@@ -470,11 +470,11 @@ strong { font-weight: 600; color: var(--ink); }
   gap: 0;
   position: relative;
 }
-/* main horizontal line */
+/* main horizontal line — passes through the dots at the TOP of each column */
 .htimeline-line {
   position: absolute;
   left: 0; right: 0;
-  top: 122px;
+  top: 75px;
   height: 1px;
   background: var(--ink);
   z-index: 1;
@@ -515,7 +515,7 @@ strong { font-weight: 600; color: var(--ink); }
 .ht-col {
   text-align: center;
   position: relative;
-  padding: 56px 6px 0;
+  padding: 12px 6px 0;
   z-index: 2;
 }
 .ht-month {
@@ -524,7 +524,7 @@ strong { font-weight: 600; color: var(--ink); }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-mute);
-  margin-bottom: 22px;
+  margin-bottom: 14px;
   line-height: 1.2;
 }
 .ht-month strong {
@@ -538,7 +538,7 @@ strong { font-weight: 600; color: var(--ink); }
   border-radius: 50%;
   background: var(--paper);
   border: 2px solid var(--ink);
-  margin: 0 auto 22px;
+  margin: 0 auto 18px;
   position: relative;
   z-index: 2;
 }
@@ -547,12 +547,14 @@ strong { font-weight: 600; color: var(--ink); }
 .ht-dot.neg { background: var(--negative); border-color: var(--negative); }
 .ht-dot.warn { background: var(--neutral); border-color: var(--neutral); }
 .ht-dot.peak {
-  width: 18px; height: 18px; margin-bottom: 20px;
+  width: 18px; height: 18px;
   box-shadow: 0 0 0 4px rgba(10,110,45,0.12);
+  margin-top: -2px; margin-bottom: 16px;
 }
 .ht-dot.crash {
   width: 16px; height: 16px;
   box-shadow: 0 0 0 4px rgba(138,31,31,0.14);
+  margin-top: -1px; margin-bottom: 17px;
 }
 .ht-title {
   font-family: var(--serif);
