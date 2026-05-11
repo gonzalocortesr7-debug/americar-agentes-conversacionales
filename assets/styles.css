@@ -740,7 +740,54 @@ strong { font-weight: 600; color: var(--ink); }
 }
 
 /* ============================================
-   EMBED · iframe externo (dashboards)
+   DASHBOARD PAGE · iframe a pantalla completa
+   ============================================ */
+body.dashboard-body { overflow: hidden; }
+body.dashboard-body::before { display: none; }
+.dashboard-titlebar {
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  padding: 12px 56px;
+  background: var(--paper-warm);
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.06em;
+  flex-wrap: wrap;
+}
+.dashboard-titlebar .db-left {
+  display: flex; align-items: center; gap: 12px;
+  color: var(--ink-mute);
+}
+.dashboard-titlebar .db-left .embed-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--positive); position: relative; flex-shrink: 0;
+}
+.dashboard-titlebar .db-left .embed-dot::after {
+  content: ""; position: absolute; inset: -3px;
+  border: 1px solid var(--positive); border-radius: 50%; opacity: 0.5;
+}
+.dashboard-titlebar .embed-label { color: var(--ink); font-weight: 600; }
+.dashboard-titlebar .embed-url { color: var(--ink-mute); }
+.dashboard-titlebar .embed-link {
+  color: var(--signal); text-decoration: none;
+  border-bottom: 1px solid var(--signal);
+  padding-bottom: 1px; font-weight: 500;
+}
+.dashboard-titlebar .embed-link:hover { color: var(--ink); border-color: var(--ink); }
+.dashboard-frame-full {
+  width: 100%;
+  height: calc(100vh - 99px); /* topnav ~52px + titlebar ~47px */
+  border: none;
+  display: block;
+  background: var(--paper);
+}
+@media (max-width: 800px) {
+  .dashboard-titlebar { padding: 12px 24px; }
+  .dashboard-titlebar .embed-url { display: none; }
+  .dashboard-frame-full { height: calc(100vh - 140px); }
+}
+
+/* ============================================
+   EMBED · iframe externo (dashboards) — legacy reusable
    ============================================ */
 .embed-wrap {
   border: 1px solid var(--ink);
