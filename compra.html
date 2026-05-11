@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agente de Compra · Tasación · Americar Chile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="topnav">
+  <div class="topnav-inner">
+    <a href="index.html" class="brand">
+      <span class="dot"></span>
+      <span>Americar <span class="sep">·</span> <span class="meta-hide">Agentes Virtuales</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">General</a>
+      <a href="venta.html">Venta</a>
+      <a href="postventa.html">Postventa</a>
+      <a href="compra.html" class="active">Compra</a>
+    </nav>
+  </div>
+</header>
+
+<div class="shell">
+
+<!-- ========================================
+     PAGE HEADER
+     ======================================== -->
+<section class="page-header first">
+  <div class="eyebrow"><span class="num">05</span> Agente de compra · Tasación</div>
+
+  <div class="agent-header">
+    <div>
+      <span class="agent-name">Compra · Piloto outbound</span>
+      <h2>El más joven<br>del ecosistema.</h2>
+    </div>
+    <div class="meta">
+      <strong>Outbound de tasación</strong>
+      Citas inspección Catman<br>
+      Piloto desde Sept 2025<br>
+      Estado: v0.5 · No estabilizado
+    </div>
+  </div>
+
+  <p class="lead">
+    El agente de compra está en piloto cerrado. Su misión es generar citas de inspección para tasación de vehículos usados — alimentar el stock que después vende el agente de venta. Hoy aporta sólo <strong>0,55%</strong> del volumen total de citas de inspección. El upside es enorme; el camino para llegar ahí es claro.
+  </p>
+</section>
+
+<!-- ========================================
+     KPIs
+     ======================================== -->
+<section id="kpis">
+  <div class="panel-eyebrow">Indicadores · Compra Outbound · Octubre + Noviembre 2025</div>
+  <div class="kpi-grid mt-32">
+    <div class="kpi">
+      <div class="label">Conversaciones outbound</div>
+      <div class="value">4.663</div>
+      <div class="delta">Volumen reducido · piloto controlado</div>
+      <div class="footnote">Oct: 1.830 · Nov: 2.833</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Citas inspección · agente</div>
+      <div class="value">150</div>
+      <div class="delta">Oct: 16 · Nov: 134</div>
+      <div class="footnote">+8× crecimiento mes a mes</div>
+    </div>
+    <div class="kpi">
+      <div class="label">% participación en total citas</div>
+      <div class="value">0,56<span class="unit">%</span></div>
+      <div class="delta neg">Sobre 26.984 citas totales del período</div>
+      <div class="footnote">Oct: 0,12% → Nov: 1,00%</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Tasa de cierre</div>
+      <div class="value">3,22<span class="unit">%</span></div>
+      <div class="delta">Sobre conversaciones totales</div>
+      <div class="footnote">Métrica de respuesta no disponible aún</div>
+    </div>
+  </div>
+
+  <div class="callout warn mt-48">
+    <div class="eyebrow">Limitación de datos</div>
+    <p>
+      <strong>El agente de compra aún no tiene reportería completa.</strong> No tenemos tasa de respuesta, costo de conversación ni costo por agenda — sólo conversaciones totales y citas concretadas. Antes de planificar escalamiento, este es el primer entregable: cerrar la medición del piloto.
+    </p>
+  </div>
+
+  <div class="callout neg mt-32">
+    <div class="eyebrow">Impacto del bloqueo Meta · Ene–Feb 2026</div>
+    <p>
+      Al igual que postventa, el piloto de compra dependía exclusivamente del outbound vía Meta. Durante el bloqueo, las campañas de tasación quedaron <strong>suspendidas</strong>, lo que congeló el crecimiento que venía mostrando el piloto (16 → 134 citas en Nov 2025). Los datos del primer trimestre 2026 no son representativos por este motivo, y la recuperación del piloto sigue en curso.
+    </p>
+  </div>
+</section>
+
+<!-- ========================================
+     Hallazgos
+     ======================================== -->
+<section id="hallazgos">
+  <div class="panel-eyebrow">Hallazgos principales</div>
+  <h3>Lo que aprendimos del piloto.</h3>
+  <div class="findings mt-32">
+    <div class="finding">
+      <div class="num">01</div>
+      <div>
+        <h4>Crecimiento agresivo mes a mes en el piloto (16 → 134 citas).</h4>
+        <p>De octubre a noviembre 2025 el agente multiplicó por 8 sus citas agendadas. La curva indica que la estructura del flujo funciona — el límite hoy es de volumen de conversaciones disparadas, no de conversión.</p>
+      </div>
+      <div class="meta"><span class="tag pos"><span class="dot"></span>Tracción</span></div>
+    </div>
+    <div class="finding">
+      <div class="num">02</div>
+      <div>
+        <h4>Sólo aporta 0,56% del total de citas de inspección.</h4>
+        <p>De las 26.984 citas de inspección de Catman en el bimestre, sólo 150 vinieron del agente. El espacio para crecer es enorme — el agente compite con un canal tradicional muy maduro.</p>
+      </div>
+      <div class="meta"><span class="tag neu"><span class="dot"></span>Oportunidad</span></div>
+    </div>
+    <div class="finding">
+      <div class="num">03</div>
+      <div>
+        <h4>Sin métricas de costo unitario.</h4>
+        <p>El reporte muestra "Costo Vambe: $0,095 / Costo Meta: $0,098" pero el costo total de conversaciones y costo por agenda están en cero. Esto es un bug de medición, no de operación.</p>
+      </div>
+      <div class="meta"><span class="tag neg"><span class="dot"></span>Bloqueante</span></div>
+    </div>
+    <div class="finding">
+      <div class="num">04</div>
+      <div>
+        <h4>Base de captación todavía no diferenciada.</h4>
+        <p>Se está usando la misma fuente de base que postventa, con criterios genéricos. Para tasación necesitamos perfilar por antigüedad de vehículo, kilometraje estimado y patrones de renovación.</p>
+      </div>
+      <div class="meta"><span class="tag neu"><span class="dot"></span>Gap producto</span></div>
+    </div>
+    <div class="finding">
+      <div class="num">05</div>
+      <div>
+        <h4>Dependencia 100% de outbound Meta · expuesto al riesgo de bloqueo.</h4>
+        <p>El piloto no tiene canal alternativo. La crisis Meta lo dejó completamente detenido durante Ene–Feb 2026. Diversificar el canal de captación es un paso necesario antes de operación regular.</p>
+      </div>
+      <div class="meta"><span class="tag neg"><span class="dot"></span>Riesgo</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     Roadmap
+     ======================================== -->
+<section id="roadmap">
+  <div class="panel-eyebrow">Roadmap funcional · Compra · próximos 90 días</div>
+  <h3>De piloto a operación.</h3>
+  <div class="roadmap mt-32">
+    <div class="rm-col">
+      <div class="week">Sprint 1</div>
+      <div class="when">Mayo · 2 semanas</div>
+      <ul>
+        <li><strong>Cerrar medición del piloto.</strong> Costo conversación, costo agenda, tasa respuesta funcionando en reportería oficial.<span class="who">Owner · BI + Producto</span></li>
+        <li><strong>Definir baseline de éxito.</strong> ¿Qué % de citas Catman queremos que venga del agente al fin de Q3? Acordar meta con Comercial.<span class="who">Owner · PM + Comercial</span></li>
+      </ul>
+    </div>
+    <div class="rm-col">
+      <div class="week">Sprint 2</div>
+      <div class="when">Junio · 2 semanas</div>
+      <ul>
+        <li><strong>Segmentación de base de compra.</strong> Definir reglas: vehículos &gt; 4 años, mismo cliente con compra anterior, patrones de renovación.<span class="who">Owner · CRM + Producto</span></li>
+        <li><strong>Mensaje inicial específico tasación.</strong> Diferenciar del mensaje de venta y postventa — la propuesta de valor es distinta.<span class="who">Owner · Producto + Marketing</span></li>
+        <li><strong>Tasación pre-conversacional.</strong> El agente entrega un rango referencial antes de pedir la cita, basado en datos básicos.<span class="who">Owner · Producto + Catman</span></li>
+      </ul>
+    </div>
+    <div class="rm-col">
+      <div class="week">Sprint 3</div>
+      <div class="when">Julio · 2 semanas</div>
+      <ul>
+        <li><strong>Escalar a 3× volumen actual.</strong> Pasar de ~2.500 a ~7.500 conversaciones mensuales, manteniendo costo por agenda &lt; US$ 20.<span class="who">Owner · Producto</span></li>
+        <li><strong>Loop a stock comercial.</strong> Las tasaciones cerradas alimentan rotación de usados — medir el ciclo completo.<span class="who">Owner · PM + Vitrina Digital</span></li>
+      </ul>
+    </div>
+    <div class="rm-col">
+      <div class="week">Sprint 4</div>
+      <div class="when">Agosto · 2 semanas</div>
+      <ul>
+        <li><strong>Cierre del piloto · go/no-go formal.</strong> Decisión de extender a operación regular o pivotar.<span class="who">Owner · Comité Productos</span></li>
+        <li><strong>Plan de extensión a Perú.</strong> Si funciona en Chile, validar viabilidad técnica (Catman PE) y de mercado.<span class="who">Owner · PM Productos</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     BENCHMARKING PLACEHOLDER
+     ======================================== -->
+<section id="benchmarking">
+  <div class="eyebrow"><span class="num">06</span> Benchmarking · Compra</div>
+  <h2>¿Cómo nos vemos<br>frente al mercado?</h2>
+  <p class="lead">
+    Espacio reservado para comparar el agente de compra contra benchmarks de captación de stock usado — tasación conversacional, tasa de cita inspección, captura de stock por canal digital.
+  </p>
+
+  <div class="placeholder">
+    <div class="ph-eyebrow">Sección en construcción</div>
+    <h3>Aquí irán los benchmarks de captación digital de stock usado.</h3>
+    <p class="ph-desc">
+      Estamos recopilando información sobre cómo otros players capturan vehículos usados mediante canales digitales — tasación instantánea, conversación asistida, modelos de comisión por canal — para fijar metas realistas al piloto.
+    </p>
+
+    <div class="ph-grid">
+      <div class="ph-card">
+        <div class="ph-label">% citas inspección por canal digital</div>
+        <div class="ph-bar"></div>
+        <div class="ph-line long"></div>
+        <div class="ph-line mid"></div>
+        <div class="ph-line short"></div>
+      </div>
+      <div class="ph-card">
+        <div class="ph-label">Conversión chat → tasación · industria</div>
+        <div class="ph-bar"></div>
+        <div class="ph-line long"></div>
+        <div class="ph-line mid"></div>
+        <div class="ph-line short"></div>
+      </div>
+      <div class="ph-card">
+        <div class="ph-label">Costo de captación por vehículo</div>
+        <div class="ph-bar"></div>
+        <div class="ph-line long"></div>
+        <div class="ph-line mid"></div>
+        <div class="ph-line short"></div>
+      </div>
+    </div>
+
+    <div class="ph-source">
+      <strong>Fuentes esperadas:</strong> · KAVAK / Carvana / Webmotors reportes públicos · CCS Cámara de Comercio Santiago · Vambe industry benchmarks · datos internos Catman vs. canal tradicional
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     NEXT
+     ======================================== -->
+<section id="explorar">
+  <div class="next-nav">
+    <a href="venta.html" class="next-nav-card">
+      <div class="nn-label">Otro agente</div>
+      <div class="nn-title">Venta · Paula <span class="nn-arrow">→</span></div>
+      <div class="nn-desc">El más maduro. Récord 6,08% de cierre en abril 2026.</div>
+    </a>
+    <a href="postventa.html" class="next-nav-card">
+      <div class="nn-label">Otro agente</div>
+      <div class="nn-title">Postventa <span class="nn-arrow">→</span></div>
+      <div class="nn-desc">Mayor volumen. 1.391 contactos por sanear.</div>
+    </a>
+    <a href="index.html" class="next-nav-card">
+      <div class="nn-label">Volver</div>
+      <div class="nn-title">Vista general <span class="nn-arrow">←</span></div>
+      <div class="nn-desc">Contexto, números, timeline y plan consolidado.</div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="doc-meta">
+    <strong>Agente de Compra · Tasación</strong>
+    Documento de trabajo interno · Gerencia Productos Digitales · Americar
+  </div>
+  <div class="sig">
+    Versión 1.1 · Mayo 2026
+  </div>
+</footer>
+
+</div>
+
+<script>
+document.documentElement.classList.add('js-on');
+const reveals = document.querySelectorAll('.panel, .kpi-grid, .findings, .roadmap, .funnel, .chart-wrap, .headline-stat, .quote-grid, .callout, .story-cols, .timeline, .placeholder, .next-nav');
+reveals.forEach(el => el.classList.add('reveal'));
+const revObs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      revObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+reveals.forEach(el => revObs.observe(el));
+</script>
+
+</body>
+</html>

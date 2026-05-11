@@ -7,7 +7,11 @@ Levantamiento punta a punta del ecosistema de agentes conversacionales de Americ
 
 ## Contenido
 
-- `index.html` — documento completo (single-page, sin dependencias).
+- `index.html` — vista general: portada, contexto, números resumen, timeline de los últimos 9 meses y plan consolidado.
+- `venta.html` — agente de Venta (Paula · nuevos + usados) + placeholder benchmarking.
+- `postventa.html` — agente de Postventa (inbound + outbound + base contaminada) + placeholder benchmarking.
+- `compra.html` — agente de Compra (piloto tasación) + placeholder benchmarking.
+- `assets/styles.css` — sistema de diseño compartido.
 
 ## Stack
 
