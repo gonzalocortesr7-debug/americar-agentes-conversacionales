@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=8">
+<link rel="stylesheet" href="assets/styles.css?v=9">
 </head>
 <body>
 
@@ -323,15 +323,61 @@
 
           <!-- AGENTS ROW -->
           <div>
+            <!-- Reusable Paula avatar symbol -->
+            <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+              <defs>
+                <symbol id="paula-avatar" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="50" fill="#0A4D1E"/>
+                  <path d="M10 100 C 10 76, 28 70, 50 70 C 72 70, 90 76, 90 100 Z" fill="#F2EFE7"/>
+                  <rect x="44" y="65" width="12" height="10" fill="#F2EFE7"/>
+                  <ellipse cx="50" cy="44" rx="20" ry="23" fill="#F2EFE7"/>
+                  <path d="M28 40 C 28 18 72 18 72 40 L 72 50 C 70 36 64 30 50 30 C 36 30 30 36 28 50 Z" fill="#1A1A1A"/>
+                  <path d="M27 39 C 26 49 26 56 28 60 L 32 60 C 32 52 33 46 34 41 Z" fill="#1A1A1A"/>
+                  <path d="M73 39 C 74 49 74 56 72 60 L 68 60 C 68 52 67 46 66 41 Z" fill="#1A1A1A"/>
+                  <ellipse cx="43" cy="44" rx="1.6" ry="2.2" fill="#1A1A1A"/>
+                  <ellipse cx="57" cy="44" rx="1.6" ry="2.2" fill="#1A1A1A"/>
+                  <path d="M44 55 Q50 58 56 55" stroke="#1A1A1A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                </symbol>
+              </defs>
+            </svg>
+
             <span class="cap-section-tag">Asistentes</span>
             <div class="cap-agents-row">
-              <div class="cap-hex">Paula<br>Preventa<br>Nuevos</div>
-              <div class="cap-hex">Paula<br>Preventa<br>Usados</div>
-              <div class="cap-hex">Paula<br>Compra</div>
-              <div class="cap-hex">Paula<br>Postventa</div>
-              <div class="cap-hex">Paula<br>Financiamiento</div>
-              <div class="cap-hex">Paula<br>Servicio al<br>Cliente</div>
-              <div class="cap-hex">Paula<br>Experiencia</div>
+              <div class="cap-agent-card">
+                <div class="cap-agent-avatar"><svg><use href="#paula-avatar"/></svg></div>
+                <div class="cap-agent-name">Paula</div>
+                <div class="cap-agent-role">Preventa Nuevos</div>
+              </div>
+              <div class="cap-agent-card">
+                <div class="cap-agent-avatar"><svg><use href="#paula-avatar"/></svg></div>
+                <div class="cap-agent-name">Paula</div>
+                <div class="cap-agent-role">Preventa Usados</div>
+              </div>
+              <div class="cap-agent-card">
+                <div class="cap-agent-avatar"><svg><use href="#paula-avatar"/></svg></div>
+                <div class="cap-agent-name">Paula</div>
+                <div class="cap-agent-role">Compra</div>
+              </div>
+              <div class="cap-agent-card">
+                <div class="cap-agent-avatar"><svg><use href="#paula-avatar"/></svg></div>
+                <div class="cap-agent-name">Paula</div>
+                <div class="cap-agent-role">Postventa</div>
+              </div>
+              <div class="cap-agent-card">
+                <div class="cap-agent-avatar"><svg><use href="#paula-avatar"/></svg></div>
+                <div class="cap-agent-name">Paula</div>
+                <div class="cap-agent-role">Financiamiento</div>
+              </div>
+              <div class="cap-agent-card">
+                <div class="cap-agent-avatar"><svg><use href="#paula-avatar"/></svg></div>
+                <div class="cap-agent-name">Paula</div>
+                <div class="cap-agent-role">Servicio al Cliente</div>
+              </div>
+              <div class="cap-agent-card">
+                <div class="cap-agent-avatar"><svg><use href="#paula-avatar"/></svg></div>
+                <div class="cap-agent-name">Paula</div>
+                <div class="cap-agent-role">Experiencia</div>
+              </div>
             </div>
           </div>
 

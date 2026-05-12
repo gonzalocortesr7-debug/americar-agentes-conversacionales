@@ -798,24 +798,40 @@ strong { font-weight: 600; color: var(--ink); }
 }
 .cap-agents-row {
   border: 1.5px solid var(--ink);
-  padding: 18px 14px;
+  padding: 20px 14px 22px;
   display: grid; grid-template-columns: repeat(7, 1fr); gap: 16px;
   background: var(--paper);
 }
-.cap-hex {
-  background: var(--americar);
-  color: var(--paper);
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+.cap-agent-card {
+  display: flex; flex-direction: column;
+  align-items: center; text-align: center;
+  gap: 10px; padding: 4px 4px 0;
+}
+.cap-agent-avatar {
+  width: 78px; height: 78px; border-radius: 50%;
+  overflow: hidden;
+  background: var(--pos-tint);
   display: flex; align-items: center; justify-content: center;
-  text-align: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.cap-agent-avatar svg {
+  width: 100%; height: 100%; display: block;
+}
+.cap-agent-name {
   font-family: var(--serif);
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.18;
-  letter-spacing: -0.005em;
-  padding: 14px 8px;
-  aspect-ratio: 1.05 / 1;
-  min-height: 96px;
+  font-size: 16px; font-weight: 500;
+  color: var(--ink); line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-top: 4px;
+}
+.cap-agent-role {
+  font-family: var(--mono);
+  font-size: 9px; letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--americar); font-weight: 600;
+  line-height: 1.25;
+  max-width: 130px;
 }
 .cap-cols {
   display: grid; grid-template-columns: repeat(7, 1fr); gap: 16px;
