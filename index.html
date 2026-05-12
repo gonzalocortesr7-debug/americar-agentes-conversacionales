@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=7">
+<link rel="stylesheet" href="assets/styles.css?v=8">
 </head>
 <body>
 
@@ -306,10 +306,130 @@
 </section>
 
 <!-- ========================================
+     MATRIZ DE CAPACIDADES · Cobertura × Profundidad
+     ======================================== -->
+<section id="matriz">
+  <div class="eyebrow"><span class="num">04</span> Mapa de capacidades · Cobertura × Profundidad</div>
+  <h2>De la cobertura<br>a la <em>profundidad funcional.</em></h2>
+  <p class="lead">
+    La estrategia de los primeros 18 meses fue de <strong>cobertura</strong> — desplegar más agentes con pocas funcionalidades cada uno, para validar el modelo conversacional en todos los frentes del ecosistema. Esa fase ya está cumplida: hoy operamos <strong>7 agentes verticales</strong> sobre la misma plataforma. La siguiente etapa es <strong>profundidad</strong>: enriquecer la capacidad funcional de cada agente — más cosas que cada uno sabe hacer, mejor integrado al resto del stack.
+  </p>
+
+  <div class="cap-matrix">
+    <div class="cap-matrix-scroll">
+      <div class="cap-matrix-inner">
+        <div class="cap-y-axis"><span class="cap-y-axis-label">↓ Profundidad</span></div>
+        <div class="cap-main">
+
+          <!-- AGENTS ROW -->
+          <div>
+            <span class="cap-section-tag">Asistentes</span>
+            <div class="cap-agents-row">
+              <div class="cap-hex">Paula<br>Preventa<br>Nuevos</div>
+              <div class="cap-hex">Paula<br>Preventa<br>Usados</div>
+              <div class="cap-hex">Paula<br>Compra</div>
+              <div class="cap-hex">Paula<br>Postventa</div>
+              <div class="cap-hex">Paula<br>Financiamiento</div>
+              <div class="cap-hex">Paula<br>Servicio al<br>Cliente</div>
+              <div class="cap-hex">Paula<br>Experiencia</div>
+            </div>
+          </div>
+
+          <!-- FUNCTIONALITIES ROW -->
+          <div>
+            <span class="cap-section-tag">Funcionalidades</span>
+            <div class="cap-cols">
+
+              <!-- Preventa Nuevos -->
+              <div class="cap-col">
+                <div class="cap-fn active">Resolución de preguntas, comparación de modelos</div>
+                <div class="cap-fn active">Creación de Lead</div>
+                <div class="cap-fn active">Envío de fotos y videos y fichas técnicas</div>
+                <div class="cap-fn active">Administrador de sucursales</div>
+                <div class="cap-fn active">Agendar Cita de Venta</div>
+                <div class="cap-fn progress">Confirmación citas de venta</div>
+                <div class="cap-fn progress">Tasación VPP</div>
+                <div class="cap-fn planned">Campañas por marca</div>
+              </div>
+
+              <!-- Preventa Usados -->
+              <div class="cap-col">
+                <div class="cap-fn active">Resolución de preguntas, comparación de modelos</div>
+                <div class="cap-fn active">Creación de Lead</div>
+                <div class="cap-fn active">Administrador de sucursales</div>
+                <div class="cap-fn active">Agendar Cita de Venta</div>
+                <div class="cap-fn progress">Confirmación citas de venta</div>
+                <div class="cap-fn progress">Tasación VPP</div>
+              </div>
+
+              <!-- Compra -->
+              <div class="cap-col">
+                <div class="cap-fn active">Agendamiento</div>
+                <div class="cap-fn active">Confirmación &amp; Reagendamiento</div>
+                <div class="cap-fn progress">Tasación</div>
+              </div>
+
+              <!-- Postventa -->
+              <div class="cap-col">
+                <div class="cap-fn active">Agendamiento Outbound</div>
+                <div class="cap-fn active">Confirmaciones</div>
+                <div class="cap-fn active">Precios de mantenciones</div>
+                <div class="cap-fn active">Tipos de servicios y tiempos</div>
+                <div class="cap-fn active">Agendamiento Reparación</div>
+                <div class="cap-fn active">Agendamiento D&amp;P</div>
+              </div>
+
+              <!-- Financiamiento -->
+              <div class="cap-col">
+                <div class="cap-fn progress">Cotización de crédito</div>
+                <div class="cap-fn progress">Pre evaluación</div>
+                <div class="cap-fn progress">Actualizar Lead existente por información adicional entregada por Cliente</div>
+              </div>
+
+              <!-- Servicio al Cliente -->
+              <div class="cap-col">
+                <div class="cap-fn planned">Resolución de preguntas y/o consultas</div>
+                <div class="cap-fn planned">Creación de Casos</div>
+                <div class="cap-fn planned">Entregar información sobre Casos ya creados</div>
+                <div class="cap-fn planned">Actualización de Casos</div>
+              </div>
+
+              <!-- Experiencia -->
+              <div class="cap-col">
+                <div class="cap-fn planned">Enviar encuesta</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="cap-x-axis">
+      <span class="cap-x-axis-label">Cobertura →</span>
+    </div>
+
+    <div class="cap-legend">
+      <div class="lg"><span class="sw active"></span>En producción</div>
+      <div class="lg"><span class="sw progress"></span>En desarrollo · piloto</div>
+      <div class="lg"><span class="sw planned"></span>Planificado · próximos sprints</div>
+    </div>
+  </div>
+
+  <div class="callout mt-48">
+    <div class="eyebrow">Lectura del mapa</div>
+    <p>
+      Las 3 primeras columnas (Preventa Nuevos · Preventa Usados · Compra · Postventa) son los agentes <strong>profundos</strong> — más de 5 funcionalidades cada uno, mayoría en producción. Las 3 últimas (Financiamiento · Servicio al Cliente · Experiencia) son agentes de <strong>cobertura</strong> — pocas funcionalidades, todas en desarrollo o planificadas. <em>La próxima curva de valor está en mover los agentes de la derecha hacia arriba — no en agregar más columnas.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ========================================
      PLAN CONSOLIDADO
      ======================================== -->
 <section id="plan">
-  <div class="eyebrow"><span class="num">04</span> Plan consolidado · Próximas semanas</div>
+  <div class="eyebrow"><span class="num">05</span> Plan consolidado · Próximas semanas</div>
   <h2>Lo que tenemos que hacer<br><em>ahora.</em></h2>
   <p class="lead">
     Tres agentes, tres roadmaps individuales — pero un único plan operativo para las próximas 4 semanas. Lo que sigue son los entregables que sí dependen de nosotros, agrupados por urgencia y owner.
@@ -457,7 +577,7 @@
      NEXT NAV — Links a páginas de agente
      ======================================== -->
 <section id="explorar">
-  <div class="eyebrow"><span class="num">05</span> Páginas de detalle</div>
+  <div class="eyebrow"><span class="num">06</span> Páginas de detalle</div>
   <h2>Explorar por agente.</h2>
   <p class="lead">El detalle de cada agente — indicadores, hallazgos, roadmap y benchmarking — vive en su propia página.</p>
 
