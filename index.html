@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=9">
+<link rel="stylesheet" href="assets/styles.css?v=10">
 </head>
 <body>
 
@@ -316,33 +316,26 @@
   </p>
 
   <div class="cap-matrix">
-    <div class="cap-matrix-scroll">
-      <div class="cap-matrix-inner">
-        <div class="cap-y-axis"><span class="cap-y-axis-label">↓ Profundidad</span></div>
-        <div class="cap-main">
+    <!-- Reusable Paula avatar symbol -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <defs>
+        <symbol id="paula-avatar" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="50" fill="#0A4D1E"/>
+          <path d="M10 100 C 10 76, 28 70, 50 70 C 72 70, 90 76, 90 100 Z" fill="#F2EFE7"/>
+          <rect x="44" y="65" width="12" height="10" fill="#F2EFE7"/>
+          <ellipse cx="50" cy="44" rx="20" ry="23" fill="#F2EFE7"/>
+          <path d="M28 40 C 28 18 72 18 72 40 L 72 50 C 70 36 64 30 50 30 C 36 30 30 36 28 50 Z" fill="#1A1A1A"/>
+          <path d="M27 39 C 26 49 26 56 28 60 L 32 60 C 32 52 33 46 34 41 Z" fill="#1A1A1A"/>
+          <path d="M73 39 C 74 49 74 56 72 60 L 68 60 C 68 52 67 46 66 41 Z" fill="#1A1A1A"/>
+          <ellipse cx="43" cy="44" rx="1.6" ry="2.2" fill="#1A1A1A"/>
+          <ellipse cx="57" cy="44" rx="1.6" ry="2.2" fill="#1A1A1A"/>
+          <path d="M44 55 Q50 58 56 55" stroke="#1A1A1A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </symbol>
+      </defs>
+    </svg>
 
-          <!-- AGENTS ROW -->
-          <div>
-            <!-- Reusable Paula avatar symbol -->
-            <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-              <defs>
-                <symbol id="paula-avatar" viewBox="0 0 100 100">
-                  <circle cx="50" cy="50" r="50" fill="#0A4D1E"/>
-                  <path d="M10 100 C 10 76, 28 70, 50 70 C 72 70, 90 76, 90 100 Z" fill="#F2EFE7"/>
-                  <rect x="44" y="65" width="12" height="10" fill="#F2EFE7"/>
-                  <ellipse cx="50" cy="44" rx="20" ry="23" fill="#F2EFE7"/>
-                  <path d="M28 40 C 28 18 72 18 72 40 L 72 50 C 70 36 64 30 50 30 C 36 30 30 36 28 50 Z" fill="#1A1A1A"/>
-                  <path d="M27 39 C 26 49 26 56 28 60 L 32 60 C 32 52 33 46 34 41 Z" fill="#1A1A1A"/>
-                  <path d="M73 39 C 74 49 74 56 72 60 L 68 60 C 68 52 67 46 66 41 Z" fill="#1A1A1A"/>
-                  <ellipse cx="43" cy="44" rx="1.6" ry="2.2" fill="#1A1A1A"/>
-                  <ellipse cx="57" cy="44" rx="1.6" ry="2.2" fill="#1A1A1A"/>
-                  <path d="M44 55 Q50 58 56 55" stroke="#1A1A1A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-                </symbol>
-              </defs>
-            </svg>
-
-            <span class="cap-section-tag">Asistentes</span>
-            <div class="cap-agents-row">
+    <span class="cap-section-tag">Asistentes</span>
+    <div class="cap-agents-row">
               <div class="cap-agent-card">
                 <div class="cap-agent-avatar"><svg><use href="#paula-avatar"/></svg></div>
                 <div class="cap-agent-name">Paula</div>
@@ -373,87 +366,78 @@
                 <div class="cap-agent-name">Paula</div>
                 <div class="cap-agent-role">Servicio al Cliente</div>
               </div>
-              <div class="cap-agent-card">
-                <div class="cap-agent-avatar"><svg><use href="#paula-avatar"/></svg></div>
-                <div class="cap-agent-name">Paula</div>
-                <div class="cap-agent-role">Experiencia</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- FUNCTIONALITIES ROW -->
-          <div>
-            <span class="cap-section-tag">Funcionalidades</span>
-            <div class="cap-cols">
-
-              <!-- Preventa Nuevos -->
-              <div class="cap-col">
-                <div class="cap-fn active">Resolución de preguntas, comparación de modelos</div>
-                <div class="cap-fn active">Creación de Lead</div>
-                <div class="cap-fn active">Envío de fotos y videos y fichas técnicas</div>
-                <div class="cap-fn active">Administrador de sucursales</div>
-                <div class="cap-fn active">Agendar Cita de Venta</div>
-                <div class="cap-fn progress">Confirmación citas de venta</div>
-                <div class="cap-fn progress">Tasación VPP</div>
-                <div class="cap-fn planned">Campañas por marca</div>
-              </div>
-
-              <!-- Preventa Usados -->
-              <div class="cap-col">
-                <div class="cap-fn active">Resolución de preguntas, comparación de modelos</div>
-                <div class="cap-fn active">Creación de Lead</div>
-                <div class="cap-fn active">Administrador de sucursales</div>
-                <div class="cap-fn active">Agendar Cita de Venta</div>
-                <div class="cap-fn progress">Confirmación citas de venta</div>
-                <div class="cap-fn progress">Tasación VPP</div>
-              </div>
-
-              <!-- Compra -->
-              <div class="cap-col">
-                <div class="cap-fn active">Agendamiento</div>
-                <div class="cap-fn active">Confirmación &amp; Reagendamiento</div>
-                <div class="cap-fn progress">Tasación</div>
-              </div>
-
-              <!-- Postventa -->
-              <div class="cap-col">
-                <div class="cap-fn active">Agendamiento Outbound</div>
-                <div class="cap-fn active">Confirmaciones</div>
-                <div class="cap-fn active">Precios de mantenciones</div>
-                <div class="cap-fn active">Tipos de servicios y tiempos</div>
-                <div class="cap-fn active">Agendamiento Reparación</div>
-                <div class="cap-fn active">Agendamiento D&amp;P</div>
-              </div>
-
-              <!-- Financiamiento -->
-              <div class="cap-col">
-                <div class="cap-fn progress">Cotización de crédito</div>
-                <div class="cap-fn progress">Pre evaluación</div>
-                <div class="cap-fn progress">Actualizar Lead existente por información adicional entregada por Cliente</div>
-              </div>
-
-              <!-- Servicio al Cliente -->
-              <div class="cap-col">
-                <div class="cap-fn planned">Resolución de preguntas y/o consultas</div>
-                <div class="cap-fn planned">Creación de Casos</div>
-                <div class="cap-fn planned">Entregar información sobre Casos ya creados</div>
-                <div class="cap-fn planned">Actualización de Casos</div>
-              </div>
-
-              <!-- Experiencia -->
-              <div class="cap-col">
-                <div class="cap-fn planned">Enviar encuesta</div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
+      <div class="cap-agent-card">
+        <div class="cap-agent-avatar"><svg><use href="#paula-avatar"/></svg></div>
+        <div class="cap-agent-name">Paula</div>
+        <div class="cap-agent-role">Experiencia</div>
       </div>
     </div>
 
-    <div class="cap-x-axis">
-      <span class="cap-x-axis-label">Cobertura →</span>
+    <span class="cap-section-tag" style="margin-top:14px;">Funcionalidades</span>
+    <div class="cap-cols">
+      <!-- Preventa Nuevos -->
+      <div class="cap-col">
+        <div class="cap-fn active">Resolución de preguntas, comparación de modelos</div>
+        <div class="cap-fn active">Creación de Lead</div>
+        <div class="cap-fn active">Envío de fotos, videos y fichas técnicas</div>
+        <div class="cap-fn active">Administrador de sucursales</div>
+        <div class="cap-fn active">Agendar Cita de Venta</div>
+        <div class="cap-fn progress">Confirmación citas de venta</div>
+        <div class="cap-fn progress">Tasación VPP</div>
+        <div class="cap-fn planned">Campañas por marca</div>
+      </div>
+
+      <!-- Preventa Usados -->
+      <div class="cap-col">
+        <div class="cap-fn active">Resolución de preguntas, comparación de modelos</div>
+        <div class="cap-fn active">Creación de Lead</div>
+        <div class="cap-fn active">Administrador de sucursales</div>
+        <div class="cap-fn active">Agendar Cita de Venta</div>
+        <div class="cap-fn progress">Confirmación citas de venta</div>
+        <div class="cap-fn progress">Tasación VPP</div>
+      </div>
+
+      <!-- Compra -->
+      <div class="cap-col">
+        <div class="cap-fn active">Agendamiento</div>
+        <div class="cap-fn active">Confirmación &amp; Reagendamiento</div>
+        <div class="cap-fn progress">Tasación</div>
+      </div>
+
+      <!-- Postventa -->
+      <div class="cap-col">
+        <div class="cap-fn active">Agendamiento Outbound</div>
+        <div class="cap-fn active">Confirmaciones</div>
+        <div class="cap-fn active">Precios de mantenciones</div>
+        <div class="cap-fn active">Tipos de servicios y tiempos</div>
+        <div class="cap-fn active">Agendamiento Reparación</div>
+        <div class="cap-fn active">Agendamiento D&amp;P</div>
+      </div>
+
+      <!-- Financiamiento -->
+      <div class="cap-col">
+        <div class="cap-fn progress">Cotización de crédito</div>
+        <div class="cap-fn progress">Pre evaluación</div>
+        <div class="cap-fn progress">Actualizar Lead con info adicional del cliente</div>
+      </div>
+
+      <!-- Servicio al Cliente -->
+      <div class="cap-col">
+        <div class="cap-fn planned">Resolución de preguntas y consultas</div>
+        <div class="cap-fn planned">Creación de Casos</div>
+        <div class="cap-fn planned">Info sobre Casos ya creados</div>
+        <div class="cap-fn planned">Actualización de Casos</div>
+      </div>
+
+      <!-- Experiencia -->
+      <div class="cap-col">
+        <div class="cap-fn planned">Enviar encuesta</div>
+      </div>
+    </div>
+
+    <div class="cap-axes">
+      <span class="ax-y">↓ Profundidad <span class="ax-line"></span></span>
+      <span class="ax-x"><span class="ax-line"></span> Cobertura →</span>
     </div>
 
     <div class="cap-legend">
@@ -466,7 +450,7 @@
   <div class="callout mt-48">
     <div class="eyebrow">Lectura del mapa</div>
     <p>
-      Las 3 primeras columnas (Preventa Nuevos · Preventa Usados · Compra · Postventa) son los agentes <strong>profundos</strong> — más de 5 funcionalidades cada uno, mayoría en producción. Las 3 últimas (Financiamiento · Servicio al Cliente · Experiencia) son agentes de <strong>cobertura</strong> — pocas funcionalidades, todas en desarrollo o planificadas. <em>La próxima curva de valor está en mover los agentes de la derecha hacia arriba — no en agregar más columnas.</em>
+      Las 4 primeras columnas (Preventa Nuevos · Preventa Usados · Compra · Postventa) son los agentes <strong>profundos</strong> — la mayoría de sus funcionalidades están en producción. Las 3 últimas (Financiamiento · Servicio al Cliente · Experiencia) son agentes de <strong>cobertura</strong> — pocas funcionalidades, todas en desarrollo o planificadas. <em>La próxima curva de valor está en mover los agentes de la derecha hacia arriba — no en agregar más columnas.</em>
     </p>
   </div>
 </section>
