@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=10">
+<link rel="stylesheet" href="assets/styles.css?v=11">
 </head>
 <body>
 
@@ -29,698 +29,160 @@
 
 <div class="shell">
 
-<!-- ========================================
-     PAGE HEADER
-     ======================================== -->
 <section class="page-header first">
-  <div class="eyebrow"><span class="num">04</span> Agente de postventa</div>
+  <div class="eyebrow">Agente de postventa</div>
 
   <div class="agent-header">
     <div>
-      <span class="agent-name">Postventa · Inbound + Outbound</span>
+      <span class="agent-name">Paula · Postventa Chile</span>
       <h2>Volumen alto,<br>base por sanear.</h2>
     </div>
     <div class="meta">
       <strong>Doble naturaleza</strong>
       Inbound: WhatsApp + Web<br>
       Outbound: Campañas mantención<br>
-      Operativo S2 2025
+      Operativo desde S2 2025
     </div>
   </div>
 
-  <p class="lead">
-    Postventa es el agente con mayor volumen de conversaciones del ecosistema. Pero también es el que sufre los problemas de base más severos: <strong>1.391 contactos únicos</strong> con rechazo explícito en sólo los últimos cuatro meses, incluyendo <strong>70 menores de edad</strong>. Esa misma deuda técnica fue la que disparó el bloqueo de Meta en enero. La salud del canal depende de resolver esto antes de seguir escalando.
-  </p>
+  <nav class="page-toc" aria-label="Índice de la página">
+    <a href="#contexto"><span class="toc-num">01</span> Contexto del agente</a>
+    <a href="#hallazgos"><span class="toc-num">02</span> Principales hallazgos</a>
+    <a href="#plan"><span class="toc-num">03</span> Plan de trabajo</a>
+  </nav>
 </section>
 
-<!-- ========================================
-     KPIs Inbound
-     ======================================== -->
-<section id="inbound">
-  <div class="panel-eyebrow">Indicadores · Inbound · Postventa Chile</div>
-  <div class="kpi-grid mt-32">
-    <div class="kpi">
-      <div class="label">Conversaciones S2 2025</div>
-      <div class="value">28.102</div>
-      <div class="delta pos">▲ +58% vs S2 2024</div>
-      <div class="footnote">Tasa de respuesta: 100% (todas son inbound)</div>
-    </div>
-    <div class="kpi">
-      <div class="label">Citas agendadas S2 2025</div>
-      <div class="value">3.334</div>
-      <div class="delta pos">▲ +41% vs S2 2024</div>
-      <div class="footnote">~700–800 agendamientos mensuales sostenidos</div>
-    </div>
-    <div class="kpi">
-      <div class="label">Tasa de conversión</div>
-      <div class="value">10,6<span class="unit">%</span></div>
-      <div class="delta neg">▼ −26% vs período anterior</div>
-      <div class="footnote">Caída por mayor volumen inbound menos calificado</div>
-    </div>
-    <div class="kpi">
-      <div class="label">Show rate al taller</div>
-      <div class="value">80<span class="unit">%</span></div>
-      <div class="delta pos">▲ +20 pp vs otros canales</div>
-      <div class="footnote">Confirmación automatizada vía integración</div>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================
-     KPIs Outbound
-     ======================================== -->
-<section id="outbound">
-  <div class="panel-eyebrow">Indicadores · Outbound · Postventa Chile · Q4 2025 + Abril 2026</div>
-  <div class="kpi-grid mt-32">
-    <div class="kpi">
-      <div class="label">Conversaciones Q4 2025</div>
-      <div class="value">91.719</div>
-      <div class="delta">Volumen masivo previo al bloqueo Meta</div>
-      <div class="footnote">vs inbound: 3,3× más conversaciones outbound</div>
-    </div>
-    <div class="kpi">
-      <div class="label">Tasa de respuesta</div>
-      <div class="value">11,3<span class="unit">%</span></div>
-      <div class="delta pos">▲ +5,2 pp vs trimestre anterior</div>
-      <div class="footnote">Mejora por segmentación y reconfiguración</div>
-    </div>
-    <div class="kpi">
-      <div class="label">Citas agendadas Q4</div>
-      <div class="value">705</div>
-      <div class="delta">Tasa de cierre: 0,77% sobre total</div>
-      <div class="footnote">Tasa baja por contaminación de base</div>
-    </div>
-    <div class="kpi">
-      <div class="label">Costo por agenda</div>
-      <div class="value">US$ 11,9</div>
-      <div class="delta pos">▼ −31% vs período anterior</div>
-      <div class="footnote">Costo combinado Vambe + Meta</div>
+<!-- ============ 01 · CONTEXTO ============ -->
+<section id="contexto">
+  <div class="section-banner">
+    <div class="num-big">01</div>
+    <div>
+      <h2>Contexto del agente.</h2>
+      <div class="punto">Qué hace Paula en postventa y cómo le está yendo hoy.</div>
     </div>
   </div>
 
-  <div class="callout neg mt-48">
-    <div class="eyebrow">Impacto del bloqueo Meta · Ene–Feb 2026</div>
-    <p>
-      El outbound de postventa fue el frente más afectado por el bloqueo Meta. Las campañas masivas de mantención se vieron <strong>prácticamente suspendidas durante 2 meses</strong>, y el costo por agenda esperado en el período subió por encima del costo histórico antes de recuperarse en marzo. Las cifras de Q4 que figuran arriba corresponden al período <em>pre-bloqueo</em> — el comportamiento post-recuperación (marzo–abril 2026) sigue en consolidación.
-    </p>
-  </div>
-</section>
-
-<!-- ========================================
-     Funnel
-     ======================================== -->
-<section id="funnel">
-  <div class="panel-eyebrow">Funnel Outbound Postventa · Q4 2025</div>
-  <h3>El paso más caro del embudo es el primero.</h3>
-  <p>De cada 100 conversaciones outbound iniciadas, sólo 11 reciben respuesta. De esas 11, sólo 8 terminan en cita de mantención agendada. <strong>El gap real no está en cierre — está en que estamos hablando con la base equivocada.</strong></p>
-
-  <div class="funnel mt-32">
-    <div class="funnel-step">
-      <div class="fs-label">Conversaciones iniciadas</div>
-      <div class="fs-value">91.719</div>
-      <div class="fs-pct">Base 100%</div>
-    </div>
-    <div class="funnel-step">
-      <div class="fs-label">Conversaciones exitosas</div>
-      <div class="fs-value">78.761</div>
-      <div class="fs-pct">85,9% del total</div>
-    </div>
-    <div class="funnel-step">
-      <div class="fs-label">Conversaciones respondidas</div>
-      <div class="fs-value">8.926</div>
-      <div class="fs-pct">11,3% tasa de respuesta</div>
-    </div>
-    <div class="funnel-step">
-      <div class="fs-label">Citas agendadas</div>
-      <div class="fs-value">705</div>
-      <div class="fs-pct">0,77% cierre total · 7,9% sobre respondidas</div>
+  <div class="punto-clave">
+    <div class="pc-label">El punto</div>
+    <div class="pc-text">
+      Paula maneja <em>dos productos distintos</em> en postventa — inbound (cliente que escribe) y outbound (recordatorio de cita) — con dueños y métricas separadas. Hoy mueve el <strong>mayor volumen del ecosistema</strong>, pero opera sobre una base contaminada que ya pasó factura: fue la causa raíz del bloqueo Meta de Ene–Feb 2026.
     </div>
   </div>
-</section>
 
-<!-- ========================================
-     ANÁLISIS DE CALIDAD CONVERSACIONAL · ABRIL 2026
-     ======================================== -->
-<section id="calidad">
-  <div class="eyebrow"><span class="num">04bis</span> Análisis profundo de calidad · Paula · Abril 2026</div>
-  <h2>15.356 conversaciones<br>que <em>no</em> terminaron en cita de mantención.</h2>
-  <p class="lead">
-    Análisis cualitativo completo del mes de abril 2026 sobre los 4 concesionarios de postventa — Salazar Israel, Coseche, Portillo y Servimaq. Cada conversación clasificada individualmente por un asistente de IA entrenado con 21 categorías de causas, validado manualmente con ≥80% de acuerdo humano–IA. Dashboard en vivo: <a href="https://paula-americar.vercel.app/calidad" target="_blank" rel="noopener" style="color:var(--signal); text-decoration:none; border-bottom:1px solid var(--signal);">paula-americar.vercel.app/calidad</a>.
-  </p>
-
-  <!-- UNIVERSE -->
   <div class="panel">
-    <div class="panel-eyebrow">El universo · Abril 2026</div>
-    <h3>De cada 10 clientes que entran a Paula,<br>6 no terminan con una cita de mantención.</h3>
-
+    <div class="panel-eyebrow">Indicadores · Inbound · Postventa Chile</div>
     <div class="kpi-grid mt-32">
       <div class="kpi">
-        <div class="label">Total conversaciones postventa</div>
-        <div class="value">24.449</div>
-        <div class="delta">4 dealers · 1 mes</div>
-        <div class="footnote">Salazar Israel · Coseche · Portillo · Servimaq</div>
+        <div class="label">Conversaciones S2 2025</div>
+        <div class="value">28.102</div>
+        <div class="delta pos">▲ +58% vs S2 2024</div>
+        <div class="footnote">Tasa de respuesta: 100% (todas son inbound)</div>
       </div>
       <div class="kpi">
-        <div class="label">Exitosas (cita de mantención agendada)</div>
-        <div class="value">9.093</div>
-        <div class="delta pos">37,2% del universo</div>
-        <div class="footnote">Cliente agendó, confirmó o fue registrado</div>
+        <div class="label">Citas de mantención · S2 2025</div>
+        <div class="value">3.334</div>
+        <div class="delta pos">▲ +41% vs S2 2024</div>
+        <div class="footnote">~700–800 agendamientos mensuales sostenidos</div>
       </div>
       <div class="kpi">
-        <div class="label">Atascadas · Inbound</div>
-        <div class="value">7.227</div>
-        <div class="delta neg">29,6% · 47% de las atascadas</div>
-        <div class="footnote">Clientes nuevos que no llegaron a cita de mantención</div>
+        <div class="label">Tasa de conversión</div>
+        <div class="value">10,6<span class="unit">%</span></div>
+        <div class="delta neg">▼ −26% vs período anterior</div>
+        <div class="footnote">Caída por mayor volumen inbound menos calificado</div>
       </div>
       <div class="kpi">
-        <div class="label">Atascadas · Outbound</div>
-        <div class="value">8.129</div>
-        <div class="delta neg">33,2% · 53% de las atascadas</div>
-        <div class="footnote">Clientes con cita de mantención que no confirmaron</div>
-      </div>
-    </div>
-
-    <div class="callout mt-48">
-      <div class="eyebrow">Por qué separamos Inbound y Outbound</div>
-      <p>
-        Mezclar los dos mundos confunde el diagnóstico. <strong>Inbound</strong> es Paula como conversacional — el problema dominante es la conversación misma, y el 54,6% del problema lo resuelve el equipo Paula ajustando el prompt. <strong>Outbound</strong> es Paula como recordatorio — el problema dominante es el template, y el 80,4% lo resuelve Vambe + Americar cambiando el formato del mensaje. <strong>Dueños distintos. Acciones distintas. Plazos distintos.</strong>
-      </p>
-    </div>
-  </div>
-
-  <!-- ============ INBOUND ============ -->
-  <div class="panel">
-    <div class="panel-eyebrow">Parte 1 · Inbound — Paula como conversacional</div>
-    <h3>7.227 chats donde Paula no agendó<br>a un cliente que llegó pidiéndolo.</h3>
-    <p>La pregunta es por qué Paula no logra agendar a un cliente que escribe espontáneamente. La respuesta corta: más de la mitad del problema (54,6%) está en cómo conversa — orden de las preguntas, fricción en el RUT, falta de información de precio, manejo de mensajes fuera de scope.</p>
-
-    <div class="panel">
-      <div class="panel-eyebrow">Distribución de causas · Inbound</div>
-      <table class="data-table mt-32">
-        <thead>
-          <tr>
-            <th>Acción requerida</th>
-            <th>Dueño</th>
-            <th>Chats</th>
-            <th>% del Inbound</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="row-label">Ajustar prompt y reglas conversacionales de Paula</td>
-            <td style="text-align:left;">Equipo Paula</td>
-            <td>3.948</td>
-            <td class="neg">54,6%</td>
-          </tr>
-          <tr>
-            <td class="row-label">Tráfico no recuperable (spam, insultos, clicks accidentales)</td>
-            <td style="text-align:left;">—</td>
-            <td>1.660</td>
-            <td>23,0%</td>
-          </tr>
-          <tr>
-            <td class="row-label">Corregir destinos de anuncios Meta</td>
-            <td style="text-align:left;">Marketing</td>
-            <td>1.055</td>
-            <td>14,6%</td>
-          </tr>
-          <tr>
-            <td class="row-label">Cambios menores en template / config</td>
-            <td style="text-align:left;">Vambe + Americar</td>
-            <td>282</td>
-            <td>3,9%</td>
-          </tr>
-          <tr>
-            <td class="row-label">Bug Quiter (citas creadas no registradas)</td>
-            <td style="text-align:left;">Tech / Vambe</td>
-            <td>261</td>
-            <td>3,6%</td>
-          </tr>
-          <tr>
-            <td class="row-label">Integración Quiter</td>
-            <td style="text-align:left;">Tech / Vambe</td>
-            <td>21</td>
-            <td>0,3%</td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="margin-top:14px; font-size:13px;">Casi el <strong>70% del problema Inbound</strong> (54,6% + 14,6%) se resuelve entre Equipo Paula y Marketing. Vambe casi no participa en el Inbound.</p>
-    </div>
-
-    <!-- Hallazgos Inbound -->
-    <div class="panel">
-      <div class="panel-eyebrow">Hallazgos Inbound</div>
-      <h3>Las cuatro fricciones que cuestan el agendamiento.</h3>
-      <div class="findings mt-32">
-        <div class="finding">
-          <div class="num">01</div>
-          <div>
-            <h4>La barrera del RUT bloquea al 24% del Inbound.</h4>
-            <p><strong>1.731 clientes</strong> (11% del universo total) abandonaron la conversación exactamente cuando Paula les pidió el RUT — incluso después de declarar intención clara de agendar. En la muestra revisada, 10 de cada 40 chats de mantención cierran tras "¿me compartes tu RUT, por favor?". <em>Recomendación:</em> pedir el RUT más adelante en el flujo, después de patente y tipo de mantención.</p>
-          </div>
-          <div class="meta"><span class="tag neg"><span class="dot"></span>1.731 chats/mes</span><span class="tag mono">Equipo Paula</span></div>
-        </div>
-        <div class="finding">
-          <div class="num">02</div>
-          <div>
-            <h4>990 clientes cayeron en el canal equivocado por anuncios Meta.</h4>
-            <p>Llegaron a postventa haciendo clic en anuncios <em>de venta</em>. El 56,8% (562 chats) quedaron desalineados: querían comprar y Paula les ofreció mantención. Anuncios "Bono hasta $3.500.000", "Liquidación CLICAR", etc. En contraste, anuncios bien segmentados de postventa tienen sólo 2,7% desalineados. <em>Recomendación:</em> separar destinos de anuncios con números de WhatsApp distintos.</p>
-          </div>
-          <div class="meta"><span class="tag neg"><span class="dot"></span>562 chats/mes</span><span class="tag mono">Marketing</span></div>
-        </div>
-        <div class="finding">
-          <div class="num">03</div>
-          <div>
-            <h4>Paula tiene 8 errores de comportamiento documentados.</h4>
-            <p>Repite el mismo mensaje sin input (789 chats · 10,9%), cotiza autos en postventa (357 · 4,9%), alucina contexto de conversaciones previas (265 · 3,7%), cruza identidad de dealer (157 · 2,2%), se identifica como "Pablo" en Servimaq (142 · 2,0% — <strong>regresión confirmada desde marzo</strong>), deriva al Contact Center sin dar el número (122 · 1,7%) y más.</p>
-          </div>
-          <div class="meta"><span class="tag neg"><span class="dot"></span>1.832 chats/mes</span><span class="tag mono">Equipo Paula</span></div>
-        </div>
-        <div class="finding">
-          <div class="num">04</div>
-          <div>
-            <h4>Paula no conoce precios ni todos los talleres.</h4>
-            <p><strong>529 clientes</strong> preguntaron el precio antes de agendar — Paula no tenía la información y los derivó al Contact Center. <strong>422 clientes</strong> completaron todos los pasos pero Paula no encontró taller en su zona — casos críticos: Maipú (Portillo) y Puerto Montt Citroën (Servimaq) no están cargados en el sistema.</p>
-          </div>
-          <div class="meta"><span class="tag neg"><span class="dot"></span>951 chats/mes</span><span class="tag mono">Vambe + Americar</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Voces Inbound -->
-    <div class="panel">
-      <div class="panel-eyebrow">Voces de clientes · Inbound</div>
-      <div class="quote-grid">
-        <div class="quote">
-          "No me dejan dar el Rut a nadie, gracias." — y cerró la conversación.
-          <span class="who">Verónica · Salazar Israel · Hallazgo RUT</span>
-        </div>
-        <div class="quote">
-          [Cliente hizo clic en anuncio "Liquidación de stock CLICAR"; al preguntar Paula por mantención respondió:] "No me moleste".
-          <span class="who">Emilio · Coseche · Anuncio Meta cruzado</span>
-        </div>
-        <div class="quote">
-          [Escribió sólo "hola buenas tardes" y Paula respondió:] "Veo tu interés en el Volkswagen Taos." [El cliente tuvo que corregir:] "necesito gestionar una revisión Ford Ranger".
-          <span class="who">Pedro Franco · Salazar · Alucinación de contexto</span>
-        </div>
-        <div class="quote">
-          [Entregó Peugeot 2008, 2022, patente y zona Maipú. Paula:] "Lamentablemente, según la información disponible, no aparece una sucursal en Maipú" [— y se fue sin cita.]
-          <span class="who">Felipe · Portillo · Taller faltante</span>
-        </div>
-        <div class="quote">
-          [Preguntó tres veces el precio de mantención de su Kia K3. Paula respondió siempre:] "Lamentablemente no tengo el precio estimado disponible." [Cerró sin agendar.]
-          <span class="who">Francisco Fernández · Servimaq · Sin precios</span>
-        </div>
-        <div class="quote">
-          [Paula en Servimaq:] "Soy Pablo, el asistente virtual de Servimaq, una empresa especializada en ofrecer una amplia variedad de vehículos nuevos y usados." [Nombre incorrecto y descripción del negocio incorrecta. Regresión desde marzo 2026.]
-          <span class="who">Bug "Pablo" · Servimaq · 142 chats/mes</span>
-        </div>
+        <div class="label">Show rate al taller</div>
+        <div class="value">80<span class="unit">%</span></div>
+        <div class="delta pos">▲ +20 pp vs otros canales</div>
+        <div class="footnote">Confirmación automatizada vía integración</div>
       </div>
     </div>
   </div>
 
-  <!-- ============ OUTBOUND ============ -->
   <div class="panel">
-    <div class="panel-eyebrow">Parte 2 · Outbound — Paula como recordatorio</div>
-    <h3>8.129 clientes con cita de mantención agendada<br>que <em>no</em> confirmaron asistencia.</h3>
-    <p>A diferencia del Inbound, estos clientes no son nuevos — ya pasaron por todo el flujo y tienen su cita de mantención en el taller. La pregunta es por qué no confirman. La respuesta corta: <strong>el template del recordatorio no funciona</strong> — no pide una acción clara, llega con datos corruptos en muchos casos, y cuando el cliente responde, una parte significativa no se sincroniza al sistema de gestión.</p>
-
-    <div class="panel">
-      <div class="panel-eyebrow">Distribución de causas · Outbound</div>
-      <table class="data-table mt-32">
-        <thead>
-          <tr>
-            <th>Acción requerida</th>
-            <th>Dueño</th>
-            <th>Chats</th>
-            <th>% del Outbound</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="row-label">Cambiar el template + validar datos antes de enviar</td>
-            <td style="text-align:left;">Vambe + Americar</td>
-            <td>6.538</td>
-            <td class="neg">80,4%</td>
-          </tr>
-          <tr>
-            <td class="row-label">Bug Quiter · cita confirmada conversacionalmente, sistema no actualizó</td>
-            <td style="text-align:left;">Tech / Vambe</td>
-            <td>1.013</td>
-            <td>12,5%</td>
-          </tr>
-          <tr>
-            <td class="row-label">Pequeños ajustes al prompt de Paula</td>
-            <td style="text-align:left;">Equipo Paula</td>
-            <td>361</td>
-            <td>4,4%</td>
-          </tr>
-          <tr>
-            <td class="row-label">Tráfico no recuperable (cliente bloqueó, número equivocado)</td>
-            <td style="text-align:left;">—</td>
-            <td>157</td>
-            <td>1,9%</td>
-          </tr>
-          <tr>
-            <td class="row-label">Otros</td>
-            <td style="text-align:left;">—</td>
-            <td>60</td>
-            <td>0,8%</td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="margin-top:14px; font-size:13px;"><strong>Más del 90% del problema Outbound</strong> se resuelve entre Vambe + Americar y Tech. El equipo Paula casi no participa — esto no es un problema conversacional.</p>
-    </div>
-
-    <!-- Hallazgos Outbound -->
-    <div class="panel">
-      <div class="panel-eyebrow">Hallazgos Outbound</div>
-      <h3>Las tres fallas del recordatorio.</h3>
-      <div class="findings mt-32">
-        <div class="finding">
-          <div class="num">01</div>
-          <div>
-            <h4>El template no pide ninguna acción clara.</h4>
-            <p><strong>5.477 clientes</strong> (67% del Outbound) recibieron el recordatorio y no respondieron nada. El texto actual dice "responde este mensaje o llámanos al 600…" — sin instrucción de qué escribir. La versión con tres botones (✅ Confirmar / 🕐 Reagendar / ❌ Cancelar) sí obtiene respuesta cuando se prueba. Adicionalmente: <strong>999 recordatorios</strong> llegaron con datos corruptos al cliente.</p>
-          </div>
-          <div class="meta"><span class="tag neg"><span class="dot"></span>6.476 chats/mes</span><span class="tag mono">Vambe + Americar</span></div>
-        </div>
-        <div class="finding">
-          <div class="num">02</div>
-          <div>
-            <h4>1.002 citas de mantención confirmadas que el sistema no registró.</h4>
-            <p>El cliente respondió "confirmo" o equivalente al recordatorio — pero Quiter no actualizó el estado de la cita de mantención. Aparecen como fallidas en los reportes operativos cuando en realidad están confirmadas conversacionalmente. <em>Consecuencia:</em> el equipo de seguimiento llama a estos clientes como si no tuvieran cita, generando confusión y desgaste del asesor.</p>
-          </div>
-          <div class="meta"><span class="tag neg"><span class="dot"></span>1.002 chats/mes</span><span class="tag mono">Tech / Vambe</span></div>
-        </div>
-        <div class="finding">
-          <div class="num">03</div>
-          <div>
-            <h4>El reagendamiento destruye citas de mantención existentes.</h4>
-            <p>Cuando un cliente pide cambiar el horario, Paula cancela primero la cita original y luego busca un nuevo slot. Si no hay disponibilidad, el cliente queda sin nada. <em>Es el error con mayor potencial de dañar la relación:</em> alguien que hizo todo bien pierde su cita por culpa del flujo. <em>Recomendación:</em> primero verificar disponibilidad del nuevo horario; cancelar la original sólo cuando hay confirmación.</p>
-          </div>
-          <div class="meta"><span class="tag neg"><span class="dot"></span>101 chats/mes · urgencia alta</span><span class="tag mono">Equipo Paula</span></div>
-        </div>
+    <div class="panel-eyebrow">Indicadores · Outbound · Postventa Chile · Q4 2025 + Abril 2026</div>
+    <div class="kpi-grid mt-32">
+      <div class="kpi">
+        <div class="label">Conversaciones Q4 2025</div>
+        <div class="value">91.719</div>
+        <div class="delta">Volumen masivo previo al bloqueo Meta</div>
+        <div class="footnote">vs inbound: 3,3× más conversaciones outbound</div>
       </div>
-    </div>
-
-    <!-- Voces Outbound -->
-    <div class="panel">
-      <div class="panel-eyebrow">Voces de clientes · Outbound</div>
-      <div class="quote-grid">
-        <div class="quote">
-          "Tienes una agenda… el día 46119, a las 11:30 horas." [La fecha era un número de sistema imposible de leer.]
-          <span class="who">María José Cáceres · Salazar · Datos corruptos</span>
-        </div>
-        <div class="quote">
-          [Entregó datos del Maxus T60, RUT, email, teléfono. Paula confirmó:] "He registrado tu solicitud para ver los modelos Maxus T60 en la sucursal de Vitacura." [El sistema seguía marcado como "Enrutador — pendiente".]
-          <span class="who">Asantacruz · Salazar · Bug Quiter</span>
-        </div>
-        <div class="quote">
-          [Pidió cambiar cita de 09:00 a 10:00. Paula canceló las 09:00. No encontró disponibilidad para las 10:00.] "Lo siento Iara, lamentablemente la cita de las 09:00 ya fue cancelada."
-          <span class="who">Iara · Coseche · Reagendamiento destructivo</span>
-        </div>
-        <div class="quote">
-          "Yo no tengo ni vehículo ni nada, soy una adulta mayor… le rogaría que no esté enviando más información." [El sistema le envió un nuevo recordatorio igualmente.]
-          <span class="who">Sonia · Salazar · Sin filtro de rechazos</span>
-        </div>
+      <div class="kpi">
+        <div class="label">Tasa de respuesta</div>
+        <div class="value">11,3<span class="unit">%</span></div>
+        <div class="delta pos">▲ +5,2 pp vs trimestre anterior</div>
+        <div class="footnote">Mejora por segmentación y reconfiguración</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Citas de mantención · Q4</div>
+        <div class="value">705</div>
+        <div class="delta">Tasa de cierre: 0,77% sobre total</div>
+        <div class="footnote">Tasa baja por contaminación de base</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Costo por agenda</div>
+        <div class="value">US$ 11,9</div>
+        <div class="delta pos">▼ −31% vs período anterior</div>
+        <div class="footnote">Costo combinado Vambe + Meta</div>
       </div>
     </div>
 
     <div class="callout neg mt-48">
-      <div class="eyebrow">Caso resumen · Sonia</div>
+      <div class="eyebrow">Impacto del bloqueo Meta · Ene–Feb 2026</div>
       <p>
-        El caso de Sonia combina las tres fallas del Outbound en una sola conversación: <strong>(1)</strong> datos erróneos en la base de origen — el número estaba asociado a quien no tiene auto. <strong>(2)</strong> falta de filtro para rechazos explícitos — no existe validación de mensajes de rechazo antes de enviar nuevos recordatorios. <strong>(3)</strong> automatización sin supervisión — el trigger se dispara ignorando el contexto de la conversación previa. <em>Los números grandes ocultan personas reales con experiencias deficientes.</em>
+        El outbound de postventa fue el frente más afectado por el bloqueo Meta. Las campañas masivas de mantención se vieron <strong>prácticamente suspendidas durante 2 meses</strong>, y el costo por agenda esperado en el período subió por encima del histórico antes de recuperarse en marzo. Las cifras de Q4 corresponden al período <em>pre-bloqueo</em>.
       </p>
     </div>
   </div>
 
-  <!-- ============ PATRÓN POR DEALER ============ -->
   <div class="panel">
-    <div class="panel-eyebrow">Patrón por concesionario · Abril 2026</div>
-    <h3>Cada dealer tiene su propia historia.</h3>
-    <table class="data-table mt-32">
-      <thead>
-        <tr>
-          <th>Dealer</th>
-          <th>Total chats atascados</th>
-          <th>Inbound</th>
-          <th>Outbound</th>
-          <th>Bug "Pablo"</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="row-label">Salazar Israel</td>
-          <td>6.739</td>
-          <td>2.860</td>
-          <td>3.879</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td class="row-label">Portillo</td>
-          <td>4.810</td>
-          <td>2.063</td>
-          <td>2.747</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td class="row-label">Coseche</td>
-          <td>2.818</td>
-          <td>1.302</td>
-          <td>1.516</td>
-          <td>0</td>
-        </tr>
-        <tr>
-          <td class="row-label">Servimaq</td>
-          <td>989</td>
-          <td>374</td>
-          <td>615</td>
-          <td class="neg">134</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="cols-2 mt-32" style="gap:32px;">
-      <ul class="bullets">
-        <li><strong>Salazar Israel:</strong> concentra el mayor volumen en ambos canales por su tamaño. Referente de escala para el grupo.</li>
-        <li><strong>Portillo:</strong> tiene el mayor problema de silencio en el pedido de RUT (736 chats), más que cualquier otro dealer.</li>
-      </ul>
-      <ul class="bullets">
-        <li><strong>Coseche:</strong> el más pequeño y el que mejor sale en términos relativos. Referente de buenas prácticas.</li>
-        <li><strong>Servimaq:</strong> tiene el problema único y urgente del bug "Pablo" — 134 chats donde Paula se identifica con nombre incorrecto. Regresión confirmada desde marzo 2026.</li>
-      </ul>
-    </div>
-  </div>
+    <div class="panel-eyebrow">Funnel Outbound · Q4 2025</div>
+    <h3>El paso más caro del embudo es el primero.</h3>
+    <p>De cada 100 conversaciones outbound iniciadas, sólo 11 reciben respuesta. De esas 11, sólo 8 terminan en cita de mantención agendada. <strong>El gap real no está en cierre — está en que estamos hablando con la base equivocada.</strong></p>
 
-  <!-- ============ ROADMAP ESTA SEMANA ============ -->
-  <div class="panel">
-    <div class="panel-eyebrow">Roadmap consolidado · Esta semana · Esfuerzo bajo</div>
-    <h3>~7.759 chats/mes recuperables<br>con acciones de esta semana.</h3>
-    <table class="data-table mt-32">
-      <thead>
-        <tr>
-          <th>Acción</th>
-          <th>Canal</th>
-          <th>Dueño</th>
-          <th>Chats/mes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="row-label">Reemplazar texto del recordatorio por botones de opción</td>
-          <td style="text-align:left;">Outbound</td>
-          <td style="text-align:left;">Vambe + Americar</td>
-          <td>~5.477</td>
-        </tr>
-        <tr>
-          <td class="row-label">Validar datos antes de enviar template</td>
-          <td style="text-align:left;">Outbound</td>
-          <td style="text-align:left;">Vambe + Americar</td>
-          <td>~999</td>
-        </tr>
-        <tr>
-          <td class="row-label">Separar destinos Meta ventas vs. postventa</td>
-          <td style="text-align:left;">Inbound</td>
-          <td style="text-align:left;">Marketing</td>
-          <td>~562</td>
-        </tr>
-        <tr>
-          <td class="row-label">Activar Maipú y Puerto Montt Citroën como talleres</td>
-          <td style="text-align:left;">Inbound</td>
-          <td style="text-align:left;">Vambe</td>
-          <td>~422</td>
-        </tr>
-        <tr>
-          <td class="row-label">Filtrar destinatarios con rechazo previo</td>
-          <td style="text-align:left;">Outbound</td>
-          <td style="text-align:left;">Vambe</td>
-          <td>~157</td>
-        </tr>
-        <tr>
-          <td class="row-label">Corregir bug "Pablo" en Servimaq (urgente)</td>
-          <td style="text-align:left;">Inbound</td>
-          <td style="text-align:left;">Equipo Paula</td>
-          <td>~142</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3 class="mt-48">Este mes · Esfuerzo medio</h3>
-    <table class="data-table mt-32">
-      <thead>
-        <tr><th>Acción</th><th>Canal</th><th>Dueño</th><th>Chats/mes</th></tr>
-      </thead>
-      <tbody>
-        <tr><td class="row-label">Evaluar pedir RUT más adelante en el flujo</td><td style="text-align:left;">Inbound</td><td style="text-align:left;">Equipo Paula</td><td>~1.731</td></tr>
-        <tr><td class="row-label">Cargar precios estimados por modelo y dealer</td><td style="text-align:left;">Inbound</td><td style="text-align:left;">Vambe + Americar</td><td>~529</td></tr>
-        <tr><td class="row-label">Corregir los 7 errores conversacionales restantes</td><td style="text-align:left;">Inbound</td><td style="text-align:left;">Equipo Paula</td><td>~1.832</td></tr>
-        <tr><td class="row-label">Invertir flujo de reagendamiento (verificar antes de cancelar)</td><td style="text-align:left;">Outbound</td><td style="text-align:left;">Equipo Paula</td><td>~101</td></tr>
-      </tbody>
-    </table>
-
-    <h3 class="mt-48">Este trimestre · Esfuerzo medio-alto</h3>
-    <table class="data-table mt-32">
-      <thead>
-        <tr><th>Acción</th><th>Canal</th><th>Dueño</th><th>Chats/mes</th></tr>
-      </thead>
-      <tbody>
-        <tr><td class="row-label">Corregir sincronización Paula → Quiter (citas confirmadas no registradas)</td><td style="text-align:left;">Outbound</td><td style="text-align:left;">Tech / Vambe</td><td>~1.002</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- ============ CIERRE ============ -->
-  <div class="panel">
-    <div class="panel-eyebrow">Síntesis del análisis</div>
-    <h3>Qué logramos.</h3>
-    <div class="kpi-grid mt-32">
-      <div class="kpi">
-        <div class="label">Conversaciones analizadas</div>
-        <div class="value">15.356</div>
-        <div class="delta">62,8% del universo postventa</div>
-        <div class="footnote">Cada chat clasificado con IA + validación humana</div>
+    <div class="funnel mt-32">
+      <div class="funnel-step">
+        <div class="fs-label">Conversaciones iniciadas</div>
+        <div class="fs-value">91.719</div>
+        <div class="fs-pct">Base 100%</div>
       </div>
-      <div class="kpi">
-        <div class="label">Casos con causa identificada</div>
-        <div class="value">88,2<span class="unit">%</span></div>
-        <div class="delta pos">Y dueño asignado para resolución</div>
-        <div class="footnote">≥80% acuerdo humano-IA en clasificación</div>
+      <div class="funnel-step">
+        <div class="fs-label">Conversaciones exitosas</div>
+        <div class="fs-value">78.761</div>
+        <div class="fs-pct">85,9% del total</div>
       </div>
-      <div class="kpi">
-        <div class="label">Conversaciones recuperables / mes</div>
-        <div class="value">12.954</div>
-        <div class="delta pos">Ejecutando los dos roadmaps</div>
-        <div class="footnote">5.218 Inbound + 7.736 Outbound</div>
+      <div class="funnel-step">
+        <div class="fs-label">Conversaciones respondidas</div>
+        <div class="fs-value">8.926</div>
+        <div class="fs-pct">11,3% tasa de respuesta</div>
       </div>
-      <div class="kpi">
-        <div class="label">Dashboard en vivo</div>
-        <div class="value" style="font-size:18px; font-family:var(--mono); line-height:1.4;">paula-americar<br>.vercel.app/calidad</div>
-        <div class="delta">Actualizado en tiempo real</div>
-        <div class="footnote">Por dealer, motivo y canal</div>
+      <div class="funnel-step">
+        <div class="fs-label">Citas de mantención agendadas</div>
+        <div class="fs-value">705</div>
+        <div class="fs-pct">0,77% cierre total · 7,9% sobre respondidas</div>
       </div>
-    </div>
-
-    <div class="callout mt-48">
-      <div class="eyebrow">Próximos pasos · más allá de postventa</div>
-      <p>
-        <strong>Mayo 2026:</strong> implementación del roadmap esta semana / este mes. Correcciones urgentes en producción. <strong>Junio 2026:</strong> medición de impacto y nuevo análisis cualitativo completo — ¿mejoraron los indicadores? <strong>Julio 2026:</strong> aplicar el mismo método al canal de preventa (venta de autos). Los errores documentados se incorporan como casos de prueba para futuras actualizaciones — Paula no debería volver a cometer los mismos errores.
-      </p>
     </div>
   </div>
 </section>
 
-<!-- ========================================
-     BASE ANALYSIS
-     ======================================== -->
-<section id="base">
-  <div class="panel-eyebrow">Análisis profundo · Base de outbound · Q1 + Abril 2026</div>
-  <h3>La base no es sólo grande.<br>Está contaminada.</h3>
-  <p class="lead">
-    Cruzando las conversaciones outbound contra los mensajes de rechazo explícito, identificamos <strong>1.391 contactos únicos</strong> que respondieron pidiendo no ser contactados o que corresponden a perfiles que nunca debieron entrar en campaña. Es una fracción del total, pero genera daño desproporcionado: cada reenvío a un opt-out es un riesgo legal, reputacional y de costo — y fue la raíz del bloqueo Meta.
-  </p>
-
-  <div class="cols-2 mt-32">
-    <div>
-      <div class="headline-stat">
-        <div class="stat" style="color: var(--negative);">1.391</div>
-        <div class="stat-cap">contactos únicos con rechazo explícito identificados en Q1 + Abril 2026. Volumen real probablemente mayor — esto es solo lo capturado en mensajes de respuesta.</div>
-      </div>
-    </div>
-    <div>
-      <table class="data-table">
-        <thead>
-          <tr><th>Categoría</th><th>Contactos</th><th>% del total</th><th>Acción requerida</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="row-label">No interesa el producto</td>
-            <td>1.020</td>
-            <td>73,3%</td>
-            <td style="text-align:left;color:var(--ink-soft);font-size:11px;">Excluir de campañas activas</td>
-          </tr>
-          <tr>
-            <td class="row-label">Solicita no ser contactado</td>
-            <td>293</td>
-            <td>21,1%</td>
-            <td style="text-align:left;color:var(--negative);font-size:11px;">Opt-out legal · bloqueo permanente</td>
-          </tr>
-          <tr>
-            <td class="row-label">Menor de edad</td>
-            <td>70</td>
-            <td>5,0%</td>
-            <td style="text-align:left;color:var(--negative);font-size:11px;">Eliminación inmediata</td>
-          </tr>
-          <tr>
-            <td class="row-label">Adulto mayor sin interés</td>
-            <td>8</td>
-            <td>0,6%</td>
-            <td style="text-align:left;color:var(--ink-soft);font-size:11px;">Exclusión permanente</td>
-          </tr>
-          <tr style="border-top:1px solid var(--ink);">
-            <td class="row-label" style="font-family:var(--serif);font-size:14px;">Total identificado</td>
-            <td style="font-weight:600;">1.391</td>
-            <td>100%</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="callout neg mt-32">
-    <div class="eyebrow">Riesgo regulatorio y reputacional</div>
-    <p>
-      Los <strong>293 contactos que solicitaron explícitamente no ser contactados</strong> y los <strong>70 menores de edad</strong> representan el riesgo más alto. La base actualmente no tiene un mecanismo de exclusión automática: cuando un cliente pide ser eliminado, lo seguimos contactando en la siguiente campaña. <strong>Esto no es un problema del agente conversacional — es un problema de gobierno de datos del CRM</strong>, y es la deuda técnica que disparó el bloqueo Meta.
-    </p>
-  </div>
-
-  <div class="panel-eyebrow mt-48">Muestra de mensajes recibidos · Menores de edad</div>
-  <div class="quote-grid">
-    <div class="quote">
-      "Aya que tengo 9 años no tengo plata entonces no me interesa eso y muchas gracias por contestar"
-      <span class="who">Ene 30 · 01:01 AM</span>
-    </div>
-    <div class="quote">
-      "Hola buenas tardes no me interesa el auto y no tengo licencia de conducir y tengo 10 años así que no tengo dinero"
-      <span class="who">Abr 08 · 23:23</span>
-    </div>
-    <div class="quote">
-      "Hola Paula!! Soy menor de edad asique no me interesa mucho el tema de autos, aún así te felicito ya que haces muy bien en tu trabajo, eres una inteligencia artificial?"
-      <span class="who">Abr 29 · 20:42</span>
-    </div>
-    <div class="quote">
-      "Soy menor de edad y no tengo auto, dejen de contactarme"
-      <span class="who">Mar 17 · 22:20</span>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================
-     Hallazgos
-     ======================================== -->
+<!-- ============ 02 · HALLAZGOS ============ -->
 <section id="hallazgos">
-  <div class="panel-eyebrow">Hallazgos principales</div>
-  <h3>Lo que aprendimos.</h3>
+  <div class="section-banner">
+    <div class="num-big">02</div>
+    <div>
+      <h2>Principales hallazgos.</h2>
+      <div class="punto">Qué aprendimos — de lo general a lo específico.</div>
+    </div>
+  </div>
+
+  <div class="punto-clave">
+    <div class="pc-label">El punto</div>
+    <div class="pc-text">
+      El inbound <em>funciona</em>; el cuello de botella está en outbound. El análisis cualitativo de abril revela que <strong>el 80% del problema outbound se resuelve cambiando el template del recordatorio</strong>. Adicionalmente, hay <strong>1.391 contactos contaminados</strong> en la base (incluyendo 70 menores de edad) que dispararon el bloqueo Meta y siguen sin estar bloqueados.
+    </div>
+  </div>
+
   <div class="findings mt-32">
     <div class="finding">
       <div class="num">01</div>
@@ -734,7 +196,7 @@
       <div class="num">02</div>
       <div>
         <h4>1.391 contactos en base con rechazo explícito — sin proceso de exclusión.</h4>
-        <p>El más grave: 70 menores de edad. Recibirán otra campaña la próxima vez que se ejecute outbound. Esto es prioridad cero para legales y compliance — y la causa raíz del bloqueo Meta.</p>
+        <p>El más grave: 70 menores de edad. Recibirán otra campaña la próxima vez que se ejecute outbound. Es la causa raíz del bloqueo Meta y es prioridad cero de compliance.</p>
       </div>
       <div class="meta"><span class="tag neg"><span class="dot"></span>Crítico</span></div>
     </div>
@@ -757,77 +219,373 @@
     <div class="finding">
       <div class="num">05</div>
       <div>
-        <h4>Costo backoffice mantención: $115K USD en diciembre 2025.</h4>
-        <p>Centralización de pagos (≈$106K), facturación, validación comercial. Operación masiva que justifica seguir invirtiendo en automatización conversacional.</p>
-      </div>
-      <div class="meta"><span class="tag signal"><span class="dot"></span>Contexto</span></div>
-    </div>
-    <div class="finding">
-      <div class="num">06</div>
-      <div>
         <h4>Sin reportería de calidad de base.</h4>
-        <p>Hoy no existe un dashboard que muestre la composición de la base outbound (segmentos, antigüedad, validez de teléfono, frecuencia de contacto). Sin esto, depurar es un ejercicio reactivo, no estructural.</p>
+        <p>No existe un dashboard que muestre la composición de la base outbound (segmentos, antigüedad, validez de teléfono, frecuencia de contacto). Sin esto, depurar es reactivo, no estructural.</p>
       </div>
       <div class="meta"><span class="tag neu"><span class="dot"></span>Gap medición</span></div>
     </div>
   </div>
-</section>
 
-<!-- ========================================
-     Roadmap
-     ======================================== -->
-<section id="roadmap">
-  <div class="panel-eyebrow">Roadmap funcional · Postventa · próximos 90 días</div>
-  <h3>El plan de saneamiento.</h3>
-  <p>El énfasis de los próximos 90 días en postventa es <strong>saneamiento estructural antes que crecimiento</strong>. No tiene sentido escalar campañas sobre una base que erosiona reputación de canal — el bloqueo Meta lo demostró.</p>
+  <!-- DEEP DIVE 02.1 -->
+  <div class="subsection">
+    <span class="subsection-tag">Deep-dive · 02.1</span>
+    <h2 style="font-size: clamp(28px, 3.6vw, 44px);">Análisis cualitativo · Abril 2026</h2>
+    <p class="lead">
+      Análisis individual de las <strong>15.356 conversaciones que no terminaron en cita de mantención</strong> en abril 2026 sobre los 4 dealers — clasificadas por una IA validada manualmente (≥80% de acuerdo humano–IA), con 21 categorías de causas. Dashboard en vivo: <a href="https://paula-americar.vercel.app/calidad" target="_blank" rel="noopener" style="color:var(--signal); text-decoration:none; border-bottom:1px solid var(--signal);">paula-americar.vercel.app/calidad</a>.
+    </p>
 
-  <div class="roadmap mt-32">
-    <div class="rm-col">
-      <div class="week">Sprint 1</div>
-      <div class="when">Mayo · 2 semanas · Prioridad cero</div>
-      <ul>
-        <li><strong>Bloqueo inmediato de 1.391 contactos.</strong> Carga manual en lista negra del CRM Llaima y Vambe. No esperar mecanismo definitivo.<span class="who">Owner · Martín Flores</span></li>
-        <li><strong>Detector automático de menores en agente.</strong> Si el cliente declara edad &lt; 18, el agente cierra el flujo y marca el contacto para exclusión permanente.<span class="who">Owner · Producto</span></li>
-        <li><strong>Audit legal del proceso de opt-out.</strong> Validar con legal de Americar cumplimiento Ley 19.628 y normativa de protección.<span class="who">Owner · Legal + PM</span></li>
-      </ul>
+    <h3 class="mt-32">De cada 10 clientes que entran a Paula, 6 no terminan con una cita de mantención.</h3>
+    <div class="kpi-grid mt-32">
+      <div class="kpi">
+        <div class="label">Total chats postventa</div>
+        <div class="value">24.449</div>
+        <div class="delta">4 dealers · Abril 2026</div>
+        <div class="footnote">Salazar · Coseche · Portillo · Servimaq</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Exitosas (con cita)</div>
+        <div class="value">9.093</div>
+        <div class="delta pos">37,2% del universo</div>
+        <div class="footnote">Cliente agendó, confirmó o fue registrado</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Atascadas · Inbound</div>
+        <div class="value">7.227</div>
+        <div class="delta neg">29,6% · 47% de las atascadas</div>
+        <div class="footnote">Clientes nuevos que no llegaron a cita</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Atascadas · Outbound</div>
+        <div class="value">8.129</div>
+        <div class="delta neg">33,2% · 53% de las atascadas</div>
+        <div class="footnote">Clientes con cita que no confirmaron</div>
+      </div>
     </div>
-    <div class="rm-col">
-      <div class="week">Sprint 2</div>
-      <div class="when">Junio · 2 semanas</div>
-      <ul>
-        <li><strong>Lista negra centralizada.</strong> Tabla única CRM Creatio + Llaima + Vambe con sync diario.<span class="who">Owner · Pablo Polanco + Martín Flores</span></li>
-        <li><strong>Workflow opt-out automatizado.</strong> Cualquier respuesta tipo "no me contacten" / "stop" / "baja" gatilla exclusión sin intervención humana.<span class="who">Owner · Producto + Vambe</span></li>
-        <li><strong>Dashboard calidad de base.</strong> Composición de base outbound semanal — frecuencia contacto, válidos, dormidos, opt-outs.<span class="who">Owner · BI</span></li>
-      </ul>
+
+    <div class="callout mt-48">
+      <div class="eyebrow">Por qué separamos Inbound y Outbound</div>
+      <p>
+        <strong>Inbound</strong> es Paula como conversacional — el 54,6% del problema lo resuelve el equipo Paula. <strong>Outbound</strong> es Paula como recordatorio — el 80,4% lo resuelve Vambe + Americar. Dueños distintos. Acciones distintas. Plazos distintos.
+      </p>
     </div>
-    <div class="rm-col">
-      <div class="week">Sprint 3</div>
-      <div class="when">Julio · 2 semanas</div>
-      <ul>
-        <li><strong>Segmentación por antigüedad de cliente.</strong> Diferenciar mensaje y frecuencia para clientes recientes vs. inactivos &gt; 24 meses.<span class="who">Owner · Producto + Marketing</span></li>
-        <li><strong>Integración cita postventa en CRM Creatio.</strong> Eliminar doble carga y errores de cancelación.<span class="who">Owner · Martín Flores</span></li>
-        <li><strong>Test de mensaje inicial corto / largo.</strong> Validar lift en tasa de respuesta.<span class="who">Owner · Producto</span></li>
-      </ul>
+
+    <div class="panel">
+      <div class="panel-eyebrow">Inbound · Distribución de causas (7.227 chats)</div>
+      <table class="data-table mt-32">
+        <thead>
+          <tr><th>Acción requerida</th><th>Dueño</th><th>Chats</th><th>%</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="row-label">Ajustar prompt y reglas conversacionales de Paula</td><td style="text-align:left;">Equipo Paula</td><td>3.948</td><td class="neg">54,6%</td></tr>
+          <tr><td class="row-label">Tráfico no recuperable (spam, insultos, clicks accidentales)</td><td style="text-align:left;">—</td><td>1.660</td><td>23,0%</td></tr>
+          <tr><td class="row-label">Corregir destinos de anuncios Meta</td><td style="text-align:left;">Marketing</td><td>1.055</td><td>14,6%</td></tr>
+          <tr><td class="row-label">Cambios menores en template / config</td><td style="text-align:left;">Vambe + Americar</td><td>282</td><td>3,9%</td></tr>
+          <tr><td class="row-label">Bug Quiter (citas creadas no registradas)</td><td style="text-align:left;">Tech / Vambe</td><td>261</td><td>3,6%</td></tr>
+          <tr><td class="row-label">Integración Quiter</td><td style="text-align:left;">Tech / Vambe</td><td>21</td><td>0,3%</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:14px; font-size:13px;">Casi el <strong>70% del problema Inbound</strong> (54,6% + 14,6%) se resuelve entre Equipo Paula y Marketing.</p>
     </div>
-    <div class="rm-col">
-      <div class="week">Sprint 4</div>
-      <div class="when">Agosto · 2 semanas</div>
-      <ul>
-        <li><strong>Sub-agente SAC.</strong> Derivar reclamos y solicitudes formales a un agente distinto del de citas — desbloquea métrica de cierre.<span class="who">Owner · Producto + Postventa</span></li>
-        <li><strong>Reintegro de contactos saneados.</strong> Identificar los que pedían no contacto pero por canal incorrecto, reactivar con consentimiento explícito.<span class="who">Owner · CRM + Compliance</span></li>
-      </ul>
+
+    <div class="panel">
+      <div class="panel-eyebrow">Inbound · 4 fricciones detectadas</div>
+      <div class="findings mt-32">
+        <div class="finding">
+          <div class="num">01</div>
+          <div>
+            <h4>La barrera del RUT bloquea al 24% del Inbound.</h4>
+            <p><strong>1.731 clientes</strong> (11% del universo total) abandonaron exactamente cuando Paula les pidió el RUT — incluso después de declarar intención de agendar. <em>Recomendación:</em> pedir el RUT más adelante en el flujo.</p>
+          </div>
+          <div class="meta"><span class="tag neg"><span class="dot"></span>1.731/mes</span><span class="tag mono">Equipo Paula</span></div>
+        </div>
+        <div class="finding">
+          <div class="num">02</div>
+          <div>
+            <h4>990 clientes cayeron en el canal equivocado por anuncios Meta.</h4>
+            <p>Llegaron a postventa haciendo clic en anuncios <em>de venta</em>. El 56,8% (562 chats) quedaron desalineados. Los anuncios bien segmentados tienen sólo 2,7% desalineados.</p>
+          </div>
+          <div class="meta"><span class="tag neg"><span class="dot"></span>562/mes</span><span class="tag mono">Marketing</span></div>
+        </div>
+        <div class="finding">
+          <div class="num">03</div>
+          <div>
+            <h4>Paula tiene 8 errores de comportamiento documentados.</h4>
+            <p>Repite mensajes (789 · 10,9%), cotiza autos en postventa (357 · 4,9%), alucina contexto previo (265 · 3,7%), se identifica como "Pablo" en Servimaq (142 · 2,0% — <strong>regresión desde marzo</strong>).</p>
+          </div>
+          <div class="meta"><span class="tag neg"><span class="dot"></span>1.832/mes</span><span class="tag mono">Equipo Paula</span></div>
+        </div>
+        <div class="finding">
+          <div class="num">04</div>
+          <div>
+            <h4>Paula no conoce precios ni todos los talleres.</h4>
+            <p><strong>529 clientes</strong> preguntaron el precio — Paula no tenía la info. <strong>422 clientes</strong> completaron todos los pasos pero Paula no encontró taller en su zona: Maipú (Portillo) y Puerto Montt Citroën (Servimaq) no están cargados.</p>
+          </div>
+          <div class="meta"><span class="tag neg"><span class="dot"></span>951/mes</span><span class="tag mono">Vambe + Americar</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-eyebrow">Voces de clientes · Inbound</div>
+      <div class="quote-grid">
+        <div class="quote">
+          "No me dejan dar el Rut a nadie, gracias." — y cerró la conversación.
+          <span class="who">Verónica · Salazar Israel · Hallazgo RUT</span>
+        </div>
+        <div class="quote">
+          [Cliente desde anuncio "Liquidación CLICAR"; Paula le pregunta por mantención:] "No me moleste".
+          <span class="who">Emilio · Coseche · Anuncio Meta cruzado</span>
+        </div>
+        <div class="quote">
+          [Cliente escribe "hola"; Paula:] "Veo tu interés en el Volkswagen Taos." [Cliente:] "necesito gestionar una revisión Ford Ranger".
+          <span class="who">Pedro Franco · Salazar · Alucinación de contexto</span>
+        </div>
+        <div class="quote">
+          [Preguntó 3 veces el precio de su Kia K3:] "Lamentablemente no tengo el precio estimado disponible." [Cerró sin agendar.]
+          <span class="who">Francisco F. · Servimaq · Sin precios</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-eyebrow">Outbound · Distribución de causas (8.129 chats)</div>
+      <table class="data-table mt-32">
+        <thead>
+          <tr><th>Acción requerida</th><th>Dueño</th><th>Chats</th><th>%</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="row-label">Cambiar el template + validar datos antes de enviar</td><td style="text-align:left;">Vambe + Americar</td><td>6.538</td><td class="neg">80,4%</td></tr>
+          <tr><td class="row-label">Bug Quiter · cita confirmada conversacionalmente, sistema no actualizó</td><td style="text-align:left;">Tech / Vambe</td><td>1.013</td><td>12,5%</td></tr>
+          <tr><td class="row-label">Pequeños ajustes al prompt de Paula</td><td style="text-align:left;">Equipo Paula</td><td>361</td><td>4,4%</td></tr>
+          <tr><td class="row-label">Tráfico no recuperable (cliente bloqueó, número equivocado)</td><td style="text-align:left;">—</td><td>157</td><td>1,9%</td></tr>
+          <tr><td class="row-label">Otros</td><td style="text-align:left;">—</td><td>60</td><td>0,8%</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:14px; font-size:13px;"><strong>Más del 90% del problema Outbound</strong> se resuelve entre Vambe + Americar y Tech. No es un problema conversacional.</p>
+    </div>
+
+    <div class="panel">
+      <div class="panel-eyebrow">Outbound · 3 fallas del recordatorio</div>
+      <div class="findings mt-32">
+        <div class="finding">
+          <div class="num">01</div>
+          <div>
+            <h4>El template no pide ninguna acción clara.</h4>
+            <p><strong>5.477 clientes</strong> (67% del Outbound) no respondieron. El texto actual dice "responde este mensaje o llámanos al 600…" — sin instrucción. Con tres botones (✅ Confirmar / 🕐 Reagendar / ❌ Cancelar) sí responde. Adicionalmente: <strong>999 recordatorios</strong> llegaron con datos corruptos.</p>
+          </div>
+          <div class="meta"><span class="tag neg"><span class="dot"></span>6.476/mes</span><span class="tag mono">Vambe + Americar</span></div>
+        </div>
+        <div class="finding">
+          <div class="num">02</div>
+          <div>
+            <h4>1.002 citas de mantención confirmadas que el sistema no registró.</h4>
+            <p>El cliente respondió "confirmo" — pero Quiter no actualizó el estado. Aparecen como fallidas en los reportes cuando en realidad están confirmadas. El equipo de seguimiento llama a estos clientes como si no tuvieran cita.</p>
+          </div>
+          <div class="meta"><span class="tag neg"><span class="dot"></span>1.002/mes</span><span class="tag mono">Tech / Vambe</span></div>
+        </div>
+        <div class="finding">
+          <div class="num">03</div>
+          <div>
+            <h4>El reagendamiento destruye citas de mantención existentes.</h4>
+            <p>Paula cancela primero la cita original y luego busca nuevo slot. Si no hay disponibilidad, el cliente queda sin nada. Es el error con mayor potencial de dañar la relación.</p>
+          </div>
+          <div class="meta"><span class="tag neg"><span class="dot"></span>101/mes · urgencia alta</span><span class="tag mono">Equipo Paula</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-eyebrow">Voces de clientes · Outbound</div>
+      <div class="quote-grid">
+        <div class="quote">
+          "Tienes una agenda… el día 46119, a las 11:30 horas." [Fecha imposible de leer.]
+          <span class="who">María José Cáceres · Salazar · Datos corruptos</span>
+        </div>
+        <div class="quote">
+          [Pidió cambiar cita 09:00 → 10:00. Paula canceló 09:00. No había 10:00.] "Lo siento Iara, lamentablemente la cita de las 09:00 ya fue cancelada."
+          <span class="who">Iara · Coseche · Reagendamiento destructivo</span>
+        </div>
+        <div class="quote">
+          "Yo no tengo ni vehículo ni nada, soy una adulta mayor… le rogaría que no esté enviando más información." [El sistema le envió otro recordatorio igualmente.]
+          <span class="who">Sonia · Salazar · Sin filtro de rechazos</span>
+        </div>
+        <div class="quote">
+          [Entregó datos del Maxus T60; Paula:] "He registrado tu solicitud…" [Sistema: "Enrutador — pendiente".]
+          <span class="who">Asantacruz · Salazar · Bug Quiter</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-eyebrow">Patrón por concesionario</div>
+      <table class="data-table mt-32">
+        <thead>
+          <tr><th>Dealer</th><th>Atascados</th><th>Inbound</th><th>Outbound</th><th>Bug "Pablo"</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="row-label">Salazar Israel</td><td>6.739</td><td>2.860</td><td>3.879</td><td>7</td></tr>
+          <tr><td class="row-label">Portillo</td><td>4.810</td><td>2.063</td><td>2.747</td><td>1</td></tr>
+          <tr><td class="row-label">Coseche</td><td>2.818</td><td>1.302</td><td>1.516</td><td>0</td></tr>
+          <tr><td class="row-label">Servimaq</td><td>989</td><td>374</td><td>615</td><td class="neg">134</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:14px; font-size:13px;"><strong>Servimaq</strong> concentra el bug "Pablo" (regresión desde marzo). <strong>Portillo</strong> tiene el mayor problema de silencio en pedido de RUT. <strong>Coseche</strong> es el que mejor sale en términos relativos.</p>
+    </div>
+  </div>
+
+  <!-- DEEP DIVE 02.2 -->
+  <div class="subsection">
+    <span class="subsection-tag">Deep-dive · 02.2</span>
+    <h2 style="font-size: clamp(28px, 3.6vw, 44px);">Base contaminada · 1.391 contactos en rechazo</h2>
+    <p class="lead">
+      Cruzando las conversaciones outbound contra mensajes de rechazo explícito, identificamos <strong>1.391 contactos únicos</strong> que pidieron no ser contactados o que nunca debieron entrar en campaña. Es la deuda técnica que disparó el bloqueo Meta.
+    </p>
+
+    <div class="cols-2 mt-32">
+      <div>
+        <div class="headline-stat">
+          <div class="stat" style="color: var(--negative);">1.391</div>
+          <div class="stat-cap">contactos únicos con rechazo explícito en Q1 + Abril 2026. Volumen real probablemente mayor — esto es sólo lo capturado en mensajes de respuesta.</div>
+        </div>
+      </div>
+      <div>
+        <table class="data-table">
+          <thead>
+            <tr><th>Categoría</th><th>Contactos</th><th>%</th><th>Acción</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="row-label">No interesa el producto</td><td>1.020</td><td>73,3%</td><td style="text-align:left;font-size:11px;color:var(--ink-soft);">Excluir de campañas activas</td></tr>
+            <tr><td class="row-label">Solicita no ser contactado</td><td>293</td><td>21,1%</td><td style="text-align:left;font-size:11px;color:var(--negative);">Opt-out legal · bloqueo permanente</td></tr>
+            <tr><td class="row-label">Menor de edad</td><td>70</td><td>5,0%</td><td style="text-align:left;font-size:11px;color:var(--negative);">Eliminación inmediata</td></tr>
+            <tr><td class="row-label">Adulto mayor sin interés</td><td>8</td><td>0,6%</td><td style="text-align:left;font-size:11px;color:var(--ink-soft);">Exclusión permanente</td></tr>
+            <tr style="border-top:1px solid var(--ink);"><td class="row-label" style="font-family:var(--serif);font-size:14px;">Total identificado</td><td style="font-weight:600;">1.391</td><td>100%</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="callout neg mt-32">
+      <div class="eyebrow">Riesgo regulatorio y reputacional</div>
+      <p>
+        Los <strong>293 contactos opt-out</strong> y los <strong>70 menores de edad</strong> son el riesgo más alto. La base no tiene un mecanismo de exclusión automática: cuando un cliente pide ser eliminado, lo seguimos contactando en la siguiente campaña. <strong>Esto no es un problema del agente — es de gobierno de datos del CRM.</strong>
+      </p>
+    </div>
+
+    <div class="panel">
+      <div class="panel-eyebrow">Muestra · Mensajes recibidos de menores de edad</div>
+      <div class="quote-grid mt-32">
+        <div class="quote">
+          "Aya que tengo 9 años no tengo plata entonces no me interesa eso y muchas gracias por contestar"
+          <span class="who">Ene 30 · 01:01 AM</span>
+        </div>
+        <div class="quote">
+          "Hola buenas tardes no me interesa el auto y no tengo licencia de conducir y tengo 10 años así que no tengo dinero"
+          <span class="who">Abr 08 · 23:23</span>
+        </div>
+        <div class="quote">
+          "Hola Paula!! Soy menor de edad asique no me interesa mucho el tema de autos, aún así te felicito ya que haces muy bien en tu trabajo, eres una inteligencia artificial?"
+          <span class="who">Abr 29 · 20:42</span>
+        </div>
+        <div class="quote">
+          "Soy menor de edad y no tengo auto, dejen de contactarme"
+          <span class="who">Mar 17 · 22:20</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ========================================
-     BENCHMARKING PLACEHOLDER
-     ======================================== -->
+<!-- ============ 03 · PLAN ============ -->
+<section id="plan">
+  <div class="section-banner">
+    <div class="num-big">03</div>
+    <div>
+      <h2>Plan de trabajo.</h2>
+      <div class="punto">Qué vamos a hacer en corto, mediano y largo plazo.</div>
+    </div>
+  </div>
+
+  <div class="punto-clave">
+    <div class="pc-label">El punto</div>
+    <div class="pc-text">
+      Primero <em>saneamos</em>, después escalamos. El corto plazo es compliance + quick wins de template. El mediano plazo es sistematizar la calidad. El largo plazo es habilitar el sub-agente SAC y reactivar contactos saneados.
+    </div>
+  </div>
+
+  <div class="plan-blocks">
+
+    <div class="plan-block">
+      <div class="plan-block-header">
+        <span class="plan-block-tag cp">Corto plazo</span>
+        <span class="plan-block-window">Mayo 2026 · 2–4 semanas · Prioridad cero</span>
+      </div>
+      <h3>Cosas que no pueden esperar — saneamiento + quick wins.</h3>
+      <p class="plan-block-desc">Acciones de esfuerzo bajo con impacto inmediato (~7.759 chats/mes recuperables) y compliance crítico.</p>
+      <ul class="plan-items">
+        <li><strong>Bloqueo manual de los 1.391 contactos.</strong> Carga en lista negra del CRM Llaima + Vambe como exclusión permanente. Incluye 70 menores de edad y 293 opt-out explícitos.<span class="who">Martín Flores · Compliance</span></li>
+        <li><strong>Detector automático de menores en el agente.</strong> Si el cliente declara edad &lt; 18, Paula cierra el flujo y marca el contacto para exclusión.<span class="who">Victorio Ortega</span></li>
+        <li><strong>Reemplazar template del recordatorio outbound por botones</strong> (✅ Confirmar / 🕐 Reagendar / ❌ Cancelar). Recuperable: ~5.477/mes.<span class="who">Vambe + Americar</span></li>
+        <li><strong>Validar datos antes de enviar template.</strong> Eliminar fechas tipo "día 46119" y patentes "SINPATENTE". Recuperable: ~999/mes.<span class="who">Vambe + Americar</span></li>
+        <li><strong>Separar destinos Meta · ventas vs. postventa.</strong> Números de WhatsApp distintos para anuncios. Recuperable: ~562/mes.<span class="who">Marketing</span></li>
+        <li><strong>Activar Maipú y Puerto Montt Citroën como talleres.</strong> Recuperable: ~422/mes.<span class="who">Vambe + Americar</span></li>
+        <li><strong>Corregir bug "Pablo" en Servimaq.</strong> Regresión desde marzo 2026. Recuperable: ~142/mes.<span class="who">Equipo Paula</span></li>
+        <li><strong>Filtrar destinatarios con rechazo previo</strong> antes de enviar nuevos recordatorios. Recuperable: ~157/mes.<span class="who">Vambe</span></li>
+        <li><strong>Audit legal del proceso de opt-out.</strong> Validar cumplimiento Ley 19.628.<span class="who">Legal + Martín Flores</span></li>
+      </ul>
+    </div>
+
+    <div class="plan-block">
+      <div class="plan-block-header">
+        <span class="plan-block-tag mp">Mediano plazo</span>
+        <span class="plan-block-window">Junio – Julio 2026 · 1–3 meses · Saneamiento estructural</span>
+      </div>
+      <h3>De parches a sistemas.</h3>
+      <p class="plan-block-desc">Reemplazar acciones manuales por flujos automáticos y dashboards permanentes — para prevenir otra crisis tipo Meta.</p>
+      <ul class="plan-items">
+        <li><strong>Lista negra centralizada CRM Creatio ↔ Llaima ↔ Vambe.</strong> Tabla única de exclusión con sync diario.<span class="who">Pablo Polanco + Martín Flores</span></li>
+        <li><strong>Workflow de opt-out automatizado.</strong> Respuestas tipo "no me contacten" / "stop" / "baja" gatillan exclusión sin intervención humana.<span class="who">Victorio + Martín Flores</span></li>
+        <li><strong>Dashboard de calidad de base outbound.</strong> Composición semanal: % válidos, % opt-out, frecuencia, antigüedad.<span class="who">Pablo Polanco</span></li>
+        <li><strong>Evaluar pedir RUT más adelante en el flujo.</strong> Después de patente y tipo de mantención. Recuperable: ~1.731/mes.<span class="who">Equipo Paula</span></li>
+        <li><strong>Cargar tabla de precios estimados por modelo y dealer.</strong> Recuperable: ~529/mes.<span class="who">Vambe + Americar</span></li>
+        <li><strong>Corregir los 7 errores conversacionales restantes.</strong> Recuperable: ~1.832/mes.<span class="who">Equipo Paula</span></li>
+        <li><strong>Invertir flujo de reagendamiento</strong> — verificar disponibilidad antes de cancelar la cita existente.<span class="who">Equipo Paula</span></li>
+        <li><strong>Segmentación por antigüedad de cliente.</strong> Mensaje y frecuencia distintos para recientes vs. inactivos &gt; 24 meses.<span class="who">Producto + Marketing</span></li>
+        <li><strong>Integración cita de mantención en CRM Creatio.</strong> Eliminar doble carga y errores de cancelación.<span class="who">Martín Flores</span></li>
+      </ul>
+    </div>
+
+    <div class="plan-block">
+      <div class="plan-block-header">
+        <span class="plan-block-tag lp">Largo plazo</span>
+        <span class="plan-block-window">Agosto 2026 en adelante · 3+ meses · Etapa 2</span>
+      </div>
+      <h3>De saneado a inteligente.</h3>
+      <p class="plan-block-desc">Una vez que la base es limpia y los flujos están automatizados, ampliamos la capacidad del agente y empezamos a orquestar.</p>
+      <ul class="plan-items">
+        <li><strong>Sub-agente SAC.</strong> Derivar reclamos y solicitudes formales a un agente distinto del de citas — desbloquea métrica de cierre de Paula Postventa.<span class="who">Producto + Postventa</span></li>
+        <li><strong>Corregir sincronización Paula → Quiter</strong> (citas de mantención confirmadas que el sistema no registra). Recuperable: ~1.002/mes.<span class="who">Tech / Vambe</span></li>
+        <li><strong>Reintegro de contactos saneados con consentimiento explícito.</strong> Reactivar los que pedían no contacto por canal incorrecto.<span class="who">Martín Flores + Compliance</span></li>
+        <li><strong>Análisis cualitativo recurrente</strong> (junio + cada trimestre). Medir efecto real de los cambios sobre los 15.356 chats atascados.<span class="who">Pablo Polanco</span></li>
+        <li><strong>Memoria contextual del cliente</strong> entre conversaciones — primer paso a la orquestación Llaima (Etapa 2).<span class="who">Producto + TI</span></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="callout mt-48">
+    <div class="eyebrow">Definición de éxito a 90 días</div>
+    <p>
+      Cero contactos con opt-out activo en la base · dashboard de calidad operativo · costo por agenda de mantención &lt; US$ 9 · template del recordatorio reemplazado por botones · 12.954 chats/mes recuperables ejecutando todo el plan.
+    </p>
+  </div>
+</section>
+
+<!-- ============ BENCHMARKING ============ -->
 <section id="benchmarking">
-  <div class="eyebrow"><span class="num">05</span> Benchmarking · Postventa</div>
+  <div class="eyebrow">Benchmarking · Postventa</div>
   <h2>¿Cómo nos vemos<br>frente al mercado?</h2>
   <p class="lead">
-    Espacio reservado para comparar el desempeño del agente de postventa contra benchmarks de la industria — show rate al taller, costo por agenda, calidad de base outbound, tasa de opt-out aceptable.
+    Espacio reservado para comparar el desempeño del agente de postventa contra benchmarks de la industria — show rate al taller, costo por agenda de mantención, calidad de base outbound, tasa de opt-out aceptable.
   </p>
 
   <div class="placeholder">
@@ -862,14 +620,11 @@
     </div>
 
     <div class="ph-source">
-      <strong>Fuentes esperadas:</strong> · Meta Business Quality Score · WhatsApp Business API guidelines · Vambe industry benchmarks · referentes de dealers automotrices LATAM
+      <strong>Fuentes esperadas:</strong> Meta Business Quality Score · WhatsApp Business API guidelines · Vambe industry benchmarks · referentes de dealers automotrices LATAM
     </div>
   </div>
 </section>
 
-<!-- ========================================
-     NEXT
-     ======================================== -->
 <section id="explorar">
   <div class="next-nav">
     <a href="venta.html" class="next-nav-card">
@@ -892,11 +647,11 @@
 
 <footer>
   <div class="doc-meta">
-    <strong>Agente de Postventa</strong>
+    <strong>Agente de Postventa · Paula</strong>
     Documento de trabajo interno · Gerencia Productos Digitales · Americar
   </div>
   <div class="sig">
-    Versión 1.1 · Mayo 2026
+    Versión 1.2 · Mayo 2026
   </div>
 </footer>
 
@@ -904,7 +659,7 @@
 
 <script>
 document.documentElement.classList.add('js-on');
-const reveals = document.querySelectorAll('.panel, .kpi-grid, .findings, .roadmap, .funnel, .chart-wrap, .headline-stat, .quote-grid, .callout, .story-cols, .timeline, .placeholder, .next-nav');
+const reveals = document.querySelectorAll('.panel, .kpi-grid, .findings, .roadmap, .funnel, .chart-wrap, .headline-stat, .quote-grid, .callout, .story-cols, .placeholder, .next-nav, .plan-blocks, .section-banner, .punto-clave');
 reveals.forEach(el => el.classList.add('reveal'));
 const revObs = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

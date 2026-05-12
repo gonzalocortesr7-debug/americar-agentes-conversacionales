@@ -740,6 +740,165 @@ strong { font-weight: 600; color: var(--ink); }
 }
 
 /* ============================================
+   PRESENTATION · Mini-TOC + Section banners + Plan blocks
+   ============================================ */
+
+/* Mini-TOC at top of agent pages */
+.page-toc {
+  display: flex; gap: 10px; flex-wrap: wrap;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 24px 0 16px;
+}
+.page-toc a {
+  font-family: var(--mono); font-size: 10.5px;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-mute); text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  transition: all 0.15s;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.page-toc a:hover {
+  color: var(--ink); background: var(--paper-warm); border-color: var(--ink);
+}
+.page-toc a .toc-num {
+  font-weight: 700; color: var(--ink); font-family: var(--serif);
+  font-size: 13px; letter-spacing: -0.02em;
+}
+
+/* Section banner with big number — opens each main axis (01 / 02 / 03) */
+.section-banner {
+  display: grid; grid-template-columns: auto 1fr; gap: 32px;
+  align-items: baseline;
+  padding: 48px 0 24px;
+  border-top: 2px solid var(--ink);
+  margin-top: 56px;
+}
+.section-banner:first-of-type { margin-top: 32px; }
+.section-banner .num-big {
+  font-family: var(--serif); font-size: 96px; font-weight: 300;
+  color: var(--ink); line-height: 0.9; letter-spacing: -0.04em;
+}
+.section-banner h2 { margin-bottom: 0; }
+.section-banner .punto {
+  font-family: var(--serif); font-style: italic;
+  font-size: 18px; color: var(--ink-mute);
+  margin-top: 12px;
+  max-width: 720px;
+  line-height: 1.4;
+}
+@media (max-width: 700px) {
+  .section-banner { grid-template-columns: 1fr; gap: 8px; padding: 32px 0 16px; }
+  .section-banner .num-big { font-size: 64px; }
+}
+
+/* Plan blocks: Corto / Mediano / Largo plazo */
+.plan-blocks {
+  display: grid; gap: 36px;
+  margin-top: 24px;
+}
+.plan-block {
+  padding: 24px 0 0;
+  border-top: 1px solid var(--ink);
+}
+.plan-block-header {
+  display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.plan-block-tag {
+  font-family: var(--mono); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 5px 11px;
+  color: var(--paper);
+  border-radius: 0;
+  line-height: 1;
+}
+.plan-block-tag.cp { background: var(--negative); }
+.plan-block-tag.mp { background: var(--neutral); }
+.plan-block-tag.lp { background: var(--signal); }
+.plan-block-window {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+}
+.plan-block h3 {
+  font-size: 22px; margin-bottom: 6px;
+  font-family: var(--serif); font-weight: 450;
+}
+.plan-block .plan-block-desc {
+  font-size: 14px; color: var(--ink-soft);
+  margin-bottom: 18px;
+  max-width: 720px;
+}
+.plan-items { list-style: none; margin-top: 4px; }
+.plan-items li {
+  padding: 14px 0 14px 22px;
+  border-top: 1px dashed var(--line);
+  position: relative;
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.plan-items li:first-child { border-top: none; padding-top: 4px; }
+.plan-items li::before {
+  content: ""; position: absolute; left: 0; top: 22px;
+  width: 7px; height: 7px; background: var(--signal); border-radius: 50%;
+}
+.plan-items li:first-child::before { top: 12px; }
+.plan-block-tag.cp ~ * .plan-items li::before,
+.plan-block .plan-items li::before { background: currentColor; }
+.plan-items li strong { color: var(--ink); font-weight: 600; }
+.plan-items li .who {
+  display: block; margin-top: 6px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--ink-mute);
+}
+
+/* "El punto" callout — section message at the top */
+.punto-clave {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 18px 22px;
+  margin: 16px 0 32px;
+  background: var(--paper-warm);
+  border-left: 3px solid var(--ink);
+}
+.punto-clave .pc-label {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink);
+  padding-top: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.punto-clave .pc-text {
+  font-family: var(--serif); font-size: 18px;
+  line-height: 1.4;
+  color: var(--ink);
+  font-weight: 400;
+}
+.punto-clave .pc-text em { font-style: italic; color: var(--signal); }
+
+/* Sub-section divider inside Hallazgos */
+.subsection {
+  margin-top: 56px; padding-top: 28px;
+  border-top: 1px solid var(--ink);
+}
+.subsection-tag {
+  display: inline-block;
+  font-family: var(--mono); font-size: 9px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  font-weight: 600;
+  color: var(--paper);
+  background: var(--ink-mute);
+  padding: 3px 9px;
+  margin-bottom: 14px;
+}
+
+/* ============================================
    MATRIZ DE CAPACIDADES · Cobertura × Profundidad
    ============================================ */
 .cap-matrix {

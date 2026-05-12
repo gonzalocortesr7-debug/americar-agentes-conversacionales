@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=10">
+<link rel="stylesheet" href="assets/styles.css?v=11">
 </head>
 <body>
 
@@ -29,11 +29,8 @@
 
 <div class="shell">
 
-<!-- ========================================
-     PAGE HEADER
-     ======================================== -->
 <section class="page-header first">
-  <div class="eyebrow"><span class="num">03</span> Agente de venta · Preventa Chile</div>
+  <div class="eyebrow">Agente de venta · Preventa Chile</div>
 
   <div class="agent-header">
     <div>
@@ -48,44 +45,60 @@
     </div>
   </div>
 
-  <p class="lead">
-    Paula es hoy el caso de éxito. En abril 2026 cerró <strong>296 ventas</strong> en Chile, casi el doble de abril 2025, con una tasa de cierre 52% superior al canal propio no asistido. El motor está afinado — el siguiente paso es escalar verticalmente (por segmento de vehículo) y horizontalmente (a más sucursales).
-  </p>
+  <nav class="page-toc" aria-label="Índice de la página">
+    <a href="#contexto"><span class="toc-num">01</span> Contexto del agente</a>
+    <a href="#hallazgos"><span class="toc-num">02</span> Principales hallazgos</a>
+    <a href="#plan"><span class="toc-num">03</span> Plan de trabajo</a>
+  </nav>
 </section>
 
-<!-- ========================================
-     KPIs Total
-     ======================================== -->
-<section id="kpis">
-  <div class="panel-eyebrow">Indicadores principales · Venta total Chile · Abr 2026</div>
-  <div class="kpi-grid mt-32">
-    <div class="kpi">
-      <div class="label">Ventas IA · Abr 2026</div>
-      <div class="value">296</div>
-      <div class="delta pos">▲ +8,4% vs Abr 2025</div>
-      <div class="footnote">YTD Ene–Abr: 1.408 ventas (+97,7% YoY)</div>
-    </div>
-    <div class="kpi">
-      <div class="label">% Ventas IA / Digitales</div>
-      <div class="value">39,4<span class="unit">%</span></div>
-      <div class="delta pos">▲ +14,4 pp YoY</div>
-      <div class="footnote">~4 de cada 10 ventas digitales son IA</div>
-    </div>
-    <div class="kpi">
-      <div class="label">Tasa de cierre IA</div>
-      <div class="value">6,08<span class="unit">%</span></div>
-      <div class="delta pos">▲ vs 4,66% canal propio (+30%)</div>
-      <div class="footnote">Récord histórico mensual</div>
-    </div>
-    <div class="kpi">
-      <div class="label">Leads IA</div>
-      <div class="value">4.867</div>
-      <div class="delta neg">▼ −28,8% vs Abr 2025</div>
-      <div class="footnote">% del canal propio: 30,2% (estable)</div>
+<!-- ============ 01 · CONTEXTO ============ -->
+<section id="contexto">
+  <div class="section-banner">
+    <div class="num-big">01</div>
+    <div>
+      <h2>Contexto del agente.</h2>
+      <div class="punto">Qué hace Paula en venta y cómo le está yendo hoy.</div>
     </div>
   </div>
 
-  <!-- Chart Venta CL -->
+  <div class="punto-clave">
+    <div class="pc-label">El punto</div>
+    <div class="pc-text">
+      Paula es el <em>caso de éxito</em> del ecosistema. En abril 2026 cerró <strong>296 ventas</strong> con una tasa de cierre <strong>30% superior</strong> al canal propio no asistido — récord histórico mensual. El motor funciona; el siguiente paso es escalar a más marcas y deepenear funcionalidades.
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-eyebrow">Indicadores principales · Venta total Chile · Abr 2026</div>
+    <div class="kpi-grid mt-32">
+      <div class="kpi">
+        <div class="label">Ventas IA · Abr 2026</div>
+        <div class="value">296</div>
+        <div class="delta pos">▲ +8,4% vs Abr 2025</div>
+        <div class="footnote">YTD Ene–Abr: 1.408 ventas (+97,7% YoY)</div>
+      </div>
+      <div class="kpi">
+        <div class="label">% Ventas IA / Digitales</div>
+        <div class="value">39,4<span class="unit">%</span></div>
+        <div class="delta pos">▲ +14,4 pp YoY</div>
+        <div class="footnote">~4 de cada 10 ventas digitales son IA</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Tasa de cierre IA</div>
+        <div class="value">6,08<span class="unit">%</span></div>
+        <div class="delta pos">▲ vs 4,66% canal propio (+30%)</div>
+        <div class="footnote">Récord histórico mensual</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Leads IA</div>
+        <div class="value">4.867</div>
+        <div class="delta neg">▼ −28,8% vs Abr 2025</div>
+        <div class="footnote">% del canal propio: 30,2% (estable)</div>
+      </div>
+    </div>
+  </div>
+
   <div class="panel">
     <div class="panel-eyebrow">Evolutivo · Tasa de cierre Agentes IA vs. canal propio · Chile general</div>
     <div class="chart-wrap mt-32">
@@ -99,53 +112,26 @@
           <line x1="50" y1="220" x2="780" y2="220"/>
         </g>
         <g font-family="IBM Plex Mono" font-size="10" fill="#5A6068" text-anchor="end">
-          <text x="44" y="44">7%</text>
-          <text x="44" y="104">5%</text>
-          <text x="44" y="164">3%</text>
-          <text x="44" y="224">1%</text>
+          <text x="44" y="44">7%</text><text x="44" y="104">5%</text><text x="44" y="164">3%</text><text x="44" y="224">1%</text>
         </g>
         <line x1="50" y1="240" x2="780" y2="240" stroke="#0F1419" stroke-width="1"/>
-        <!-- Meta block band (Ene 26 + Feb 26) -->
         <rect x="606" y="40" width="92" height="200" fill="rgba(138,31,31,0.06)"/>
         <text x="652" y="32" font-family="IBM Plex Mono" font-size="9" fill="#8A1F1F" font-weight="600" text-anchor="middle">BLOQUEO META</text>
         <g font-family="IBM Plex Mono" font-size="9" fill="#5A6068" text-anchor="middle">
-          <text x="74" y="260">E25</text>
-          <text x="120" y="260">F</text>
-          <text x="167" y="260">M</text>
-          <text x="213" y="260">A</text>
-          <text x="259" y="260">M</text>
-          <text x="305" y="260">J</text>
-          <text x="352" y="260">J</text>
-          <text x="398" y="260">A</text>
-          <text x="444" y="260">S</text>
-          <text x="490" y="260">O</text>
-          <text x="537" y="260">N</text>
-          <text x="583" y="260">D</text>
-          <text x="629" y="260">E26</text>
-          <text x="676" y="260">F</text>
-          <text x="722" y="260">M</text>
-          <text x="768" y="260">A</text>
+          <text x="74" y="260">E25</text><text x="120" y="260">F</text><text x="167" y="260">M</text><text x="213" y="260">A</text>
+          <text x="259" y="260">M</text><text x="305" y="260">J</text><text x="352" y="260">J</text><text x="398" y="260">A</text>
+          <text x="444" y="260">S</text><text x="490" y="260">O</text><text x="537" y="260">N</text><text x="583" y="260">D</text>
+          <text x="629" y="260">E26</text><text x="676" y="260">F</text><text x="722" y="260">M</text><text x="768" y="260">A</text>
         </g>
         <polyline fill="none" stroke="#5A6068" stroke-width="1.5" stroke-dasharray="4,3"
           points="74,141 120,138 167,138 213,91 259,79 305,95 352,163 398,143 444,104 490,101 537,99 583,108 629,90 676,67 722,85 768,84"/>
         <polyline fill="none" stroke="#1E3A8A" stroke-width="2.2"
           points="74,137 120,116 167,103 213,107 259,106 305,100 352,155 398,119 444,84 490,79 537,55 583,99 629,62 676,49 722,57 768,37"/>
         <g fill="#1E3A8A">
-          <circle cx="74" cy="137" r="3"/>
-          <circle cx="120" cy="116" r="3"/>
-          <circle cx="167" cy="103" r="3"/>
-          <circle cx="213" cy="107" r="3"/>
-          <circle cx="259" cy="106" r="3"/>
-          <circle cx="305" cy="100" r="3"/>
-          <circle cx="352" cy="155" r="3"/>
-          <circle cx="398" cy="119" r="3"/>
-          <circle cx="444" cy="84" r="3"/>
-          <circle cx="490" cy="79" r="3"/>
-          <circle cx="537" cy="55" r="3"/>
-          <circle cx="583" cy="99" r="3"/>
-          <circle cx="629" cy="62" r="3"/>
-          <circle cx="676" cy="49" r="3"/>
-          <circle cx="722" cy="57" r="3"/>
+          <circle cx="74" cy="137" r="3"/><circle cx="120" cy="116" r="3"/><circle cx="167" cy="103" r="3"/><circle cx="213" cy="107" r="3"/>
+          <circle cx="259" cy="106" r="3"/><circle cx="305" cy="100" r="3"/><circle cx="352" cy="155" r="3"/><circle cx="398" cy="119" r="3"/>
+          <circle cx="444" cy="84" r="3"/><circle cx="490" cy="79" r="3"/><circle cx="537" cy="55" r="3"/><circle cx="583" cy="99" r="3"/>
+          <circle cx="629" cy="62" r="3"/><circle cx="676" cy="49" r="3"/><circle cx="722" cy="57" r="3"/>
           <circle cx="768" cy="37" r="4" fill="#1E3A8A" stroke="#FAF8F3" stroke-width="2"/>
         </g>
         <g font-family="IBM Plex Mono" font-size="10" fill="#1E3A8A">
@@ -160,61 +146,69 @@
       </div>
     </div>
   </div>
-</section>
 
-<!-- ========================================
-     Nuevos vs Usados
-     ======================================== -->
-<section id="segmentos">
-  <div class="panel-eyebrow">Detalle por segmento · Chile · Abril 2026</div>
-  <h3>Nuevos vs. Usados: dos historias distintas.</h3>
-  <p>El segmento de usados es donde el agente domina — casi <strong>50%</strong> de la venta digital, con la mejor tasa de cierre del ecosistema. En nuevos el peso es menor pero crece más rápido (+115% YoY en ventas).</p>
+  <div class="panel">
+    <div class="panel-eyebrow">Detalle por segmento · Chile · Abril 2026</div>
+    <h3>Nuevos vs. Usados: dos historias distintas.</h3>
+    <p>El segmento de usados es donde el agente domina — casi <strong>50%</strong> de la venta digital, con la mejor tasa de cierre del ecosistema. En nuevos el peso es menor pero crece más rápido (+115% YoY en ventas).</p>
 
-  <div class="cols-2 mt-32">
-    <div class="chart-wrap">
-      <div class="chart-title">Vehículos nuevos · Abril 2026</div>
-      <div class="chart-sub">Volumen menor, pero crecimiento sostenido</div>
-      <table class="data-table">
-        <thead>
-          <tr><th>Indicador</th><th>Abr 26</th><th>Var YoY</th></tr>
-        </thead>
-        <tbody>
-          <tr><td class="row-label">Leads IA</td><td>1.698</td><td class="pos">+26%</td></tr>
-          <tr><td class="row-label">% leads del canal propio</td><td>20,8%</td><td class="pos">+5 pp</td></tr>
-          <tr><td class="row-label">Ventas IA</td><td>95</td><td class="pos">+4%</td></tr>
-          <tr><td class="row-label">% ventas digitales IA</td><td>27,5%</td><td class="pos">+0 pp</td></tr>
-          <tr><td class="row-label">Tasa de cierre IA</td><td>5,59%</td><td class="neg">−1,2 pp</td></tr>
-        </tbody>
-      </table>
-      <div class="chart-legend"><div class="lg">YTD Ene–Abr: <strong>440 ventas (+115% YoY)</strong></div></div>
-    </div>
+    <div class="cols-2 mt-32">
+      <div class="chart-wrap">
+        <div class="chart-title">Vehículos nuevos · Abril 2026</div>
+        <div class="chart-sub">Volumen menor, pero crecimiento sostenido</div>
+        <table class="data-table">
+          <thead>
+            <tr><th>Indicador</th><th>Abr 26</th><th>Var YoY</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="row-label">Leads IA</td><td>1.698</td><td class="pos">+26%</td></tr>
+            <tr><td class="row-label">% leads del canal propio</td><td>20,8%</td><td class="pos">+5 pp</td></tr>
+            <tr><td class="row-label">Ventas IA</td><td>95</td><td class="pos">+4%</td></tr>
+            <tr><td class="row-label">% ventas digitales IA</td><td>27,5%</td><td class="pos">+0 pp</td></tr>
+            <tr><td class="row-label">Tasa de cierre IA</td><td>5,59%</td><td class="neg">−1,2 pp</td></tr>
+          </tbody>
+        </table>
+        <div class="chart-legend"><div class="lg">YTD Ene–Abr: <strong>440 ventas (+115% YoY)</strong></div></div>
+      </div>
 
-    <div class="chart-wrap">
-      <div class="chart-title">Vehículos usados · Abril 2026</div>
-      <div class="chart-sub">El segmento donde el agente <em>realmente</em> manda</div>
-      <table class="data-table">
-        <thead>
-          <tr><th>Indicador</th><th>Abr 26</th><th>Var YoY</th></tr>
-        </thead>
-        <tbody>
-          <tr><td class="row-label">Leads IA</td><td>3.174</td><td class="neg">−42%</td></tr>
-          <tr><td class="row-label">% leads del canal propio</td><td>39,9%</td><td class="pos">+3 pp</td></tr>
-          <tr><td class="row-label">Ventas IA</td><td>201</td><td class="pos">+10%</td></tr>
-          <tr><td class="row-label">% ventas digitales IA</td><td>49,6%</td><td class="pos">+26 pp</td></tr>
-          <tr><td class="row-label">Tasa de cierre IA</td><td>6,33%</td><td class="pos">+3 pp</td></tr>
-        </tbody>
-      </table>
-      <div class="chart-legend"><div class="lg">YTD Ene–Abr: <strong>945 ventas (+118% YoY)</strong></div></div>
+      <div class="chart-wrap">
+        <div class="chart-title">Vehículos usados · Abril 2026</div>
+        <div class="chart-sub">El segmento donde el agente <em>realmente</em> manda</div>
+        <table class="data-table">
+          <thead>
+            <tr><th>Indicador</th><th>Abr 26</th><th>Var YoY</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="row-label">Leads IA</td><td>3.174</td><td class="neg">−42%</td></tr>
+            <tr><td class="row-label">% leads del canal propio</td><td>39,9%</td><td class="pos">+3 pp</td></tr>
+            <tr><td class="row-label">Ventas IA</td><td>201</td><td class="pos">+10%</td></tr>
+            <tr><td class="row-label">% ventas digitales IA</td><td>49,6%</td><td class="pos">+26 pp</td></tr>
+            <tr><td class="row-label">Tasa de cierre IA</td><td>6,33%</td><td class="pos">+3 pp</td></tr>
+          </tbody>
+        </table>
+        <div class="chart-legend"><div class="lg">YTD Ene–Abr: <strong>945 ventas (+118% YoY)</strong></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ========================================
-     Hallazgos
-     ======================================== -->
+<!-- ============ 02 · HALLAZGOS ============ -->
 <section id="hallazgos">
-  <div class="panel-eyebrow">Hallazgos principales</div>
-  <h3>Lo que aprendimos en abril.</h3>
+  <div class="section-banner">
+    <div class="num-big">02</div>
+    <div>
+      <h2>Principales hallazgos.</h2>
+      <div class="punto">Lo que aprendimos en abril.</div>
+    </div>
+  </div>
+
+  <div class="punto-clave">
+    <div class="pc-label">El punto</div>
+    <div class="pc-text">
+      La brecha de Paula sobre el canal propio se <em>amplió 70% YoY</em> y es ya estructural, no estacional. El problema no es el cierre — es el volumen de leads, que cayó −28,8% en abril. Y nos falta el feedback loop con asesores que nos diga qué leads son apto o no.
+    </div>
+  </div>
+
   <div class="findings mt-32">
     <div class="finding">
       <div class="num">01</div>
@@ -228,7 +222,7 @@
       <div class="num">02</div>
       <div>
         <h4>Caída en volumen de leads IA en abril (−28,8% YoY).</h4>
-        <p>Aunque el % de participación se sostiene, el volumen absoluto bajó. Probable efecto rebote post-bloqueo Meta — cruzar contra inversión en Meta y formularios web para confirmar.</p>
+        <p>Aunque el % de participación se sostiene, el volumen absoluto bajó. Probable efecto rebote post-bloqueo Meta — cruzar contra inversión en Meta y formularios web por marca para confirmar.</p>
       </div>
       <div class="meta"><span class="tag neu"><span class="dot"></span>A investigar</span></div>
     </div>
@@ -236,7 +230,7 @@
       <div class="num">03</div>
       <div>
         <h4>Nuevos: cae tasa de cierre IA en abril a 5,59% (vs 8,38% en marzo).</h4>
-        <p>Probable efecto mix por mayor presencia de leads de campañas con baja intención. Validar con equipo de marketing si hubo cambio de pauta a fines de marzo.</p>
+        <p>Probable efecto mix por mayor presencia de leads de campañas con baja intención. Validar con marketing si hubo cambio de pauta a fines de marzo.</p>
       </div>
       <div class="meta"><span class="tag neg"><span class="dot"></span>Atender</span></div>
     </div>
@@ -252,62 +246,89 @@
       <div class="num">05</div>
       <div>
         <h4>Falta cierre del loop de calidad de lead.</h4>
-        <p>Los asesores no tienen un canal estructurado para devolver feedback sobre la calidad de leads del agente (motivo de no-cierre, calidad de calificación). Sin eso, no podemos entrenar el agente con datos del propio negocio.</p>
+        <p>Los asesores no tienen un canal estructurado para devolver feedback sobre la calidad de leads del agente. Sin eso, no podemos entrenar el agente con datos del propio negocio.</p>
       </div>
       <div class="meta"><span class="tag neu"><span class="dot"></span>Gap proceso</span></div>
     </div>
   </div>
 </section>
 
-<!-- ========================================
-     Roadmap
-     ======================================== -->
-<section id="roadmap">
-  <div class="panel-eyebrow">Roadmap funcional · Venta · próximos 90 días</div>
-  <h3>Lo que vamos a construir.</h3>
-  <div class="roadmap mt-32">
-    <div class="rm-col">
-      <div class="week">Sprint 1</div>
-      <div class="when">Mayo · 2 semanas</div>
-      <ul>
-        <li><strong>Diagnóstico caída de leads.</strong> Cruzar volumen IA con inversión Meta + tráfico web por marca.<span class="who">Owner · PM Productos</span></li>
-        <li><strong>Extender Cita de venta a 2 marcas adicionales.</strong> Definir candidatos junto a Gerencia Comercial.<span class="who">Owner · PM + Comercial</span></li>
-        <li><strong>Activar feedback loop asesores.</strong> Botón rápido en CRM Llaima para clasificar calidad de lead IA.<span class="who">Owner · Martín Flores</span></li>
+<!-- ============ 03 · PLAN ============ -->
+<section id="plan">
+  <div class="section-banner">
+    <div class="num-big">03</div>
+    <div>
+      <h2>Plan de trabajo.</h2>
+      <div class="punto">Qué vamos a hacer en corto, mediano y largo plazo.</div>
+    </div>
+  </div>
+
+  <div class="punto-clave">
+    <div class="pc-label">El punto</div>
+    <div class="pc-text">
+      Corto plazo: diagnosticar la caída de leads y extender Cita de Venta a 2 marcas más. Mediano plazo: enriquecer el catálogo, integrar tasación VPP y armar pre-evaluación crediticia. Largo plazo: <em>memoria contextual</em> entre conversaciones — primer paso a la orquestación Llaima.
+    </div>
+  </div>
+
+  <div class="plan-blocks">
+
+    <div class="plan-block">
+      <div class="plan-block-header">
+        <span class="plan-block-tag cp">Corto plazo</span>
+        <span class="plan-block-window">Mayo 2026 · 2–4 semanas</span>
+      </div>
+      <h3>Diagnóstico y expansión inicial.</h3>
+      <p class="plan-block-desc">Entender la caída de leads de abril y desbloquear el siguiente escalón: Cita de Venta más allá de Toyota.</p>
+      <ul class="plan-items">
+        <li><strong>Diagnóstico de la caída de leads IA en abril.</strong> Cruzar volumen de leads IA con inversión Meta y tráfico de formularios web por marca. Definir si es pauta, calificación o comportamiento post-bloqueo.<span class="who">PM Productos + Pablo Polanco</span></li>
+        <li><strong>Extender Cita de Venta a 2 marcas adicionales.</strong> Definir candidatos según volumen de leads, capacidad operativa y disposición de los Brand Manager.<span class="who">PM + Comercial</span></li>
+        <li><strong>Activar feedback loop de asesores.</strong> Botón rápido en CRM Llaima para clasificar calidad del lead IA (apto / no apto / no contestó / cerró).<span class="who">Martín Flores</span></li>
       </ul>
     </div>
-    <div class="rm-col">
-      <div class="week">Sprint 2</div>
-      <div class="when">Junio · 2 semanas</div>
-      <ul>
-        <li><strong>Catálogo enriquecido por modelo.</strong> Carga de fichas técnicas, fotos, videos para top-15 modelos en stock rotación.<span class="who">Owner · Vitrina Digital</span></li>
-        <li><strong>Tasación VPP integrada en flujo.</strong> Cliente con auto a entregar puede iniciar tasación dentro del chat.<span class="who">Owner · Equipo Catman</span></li>
-        <li><strong>A/B test de mensaje inicial en usados.</strong> Variantes por marca para validar lift en respuesta.<span class="who">Owner · Producto</span></li>
+
+    <div class="plan-block">
+      <div class="plan-block-header">
+        <span class="plan-block-tag mp">Mediano plazo</span>
+        <span class="plan-block-window">Junio – Julio 2026 · 1–3 meses</span>
+      </div>
+      <h3>Más profundidad funcional.</h3>
+      <p class="plan-block-desc">Enriquecer la capacidad del agente con catálogo, tasación y simulador crediticio — los tres deltas que más mueven la aguja en preventa.</p>
+      <ul class="plan-items">
+        <li><strong>Catálogo enriquecido por modelo.</strong> Carga de fichas técnicas, fotos y videos para top-15 modelos en stock de rotación.<span class="who">Vitrina Digital</span></li>
+        <li><strong>Tasación VPP integrada en el flujo.</strong> Cliente con auto a entregar puede iniciar tasación dentro del chat.<span class="who">Equipo Catman + Victorio Ortega</span></li>
+        <li><strong>A/B test de mensaje inicial en usados.</strong> Variantes por marca para validar lift en respuesta.<span class="who">Producto</span></li>
+        <li><strong>Pre-evaluación crediticia conversacional.</strong> Simulador básico dentro del chat antes de derivar a Tanner / Banco Internacional.<span class="who">Producto + Crédito</span></li>
+        <li><strong>Confirmación de cita de venta automatizada.</strong> Workflow de 24h / 2h / 1h antes con opción de reagendar.<span class="who">Victorio Ortega</span></li>
       </ul>
     </div>
-    <div class="rm-col">
-      <div class="week">Sprint 3</div>
-      <div class="when">Julio · 2 semanas</div>
-      <ul>
-        <li><strong>Pre-evaluación crediticia conversacional.</strong> Simulador básico dentro del chat antes de derivar a Tanner / Banco Internacional.<span class="who">Owner · Producto + Crédito</span></li>
-        <li><strong>Confirmación de cita de venta automatizada.</strong> Workflow de 24h/2h/1h antes con opción de reagendar.<span class="who">Owner · Victorio Ortega</span></li>
+
+    <div class="plan-block">
+      <div class="plan-block-header">
+        <span class="plan-block-tag lp">Largo plazo</span>
+        <span class="plan-block-window">Agosto 2026 en adelante · 3+ meses</span>
+      </div>
+      <h3>Hacia un Paula con memoria.</h3>
+      <p class="plan-block-desc">Romper la barrera de cada conversación aislada: el cliente que vuelve no parte de cero. Primer paso real hacia la orquestación de la Etapa 2.</p>
+      <ul class="plan-items">
+        <li><strong>Agente con memoria contextual.</strong> El cliente que vuelve ya no parte de cero — Paula recuerda preferencias, conversaciones anteriores y modelos vistos.<span class="who">Producto + TI + Victorio Ortega</span></li>
+        <li><strong>Reporte de performance al directorio.</strong> Cierre de ciclo Q2 con highlights y aprendizajes consolidados.<span class="who">PM Productos</span></li>
+        <li><strong>Análisis cualitativo del canal de Venta</strong> (mismo método aplicado en postventa). Identificar fricciones conversacionales propias del flujo de preventa.<span class="who">Pablo Polanco</span></li>
       </ul>
     </div>
-    <div class="rm-col">
-      <div class="week">Sprint 4</div>
-      <div class="when">Agosto · 2 semanas</div>
-      <ul>
-        <li><strong>Agente con memoria contextual.</strong> El cliente que volvió ya no parte de cero — primer paso a la Etapa 2 (orquestación Llaima).<span class="who">Owner · Producto + TI</span></li>
-        <li><strong>Reporte de performance al directorio.</strong> Cierre de ciclo Q2 con highlights y aprendizajes.<span class="who">Owner · PM Productos</span></li>
-      </ul>
-    </div>
+
+  </div>
+
+  <div class="callout mt-48">
+    <div class="eyebrow">Definición de éxito a 90 días</div>
+    <p>
+      Cita de Venta operando en al menos 3 marcas · tasa de cierre IA sostenida &gt; 5,5% · feedback loop con asesores cerrado en CRM Llaima · caída de leads de abril explicada y, si aplica, recuperada.
+    </p>
   </div>
 </section>
 
-<!-- ========================================
-     BENCHMARKING PLACEHOLDER
-     ======================================== -->
+<!-- ============ BENCHMARKING ============ -->
 <section id="benchmarking">
-  <div class="eyebrow"><span class="num">04</span> Benchmarking · Venta</div>
+  <div class="eyebrow">Benchmarking · Venta</div>
   <h2>¿Cómo nos vemos<br>frente al mercado?</h2>
   <p class="lead">
     Espacio reservado para comparar el desempeño del agente de venta de Americar contra benchmarks de la industria — tasa de cierre, tiempo de respuesta, costo por lead, conversión inbound vs. outbound.
@@ -317,7 +338,7 @@
     <div class="ph-eyebrow">Sección en construcción</div>
     <h3>Aquí irán los benchmarks contra industria automotriz y conversacional.</h3>
     <p class="ph-desc">
-      Estamos recopilando información comparable de competidores directos (otros retailers automotrices con asistentes IA) y referentes verticales (e-commerce, banca, telco). Una vez consolidada, llenaremos los siguientes módulos.
+      Estamos recopilando información comparable de competidores directos (otros retailers automotrices con asistentes IA) y referentes verticales (e-commerce, banca, telco).
     </p>
 
     <div class="ph-grid">
@@ -345,14 +366,11 @@
     </div>
 
     <div class="ph-source">
-      <strong>Fuentes esperadas:</strong> · Reporte McKinsey Automotive Retail 2025 · Vambe industry benchmarks · CCS Cámara de Comercio Santiago · datos públicos competencia
+      <strong>Fuentes esperadas:</strong> Reporte McKinsey Automotive Retail 2025 · Vambe industry benchmarks · CCS Cámara de Comercio Santiago · datos públicos competencia
     </div>
   </div>
 </section>
 
-<!-- ========================================
-     NEXT
-     ======================================== -->
 <section id="explorar">
   <div class="next-nav">
     <a href="postventa.html" class="next-nav-card">
@@ -379,7 +397,7 @@
     Documento de trabajo interno · Gerencia Productos Digitales · Americar
   </div>
   <div class="sig">
-    Versión 1.1 · Mayo 2026
+    Versión 1.2 · Mayo 2026
   </div>
 </footer>
 
@@ -387,7 +405,7 @@
 
 <script>
 document.documentElement.classList.add('js-on');
-const reveals = document.querySelectorAll('.panel, .kpi-grid, .findings, .roadmap, .funnel, .chart-wrap, .headline-stat, .quote-grid, .callout, .story-cols, .timeline, .placeholder, .next-nav');
+const reveals = document.querySelectorAll('.panel, .kpi-grid, .findings, .roadmap, .funnel, .chart-wrap, .headline-stat, .quote-grid, .callout, .story-cols, .placeholder, .next-nav, .plan-blocks, .section-banner, .punto-clave');
 reveals.forEach(el => el.classList.add('reveal'));
 const revObs = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
