@@ -1215,3 +1215,32 @@ ul.bullets li strong { color: var(--ink); }
   font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--ink-mute); margin-top: 12px; max-width: 480px;
 }
+
+/* ============================================================
+   .is-new — marca temporal para bloques agregados el 12-may-2026
+   Quitar la clase del HTML (o esta regla) cuando se "oficialice"
+   ============================================================ */
+.is-new {
+  position: relative;
+  border-left: 3px solid var(--americar);
+  padding-left: 24px !important;
+  margin-top: 36px;
+}
+.is-new::before {
+  content: "NUEVO · 12 MAY 2026 · INVERSIÓN META";
+  position: absolute;
+  top: -10px;
+  left: 18px;
+  background: var(--americar);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  padding: 3px 9px;
+  border-radius: 2px;
+  z-index: 2;
+}
+.finding.is-new { padding-left: 24px !important; }
+.finding.is-new::before { left: 18px; top: -10px; }
+.chart-wrap.is-new { padding-left: 24px; }

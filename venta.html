@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=11">
+<link rel="stylesheet" href="assets/styles.css?v=12">
 </head>
 <body>
 
@@ -99,12 +99,16 @@
     </div>
   </div>
 
-  <div class="panel">
-    <div class="panel-eyebrow">Evolutivo · Tasa de cierre Agentes IA vs. canal propio · Chile general</div>
+  <div class="panel is-new">
+    <div class="panel-eyebrow">Evolutivo integrado · Cierre IA + Inversión Meta C2W + Leads CRM · Chile · Ene 2025 a Abr 2026</div>
     <div class="chart-wrap mt-32">
-      <div class="chart-title">% Tasa de cierre mensual</div>
-      <div class="chart-sub">La brecha favorable a IA se mantuvo todo el ciclo y se amplió en Q1 2026 — incluso atravesando el bloqueo Meta.</div>
-      <svg viewBox="0 0 800 280" width="100%" preserveAspectRatio="xMidYMid meet" style="display:block;">
+      <div class="chart-title">Tres capas, una misma historia mensual</div>
+      <div class="chart-sub">Arriba la tasa de cierre IA vs canal propio. En el medio la inversión Meta Click-to-WhatsApp que abre el embudo. Abajo los leads que entraron al CRM Llaima ya calificados por Paula. El bloqueo Meta de Ene–Feb afectó al outbound (no a estos anuncios C2W) — y aun así, la conversión msg → lead se deterioró en abril.</div>
+      <svg viewBox="0 0 800 580" width="100%" preserveAspectRatio="xMidYMid meet" style="display:block;">
+
+        <!-- =========================================================
+             CAPA 1 · Tasa de cierre Agentes IA vs canal propio (y 20-240)
+             ========================================================= -->
         <g stroke="rgba(15,20,25,0.08)" stroke-width="1">
           <line x1="50" y1="40" x2="780" y2="40"/>
           <line x1="50" y1="100" x2="780" y2="100"/>
@@ -114,15 +118,10 @@
         <g font-family="IBM Plex Mono" font-size="10" fill="#5A6068" text-anchor="end">
           <text x="44" y="44">7%</text><text x="44" y="104">5%</text><text x="44" y="164">3%</text><text x="44" y="224">1%</text>
         </g>
+        <text x="50" y="14" font-family="IBM Plex Mono" font-size="10" fill="#0F1419" font-weight="600" letter-spacing="0.6">CAPA 1 · TASA DE CIERRE</text>
         <line x1="50" y1="240" x2="780" y2="240" stroke="#0F1419" stroke-width="1"/>
         <rect x="606" y="40" width="92" height="200" fill="rgba(138,31,31,0.06)"/>
-        <text x="652" y="32" font-family="IBM Plex Mono" font-size="9" fill="#8A1F1F" font-weight="600" text-anchor="middle">BLOQUEO META</text>
-        <g font-family="IBM Plex Mono" font-size="9" fill="#5A6068" text-anchor="middle">
-          <text x="74" y="260">E25</text><text x="120" y="260">F</text><text x="167" y="260">M</text><text x="213" y="260">A</text>
-          <text x="259" y="260">M</text><text x="305" y="260">J</text><text x="352" y="260">J</text><text x="398" y="260">A</text>
-          <text x="444" y="260">S</text><text x="490" y="260">O</text><text x="537" y="260">N</text><text x="583" y="260">D</text>
-          <text x="629" y="260">E26</text><text x="676" y="260">F</text><text x="722" y="260">M</text><text x="768" y="260">A</text>
-        </g>
+        <text x="652" y="32" font-family="IBM Plex Mono" font-size="9" fill="#8A1F1F" font-weight="600" text-anchor="middle">BLOQUEO META (outbound)</text>
         <polyline fill="none" stroke="#5A6068" stroke-width="1.5" stroke-dasharray="4,3"
           points="74,141 120,138 167,138 213,91 259,79 305,95 352,163 398,143 444,104 490,101 537,99 583,108 629,90 676,67 722,85 768,84"/>
         <polyline fill="none" stroke="#1E3A8A" stroke-width="2.2"
@@ -137,12 +136,84 @@
         <g font-family="IBM Plex Mono" font-size="10" fill="#1E3A8A">
           <text x="768" y="24" text-anchor="end" font-weight="600">6,08% · récord</text>
         </g>
+
+        <!-- =========================================================
+             CAPA 2 · Inversión Meta C2W Venta (Nuevos + Usados) mensual CLP (y 270-390)
+             ========================================================= -->
+        <text x="50" y="262" font-family="IBM Plex Mono" font-size="10" fill="#0F1419" font-weight="600" letter-spacing="0.6">CAPA 2 · INVERSIÓN META C2W · NUEVOS + USADOS (CLP)</text>
+        <g stroke="rgba(15,20,25,0.06)" stroke-width="1">
+          <line x1="50" y1="290" x2="780" y2="290"/>
+          <line x1="50" y1="330" x2="780" y2="330"/>
+          <line x1="50" y1="370" x2="780" y2="370"/>
+        </g>
+        <g font-family="IBM Plex Mono" font-size="9" fill="#5A6068" text-anchor="end">
+          <text x="44" y="293">$50M</text><text x="44" y="333">$30M</text><text x="44" y="373">$10M</text>
+        </g>
+        <line x1="50" y1="390" x2="780" y2="390" stroke="#0F1419" stroke-width="1"/>
+        <rect x="606" y="270" width="92" height="120" fill="rgba(138,31,31,0.04)"/>
+        <!-- Barras: ancho 18, centradas en x. Sin barra antes de May 2025 (no hay data Meta) -->
+        <g fill="#0A4D1E" fill-opacity="0.78">
+          <rect x="250" y="320" width="18" height="70"/>
+          <rect x="296" y="306" width="18" height="84"/>
+          <rect x="343" y="316" width="18" height="74"/>
+          <rect x="389" y="337" width="18" height="53"/>
+          <rect x="435" y="284" width="18" height="106"/>
+          <rect x="481" y="298" width="18" height="92"/>
+          <rect x="528" y="301" width="18" height="89"/>
+          <rect x="574" y="304" width="18" height="86"/>
+          <rect x="620" y="292" width="18" height="98"/>
+          <rect x="667" y="281" width="18" height="109"/>
+          <rect x="713" y="273" width="18" height="117"/>
+          <rect x="759" y="294" width="18" height="96"/>
+        </g>
+        <!-- Etiquetas peak: marzo 2026 con valor -->
+        <text x="722" y="266" font-family="IBM Plex Mono" font-size="9" fill="#0A4D1E" font-weight="600" text-anchor="middle">$58,6M</text>
+        <text x="768" y="266" font-family="IBM Plex Mono" font-size="9" fill="#0A4D1E" text-anchor="middle">$48,1M</text>
+
+        <!-- =========================================================
+             CAPA 3 · Leads CRM C2W mensual (y 420-520)
+             ========================================================= -->
+        <text x="50" y="412" font-family="IBM Plex Mono" font-size="10" fill="#0F1419" font-weight="600" letter-spacing="0.6">CAPA 3 · LEADS CRM LLAIMA · CALIFICADOS POR PAULA</text>
+        <g stroke="rgba(15,20,25,0.06)" stroke-width="1">
+          <line x1="50" y1="440" x2="780" y2="440"/>
+          <line x1="50" y1="480" x2="780" y2="480"/>
+          <line x1="50" y1="520" x2="780" y2="520"/>
+        </g>
+        <g font-family="IBM Plex Mono" font-size="9" fill="#5A6068" text-anchor="end">
+          <text x="44" y="443">1.200</text><text x="44" y="483">600</text><text x="44" y="523">0</text>
+        </g>
+        <line x1="50" y1="520" x2="780" y2="520" stroke="#0F1419" stroke-width="1"/>
+        <rect x="606" y="420" width="92" height="100" fill="rgba(138,31,31,0.04)"/>
+        <!-- Línea de leads -->
+        <polyline fill="none" stroke="#B85C00" stroke-width="2.2"
+          points="259,493 305,468 352,510 398,519 444,454 490,433 537,429 583,432 629,458 676,447 722,447 768,469"/>
+        <g fill="#B85C00">
+          <circle cx="259" cy="493" r="2.8"/><circle cx="305" cy="468" r="2.8"/><circle cx="352" cy="510" r="2.8"/>
+          <circle cx="398" cy="519" r="2.8"/><circle cx="444" cy="454" r="2.8"/><circle cx="490" cy="433" r="2.8"/>
+          <circle cx="537" cy="429" r="2.8"/><circle cx="583" cy="432" r="2.8"/><circle cx="629" cy="458" r="2.8"/>
+          <circle cx="676" cy="447" r="2.8"/><circle cx="722" cy="447" r="2.8"/>
+          <circle cx="768" cy="469" r="3.5" fill="#B85C00" stroke="#FAF8F3" stroke-width="2"/>
+        </g>
+        <text x="768" y="461" font-family="IBM Plex Mono" font-size="9" fill="#B85C00" font-weight="600" text-anchor="end">613 · −29,6% MoM</text>
+        <text x="537" y="420" font-family="IBM Plex Mono" font-size="9" fill="#B85C00" font-weight="600" text-anchor="middle">1.092 peak Nov</text>
+
+        <!-- Eje X compartido · meses -->
+        <g font-family="IBM Plex Mono" font-size="9" fill="#5A6068" text-anchor="middle">
+          <text x="74" y="540">E25</text><text x="120" y="540">F</text><text x="167" y="540">M</text><text x="213" y="540">A</text>
+          <text x="259" y="540">M</text><text x="305" y="540">J</text><text x="352" y="540">J</text><text x="398" y="540">A</text>
+          <text x="444" y="540">S</text><text x="490" y="540">O</text><text x="537" y="540">N</text><text x="583" y="540">D</text>
+          <text x="629" y="540">E26</text><text x="676" y="540">F</text><text x="722" y="540">M</text><text x="768" y="540">A</text>
+        </g>
+        <text x="167" y="555" font-family="IBM Plex Mono" font-size="8" fill="#9A9F9C" text-anchor="middle" font-style="italic">data Meta desde May 2025</text>
+        <text x="652" y="555" font-family="IBM Plex Mono" font-size="8" fill="#8A1F1F" text-anchor="middle" font-style="italic">bloqueo afectó solo outbound</text>
       </svg>
       <div class="chart-legend">
-        <div class="lg"><span class="swatch" style="background:#1E3A8A"></span>Agentes IA</div>
-        <div class="lg"><span class="swatch" style="background:#5A6068; height:1px; border-top:1px dashed #5A6068"></span>Canal propio general</div>
-        <div class="lg"><span class="swatch" style="background:rgba(138,31,31,0.2)"></span>Bloqueo Meta</div>
-        <div class="lg mono" style="margin-left:auto">Fuente: bi.americar.com/cierre-digital</div>
+        <div class="lg"><span class="swatch" style="background:#1E3A8A"></span>Tasa cierre Agentes IA</div>
+        <div class="lg"><span class="swatch" style="background:#5A6068; height:1px; border-top:1px dashed #5A6068"></span>Canal propio</div>
+        <div class="lg"><span class="swatch" style="background:#0A4D1E"></span>Inversión Meta C2W (Nuevos+Usados)</div>
+        <div class="lg"><span class="swatch" style="background:#B85C00"></span>Leads CRM Llaima</div>
+        <div class="lg"><span class="swatch" style="background:rgba(138,31,31,0.15)"></span>Bloqueo Meta outbound</div>
+        <div class="lg mono" style="margin-left:auto">Fuentes: BI Americar · Meta Ads API · CRM Llaima</div>
       </div>
     </div>
   </div>
@@ -189,6 +260,68 @@
         <div class="chart-legend"><div class="lg">YTD Ene–Abr: <strong>945 ventas (+118% YoY)</strong></div></div>
       </div>
     </div>
+  </div>
+
+  <div class="panel is-new">
+    <div class="panel-eyebrow">Inversión Meta · Click-to-WhatsApp inbound · Q1 + Abril 2026</div>
+    <h3>El motor del embudo: $210M CLP en C2W abrieron 184.731 conversaciones.</h3>
+    <p>Prácticamente la totalidad de los leads inbound de Paula entran por anuncios <strong>Click-to-WhatsApp</strong> de Meta. En Q1+Abril 2026 invertimos <strong>$210M CLP</strong> en C2W para Venta, generando <strong>184.731 conversaciones iniciadas</strong> con Paula. La eficiencia entre segmentos cuenta la historia: <strong>Usados cuesta 3,8× menos</strong> por conversación iniciada que Nuevos — y recibe la mitad del presupuesto.</p>
+
+    <table class="data-table mt-32">
+      <thead>
+        <tr>
+          <th>Segmento</th>
+          <th>Inversión Meta C2W</th>
+          <th>Msgs iniciados<br><span class="mono" style="font-weight:400;font-size:10px;">(Meta · top funnel)</span></th>
+          <th>Leads CRM Llaima<br><span class="mono" style="font-weight:400;font-size:10px;">(calificados Paula)</span></th>
+          <th>Costo / msg</th>
+          <th>Costo / lead CRM</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="row-label">Nuevos</td><td>$136,4M</td><td>60.312</td><td>2.556</td><td>$2.262</td><td>$53.381</td></tr>
+        <tr><td class="row-label">Usados</td><td>$73,7M</td><td>124.419</td><td>559</td><td class="pos">$592</td><td class="neg">$131.841</td></tr>
+        <tr style="border-top:1px solid var(--ink);">
+          <td class="row-label" style="font-family:var(--serif);font-size:14px;">Total Venta</td>
+          <td style="font-weight:600;">$210,1M</td>
+          <td style="font-weight:600;">184.731</td>
+          <td style="font-weight:600;">3.115</td>
+          <td>$1.137</td>
+          <td>$67.464</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:14px; font-size:13px;">
+      <strong>Dos vistas, dos lecturas:</strong> Meta cuenta cada conversación iniciada desde un anuncio (top-of-funnel crudo). CRM Llaima cuenta el lead ya calificado por Paula y entregado al asesor. La razón msg → lead CRM en Nuevos es ~4,2%, en Usados ~0,4%: la conversación de Usados es más amplia pero menos densa por unidad — coherente con un cliente que está explorando stock vs. uno que ya pidió cotización formal.
+    </p>
+  </div>
+
+  <div class="panel is-new">
+    <div class="panel-eyebrow">Evolutivo mensual · Inversión Meta C2W · Venta · 2025-05 a 2026-04</div>
+    <h3>El bloqueo Meta Ene–Feb no detuvo la inversión inbound.</h3>
+    <p>El bloqueo afectó al outbound (cuentas WhatsApp Business para envíos masivos), no a los anuncios C2W. La inversión inbound se mantuvo y subió en Q1 2026 — pero el ratio mensaje → lead CRM se deterioró, sobre todo en Abril.</p>
+
+    <table class="data-table mt-32">
+      <thead>
+        <tr><th>Mes</th><th>Spend Nuevos</th><th>Msgs N</th><th>Spend Usados</th><th>Msgs U</th><th>Leads CRM C2W</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="row-label">Sep 2025</td><td>$39,9M</td><td>18.374</td><td>$13,0M</td><td>6.546</td><td>796</td></tr>
+        <tr><td class="row-label">Oct 2025</td><td>$33,8M</td><td>17.743</td><td>$12,2M</td><td>8.904</td><td>1.046</td></tr>
+        <tr><td class="row-label">Nov 2025</td><td>$31,5M</td><td>14.054</td><td>$12,8M</td><td>11.252</td><td>1.092</td></tr>
+        <tr><td class="row-label">Dic 2025</td><td>$32,4M</td><td>13.458</td><td>$10,7M</td><td>12.087</td><td>1.056</td></tr>
+        <tr><td class="row-label">Ene 2026</td><td>$36,0M</td><td>17.190</td><td>$12,8M</td><td>15.631</td><td>749</td></tr>
+        <tr><td class="row-label">Feb 2026</td><td>$38,2M</td><td>15.659</td><td>$16,5M</td><td>22.121</td><td>882</td></tr>
+        <tr><td class="row-label">Mar 2026</td><td>$34,8M</td><td>14.404</td><td>$23,8M</td><td>50.952</td><td>871</td></tr>
+        <tr><td class="row-label">Abr 2026</td><td>$27,5M</td><td>13.059</td><td>$20,6M</td><td>35.715</td><td class="neg">613</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:14px; font-size:13px;">
+      <strong>Abril 2026:</strong> la inversión bajó 13% mes a mes en Nuevos y 14% en Usados. El messaging_started en Usados se mantiene 7× sobre el promedio de 2025 — la conversación al inicio del embudo está sana. La caída de leads CRM (-29,6% vs marzo) es <em>downstream</em> del agente, no de la pauta.
+    </p>
+    <p style="margin-top:8px; font-size:12px; color: var(--ink-soft);" class="mono">
+      Fuente: Meta Ads API · paula_meta_insights_daily · is_whatsapp = true · vertical_token ∈ {Nuevos, Usados}.
+    </p>
   </div>
 </section>
 
@@ -249,6 +382,14 @@
         <p>Los asesores no tienen un canal estructurado para devolver feedback sobre la calidad de leads del agente. Sin eso, no podemos entrenar el agente con datos del propio negocio.</p>
       </div>
       <div class="meta"><span class="tag neu"><span class="dot"></span>Gap proceso</span></div>
+    </div>
+    <div class="finding is-new">
+      <div class="num">06</div>
+      <div>
+        <h4>Usados: 3,8× más eficiente por conversación que Nuevos, con la mitad del presupuesto Meta.</h4>
+        <p>Q1+Abril 2026: Usados capturó <strong>67% de los messaging_started</strong> con solo <strong>35% del presupuesto C2W</strong>. Costo por mensaje iniciado: $592 CLP en Usados vs $2.262 en Nuevos. El techo de Usados hoy no es la pauta — es la capacidad de seguimiento humano post-conversación.</p>
+      </div>
+      <div class="meta"><span class="tag signal"><span class="dot"></span>Reasignación presupuesto</span></div>
     </div>
   </div>
 </section>
