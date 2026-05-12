@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benchmark · Asistentes IA · Industria Automotriz Chile 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css?v=14">
+</head>
+<body>
+
+<header class="topnav">
+  <div class="topnav-inner">
+    <a href="index.html" class="brand">
+      <span class="dot"></span>
+      <span>Americar <span class="sep">·</span> <span class="meta-hide">Agentes Virtuales</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">General</a>
+      <a href="venta.html">Venta</a>
+      <a href="postventa.html">Postventa</a>
+      <a href="compra.html">Compra</a>
+      <a href="benchmark.html" class="active">Benchmark</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </div>
+</header>
+
+<div class="shell">
+
+<!-- ============ PAGE HEADER ============ -->
+<section class="page-header first">
+  <div class="eyebrow">Informe confidencial · Salazar Israel · Mayo 2026</div>
+  <h2>Benchmark de asistentes IA<br>en la industria automotriz <em>Chile.</em></h2>
+
+  <div class="cover-footer" style="margin-top: 28px;">
+    <div class="item">Empresas evaluadas<strong>4 actores · mercado chileno</strong></div>
+    <div class="item">Flujos evaluados<strong>10 casos de uso por empresa</strong></div>
+    <div class="item">Dimensiones<strong>9 criterios · escala 1–5</strong></div>
+    <div class="item">Metodología<strong>Cliente simulado · capturas reales</strong></div>
+  </div>
+
+  <nav class="bench-tabs" aria-label="Secciones del benchmark">
+    <button class="active" onclick="showBench('resumen', event)">Resumen ejecutivo</button>
+    <button onclick="showBench('comparativa', event)">Comparativa</button>
+    <button onclick="showBench('kavak', event)">Kavak</button>
+    <button onclick="showBench('bf', event)">Bruno Fritsch</button>
+    <button onclick="showBench('pompeyo', event)">Pompeyo · Claudia</button>
+    <button onclick="showBench('paula', event)">Salazar Israel · Paula</button>
+    <button onclick="showBench('oportunidades', event)">Oportunidades</button>
+  </nav>
+</section>
+
+<!-- ============ RESUMEN ============ -->
+<section id="bench-resumen" class="bench-pane active">
+  <div class="eyebrow">01 · Resumen ejecutivo</div>
+  <h2>Cómo está parada Paula<br>frente al mercado chileno.</h2>
+  <p class="lead">
+    Análisis comparativo de los asistentes conversacionales en la industria automotriz chilena, evaluados con flujos reales de compra, postventa y generación de leads — cliente simulado y capturas reales.
+  </p>
+
+  <div class="punto-clave">
+    <div class="pc-label">El punto</div>
+    <div class="pc-text">
+      Paula salió <em>segunda</em> con 38/45 — a sólo 6 puntos del referente (Claudia · Pompeyo Carrasco · 44/45). Supera con claridad a Kavak y Bruno Fritsch, que no tienen IA generativa real. <strong>La brecha con el referente es de configuración, no de tecnología.</strong>
+    </div>
+  </div>
+
+  <div class="bench-rank">
+    <div class="bench-rank-card kavak">
+      <div class="rank-pos">#4 · Último lugar</div>
+      <div class="rank-name">Kavak</div>
+      <div class="rank-type">Canal híbrido · Sin IA generativa</div>
+      <div class="rank-score">14<span class="denom">/45</span></div>
+      <div class="rank-pct">31% del puntaje máximo</div>
+      <div class="rank-bar"><div class="rank-bar-fill" style="width:31%;"></div></div>
+      <div class="rank-verdict">WhatsApp con agentes humanos no identificados. Demoras de 3–90 min. Sin memoria. El único flujo exitoso fue la tasación con precios exactos.</div>
+    </div>
+    <div class="bench-rank-card bf">
+      <div class="rank-pos">#3 · Tercer lugar</div>
+      <div class="rank-name">Bruno Fritsch</div>
+      <div class="rank-type">Chatbot web + agentes humanos</div>
+      <div class="rank-score">23<span class="denom">/45</span></div>
+      <div class="rank-pct">51% del puntaje máximo</div>
+      <div class="rank-bar"><div class="rank-bar-fill" style="width:51%;"></div></div>
+      <div class="rank-verdict">Árbol de decisión con formulario de 6 pasos. Diseño limpio pero sin IA. Agentes humanos con demora de 1 hora.</div>
+    </div>
+    <div class="bench-rank-card paula">
+      <div class="rank-pos">#2 · Segundo lugar</div>
+      <div class="rank-name">Salazar Israel · Paula</div>
+      <div class="rank-type">IA generativa · WhatsApp · Memoria histórica única</div>
+      <div class="rank-score">38<span class="denom">/45</span></div>
+      <div class="rank-pct">84% · brecha de 6 pts con Pompeyo</div>
+      <div class="rank-bar"><div class="rank-bar-fill" style="width:84%;"></div></div>
+      <div class="rank-verdict">Memoria histórica única, precios en el primer mensaje, mejor resumen de lead del benchmark. Brechas en confirmación estructurada y cambio de flujo.</div>
+    </div>
+    <div class="bench-rank-card pompeyo">
+      <div class="rank-pos">#1 · Referente del mercado</div>
+      <div class="rank-name">Pompeyo Carrasco · Claudia</div>
+      <div class="rank-type">IA generativa · 2 canales WhatsApp especializados</div>
+      <div class="rank-score">44<span class="denom">/45</span></div>
+      <div class="rank-pct">98% · 8 dimensiones en 5/5</div>
+      <div class="rank-bar"><div class="rank-bar-fill" style="width:98%;"></div></div>
+      <div class="rank-verdict">Referente absoluto. 2 citas con test drive en 11 min. VPP, financiamiento, seguros, usados y recordatorio pre-visita, todo dentro del chat.</div>
+    </div>
+  </div>
+
+  <div class="bench-conclusion">
+    <div class="bc-label">Hallazgo principal</div>
+    <div class="bc-text">
+      La hipótesis inicial era que Paula estaría <em>alineada o mejor posicionada</em> que la mayoría del mercado. El benchmark la confirma: Paula supera a Kavak y Bruno Fritsch, que no tienen IA generativa real. Y con 38/45 está a <strong>sólo 6 puntos de Claudia (Pompeyo Carrasco)</strong>, el referente del benchmark. La brecha se explica principalmente por la confirmación estructurada de cita y la falta de canal dedicado de postventa — <em>ambas son brechas de configuración, no de tecnología.</em>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-eyebrow">Lectura por competidor</div>
+    <div class="findings mt-32">
+      <div class="finding">
+        <div class="num">01</div>
+        <div>
+          <h4>Kavak — el modelo opuesto</h4>
+          <p>No es IA: canal de WhatsApp con automatismos defectuosos y agentes humanos sin identificación. 90+ minutos de conversación sin cerrar una cita. El único logro real fue entregar precios de tasación. Su CRM de remarketing es sofisticado pero <em>desconectado</em> del canal conversacional.</p>
+        </div>
+        <div class="meta"><span class="tag neg"><span class="dot"></span>14/45</span></div>
+      </div>
+      <div class="finding">
+        <div class="num">02</div>
+        <div>
+          <h4>Bruno Fritsch — el modelo intermedio</h4>
+          <p>Chatbot de árbol de decisión bien diseñado visualmente, sin comprensión de lenguaje natural. Captura leads con un formulario de 6 pasos. La conexión a WhatsApp requiere código manual y los agentes responden con 1 hora de demora.</p>
+        </div>
+        <div class="meta"><span class="tag neu"><span class="dot"></span>23/45</span></div>
+      </div>
+      <div class="finding">
+        <div class="num">03</div>
+        <div>
+          <h4>Pompeyo (Claudia) — el referente a seguir</h4>
+          <p>IA generativa con acceso completo al catálogo. Dos canales especializados. 2 citas con confirmación estructurada en 11 minutos. 8 de 9 dimensiones en 5/5. Cross-sell, VPP, seguro automotriz, recordatorio pre-visita.</p>
+        </div>
+        <div class="meta"><span class="tag pos"><span class="dot"></span>44/45</span></div>
+      </div>
+      <div class="finding">
+        <div class="num">04</div>
+        <div>
+          <h4>Paula (Salazar Israel) — sólo 6 puntos de Claudia</h4>
+          <p>Memoria histórica única, precios en el primer mensaje, mejor resumen de lead del benchmark y VPP proactivo. Las brechas principales son la confirmación estructurada de cita y la dificultad para cambiar de flujo compra → postventa.</p>
+        </div>
+        <div class="meta"><span class="tag signal"><span class="dot"></span>38/45</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARATIVA ============ -->
+<section id="bench-comparativa" class="bench-pane">
+  <div class="eyebrow">02 · Comparativa</div>
+  <h2>Tres tablas para entender<br>la diferencia.</h2>
+  <p class="lead">
+    Dos miradas complementarias: la primera mide <strong>cómo funciona</strong> cada asistente (calidad, escala 1–5), la segunda mide <strong>qué puede hacer</strong> (cobertura de flujos reales). La tercera resume las características del sistema.
+  </p>
+
+  <div class="panel">
+    <div class="panel-eyebrow">Tabla 1 · Calidad · Cómo funciona cada asistente</div>
+    <p style="margin-top:8px; font-size:13px; color:var(--ink-mute);">Escala 1 a 5 por dimensión · Puntaje máximo 45 puntos.</p>
+    <table class="data-table mt-32">
+      <thead>
+        <tr>
+          <th>Dimensión</th>
+          <th><span class="bench-pill kavak">Kavak</span></th>
+          <th><span class="bench-pill bf">Bruno Fritsch</span></th>
+          <th><span class="bench-pill paula">Paula · SI</span></th>
+          <th><span class="bench-pill pompeyo">Claudia · PC</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="row-label">Cobertura de flujos <span style="display:block;font-family:var(--mono);font-size:10px;color:var(--ink-mute);font-weight:400;">Funcionalidad</span></td><td><span class="bench-dot s2">2</span></td><td><span class="bench-dot s3">3</span></td><td><span class="bench-dot s4">4</span></td><td><span class="bench-dot s5">5</span></td></tr>
+        <tr><td class="row-label">Agendamiento online <span style="display:block;font-family:var(--mono);font-size:10px;color:var(--ink-mute);font-weight:400;">Funcionalidad</span></td><td><span class="bench-dot s3">3</span></td><td><span class="bench-dot s2">2</span></td><td><span class="bench-dot s3">3</span></td><td><span class="bench-dot s4">4</span></td></tr>
+        <tr><td class="row-label">Velocidad de respuesta <span style="display:block;font-family:var(--mono);font-size:10px;color:var(--ink-mute);font-weight:400;">Conversación</span></td><td><span class="bench-dot s1">1</span></td><td><span class="bench-dot s2">2</span></td><td><span class="bench-dot s5">5</span></td><td><span class="bench-dot s5">5</span></td></tr>
+        <tr><td class="row-label">Continuidad contextual <span style="display:block;font-family:var(--mono);font-size:10px;color:var(--ink-mute);font-weight:400;">Conversación</span></td><td><span class="bench-dot s1">1</span></td><td><span class="bench-dot s2">2</span></td><td><span class="bench-dot s5">5</span></td><td><span class="bench-dot s5">5</span></td></tr>
+        <tr><td class="row-label">Calidad de respuesta <span style="display:block;font-family:var(--mono);font-size:10px;color:var(--ink-mute);font-weight:400;">Conversación</span></td><td><span class="bench-dot s1">1</span></td><td><span class="bench-dot s2">2</span></td><td><span class="bench-dot s4">4</span></td><td><span class="bench-dot s5">5</span></td></tr>
+        <tr><td class="row-label">Manejo de errores <span style="display:block;font-family:var(--mono);font-size:10px;color:var(--ink-mute);font-weight:400;">Conversación</span></td><td><span class="bench-dot s2">2</span></td><td><span class="bench-dot s3">3</span></td><td><span class="bench-dot s4">4</span></td><td><span class="bench-dot s5">5</span></td></tr>
+        <tr><td class="row-label">Captura de lead <span style="display:block;font-family:var(--mono);font-size:10px;color:var(--ink-mute);font-weight:400;">Conversión</span></td><td><span class="bench-dot s3">3</span></td><td><span class="bench-dot s4">4</span></td><td><span class="bench-dot s5">5</span></td><td><span class="bench-dot s5">5</span></td></tr>
+        <tr><td class="row-label">CTA y derivación <span style="display:block;font-family:var(--mono);font-size:10px;color:var(--ink-mute);font-weight:400;">Conversión</span></td><td><span class="bench-dot s2">2</span></td><td><span class="bench-dot s3">3</span></td><td><span class="bench-dot s4">4</span></td><td><span class="bench-dot s5">5</span></td></tr>
+        <tr><td class="row-label">Personalización <span style="display:block;font-family:var(--mono);font-size:10px;color:var(--ink-mute);font-weight:400;">Conversión</span></td><td><span class="bench-dot s1">1</span></td><td><span class="bench-dot s2">2</span></td><td><span class="bench-dot s5">5</span></td><td><span class="bench-dot s5">5</span></td></tr>
+        <tr style="border-top:1px solid var(--ink); background: var(--paper-warm);">
+          <td class="row-label" style="font-family:var(--serif);font-size:15px;">Total / 45</td>
+          <td style="color: var(--negative); font-weight: 600;">14 · 31%</td>
+          <td style="color: var(--neutral); font-weight: 600;">23 · 51%</td>
+          <td style="color: var(--signal); font-weight: 600;">38 · 84%</td>
+          <td style="color: var(--positive); font-weight: 600;">44 · 98%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bench-bar-wrap">
+    <div class="bench-bar-title">Puntaje total comparado</div>
+    <div class="bench-bar-row pompeyo">
+      <div class="br-header"><span class="br-name">Claudia · Pompeyo Carrasco</span><span class="br-score">44/45</span></div>
+      <div class="br-track"><div class="br-fill" style="width:97.8%;"></div></div>
+    </div>
+    <div class="bench-bar-row paula">
+      <div class="br-header"><span class="br-name">Paula · Salazar Israel</span><span class="br-score">38/45</span></div>
+      <div class="br-track"><div class="br-fill" style="width:84.4%;"></div></div>
+    </div>
+    <div class="bench-bar-row bf">
+      <div class="br-header"><span class="br-name">Bruno Fritsch</span><span class="br-score">23/45</span></div>
+      <div class="br-track"><div class="br-fill" style="width:51.1%;"></div></div>
+    </div>
+    <div class="bench-bar-row kavak">
+      <div class="br-header"><span class="br-name">Kavak</span><span class="br-score">14/45</span></div>
+      <div class="br-track"><div class="br-fill" style="width:31.1%;"></div></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-eyebrow">Tabla 2 · Cobertura · Qué puede hacer cada asistente</div>
+    <p style="margin-top:8px; font-size:13px; color:var(--ink-mute);">La cobertura indica si el asistente <strong>puede</strong> ejecutar el flujo. La calidad de esa ejecución se refleja en la Tabla 1.</p>
+
+    <div class="bench-cov-legend mt-32">
+      <span class="lg"><span class="bench-cov ok">✓</span> Completado</span>
+      <span class="lg"><span class="bench-cov partial">~</span> Parcial</span>
+      <span class="lg"><span class="bench-cov no">✗</span> No cubre</span>
+      <span class="lg"><span class="bench-cov na">–</span> No aplica</span>
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Flujo</th>
+          <th style="text-align:center;">Área</th>
+          <th><span class="bench-pill kavak">Kavak</span></th>
+          <th><span class="bench-pill bf">Bruno F.</span></th>
+          <th><span class="bench-pill paula">Paula · SI</span></th>
+          <th><span class="bench-pill pompeyo">Claudia · PC</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="row-label">Cita de ventas + test drive</td><td style="text-align:center;font-size:11px;">Ventas</td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td></tr>
+        <tr><td class="row-label">Cita de inspección / mantención</td><td style="text-align:center;font-size:11px;">Postventa</td><td><span class="bench-cov no">✗</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td></tr>
+        <tr><td class="row-label">Cotización con precio en el chat</td><td style="text-align:center;font-size:11px;">Ventas</td><td><span class="bench-cov partial">~</span></td><td><span class="bench-cov no">✗</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov partial">~</span></td></tr>
+        <tr><td class="row-label">VPP / Parte de pago · tasación vehículo actual</td><td style="text-align:center;font-size:11px;">Ventas</td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov no">✗</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td></tr>
+        <tr><td class="row-label">Financiamiento · opciones de crédito</td><td style="text-align:center;font-size:11px;">Ventas</td><td><span class="bench-cov no">✗</span></td><td><span class="bench-cov no">✗</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td></tr>
+        <tr><td class="row-label">Postventa · precios mantención y servicios</td><td style="text-align:center;font-size:11px;">Postventa</td><td><span class="bench-cov na">–</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td></tr>
+        <tr><td class="row-label">Autos usados · búsqueda y derivación</td><td style="text-align:center;font-size:11px;">Ventas</td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td></tr>
+        <tr><td class="row-label">Seguro automotriz</td><td style="text-align:center;font-size:11px;">Ventas</td><td><span class="bench-cov no">✗</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov no">✗</span></td><td><span class="bench-cov ok">✓</span></td></tr>
+        <tr><td class="row-label">Captación de lead · datos clave</td><td style="text-align:center;font-size:11px;">General</td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td><td><span class="bench-cov ok">✓</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <div class="panel-eyebrow">Tabla 3 · Características del sistema</div>
+    <p style="margin-top:8px; font-size:13px; color:var(--ink-mute);">Qué hay debajo de cada asistente.</p>
+    <table class="data-table mt-32">
+      <thead>
+        <tr>
+          <th>Característica</th>
+          <th><span class="bench-pill kavak">Kavak</span></th>
+          <th><span class="bench-pill bf">Bruno Fritsch</span></th>
+          <th><span class="bench-pill paula">Paula · SI</span></th>
+          <th><span class="bench-pill pompeyo">Claudia · PC</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="row-label">Tipo de sistema</td><td>Bot + humano</td><td>Árbol decisión</td><td style="color:var(--signal); font-weight:600;">IA generativa</td><td style="color:var(--positive); font-weight:600;">IA generativa</td></tr>
+        <tr><td class="row-label">Nombre del asistente</td><td style="color:var(--ink-mute);">Sin nombre</td><td style="color:var(--ink-mute);">Sin nombre</td><td style="color:var(--signal); font-weight:600;">Paula</td><td style="color:var(--positive); font-weight:600;">Claudia</td></tr>
+        <tr><td class="row-label">Canal principal</td><td>WhatsApp</td><td>Chat web</td><td>WhatsApp</td><td>WhatsApp</td></tr>
+        <tr><td class="row-label">Tiempo de respuesta</td><td class="neg">3–26 minutos</td><td style="color:var(--neutral);">~1 hora (WA)</td><td class="pos">&lt;2 segundos</td><td class="pos">&lt;2 segundos</td></tr>
+        <tr><td class="row-label">Memoria histórica</td><td class="neg">No</td><td class="neg">No</td><td class="pos">Sí ✦ única en benchmark</td><td class="pos">Sí ✦ intra-sesión</td></tr>
+        <tr><td class="row-label">Agendamiento en el chat</td><td style="color:var(--neutral);">Parcial</td><td class="neg">No</td><td class="pos">Sí</td><td class="pos">Sí, con confirmación</td></tr>
+        <tr><td class="row-label">Precios en el chat</td><td style="color:var(--neutral);">Link al catálogo</td><td class="neg">No</td><td class="pos">Sí</td><td style="color:var(--neutral);">Referenciales</td></tr>
+        <tr><td class="row-label">Canal postventa propio</td><td class="neg">No aplica</td><td class="neg">Deriva a web</td><td style="color:var(--neutral);">Canal único</td><td class="pos">Canal dedicado</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ KAVAK ============ -->
+<section id="bench-kavak" class="bench-pane">
+  <div class="eyebrow">03 · Kavak · #4</div>
+
+  <div class="bench-co-header">
+    <div class="bench-co-avatar av-kavak">KV</div>
+    <div class="bench-co-meta">
+      <div class="bench-co-title">Kavak Chile</div>
+      <div class="bench-co-sub">Marketplace de autos usados · Canal WhatsApp Business · Score: 14/45 · 31%</div>
+    </div>
+    <div class="bench-co-score kavak">14</div>
+  </div>
+
+  <div class="bench-detail-grid">
+    <div class="bench-detail">
+      <div class="bench-detail-head">Tipo de sistema</div>
+      <div style="font-family: var(--serif); font-size: 18px; line-height: 1.3; margin-bottom: 8px;">Bot de árbol de decisión + agentes humanos no identificados.</div>
+      <div style="font-size: 13px; color: var(--ink-mute); line-height: 1.55;">No es IA generativa. Las respuestas tardías y coloquiales confirman intervención humana.</div>
+    </div>
+    <div class="bench-detail">
+      <div class="bench-detail-head">Tiempo total documentado</div>
+      <div class="bench-headline neg">~2 horas</div>
+      <div style="font-size: 13px; color: var(--ink-mute); line-height: 1.55; margin-top: 8px;">Sin cita confirmada. Sin precio del vehículo de interés. Un solo flujo exitoso: tasación.</div>
+    </div>
+  </div>
+
+  <div class="bench-detail-grid">
+    <div class="bench-detail">
+      <div class="bench-detail-head pos">Fortalezas</div>
+      <ul>
+        <li>WhatsApp nativo reduce barrera de adopción</li>
+        <li>CRM de remarketing con segmentación por comportamiento</li>
+        <li>Tasación con 3 opciones de precio exacto (permuta / compra asegurada / inmediata)</li>
+        <li>Mensajes outbound con precios actualizados dinámicamente</li>
+        <li>Segmentación de intención desde el primer contacto</li>
+      </ul>
+    </div>
+    <div class="bench-detail">
+      <div class="bench-detail-head neg">Debilidades críticas</div>
+      <ul>
+        <li>Demoras de <strong>3 a 26 minutos</strong> entre turnos de la misma conversación</li>
+        <li>Sin memoria de sesión: reinicia el flujo tras 26 min de inactividad</li>
+        <li>URL enviada con typo ("awift" en lugar de "swift")</li>
+        <li>Capturó sólo 1 de 2 modelos solicitados y no aplicó ningún filtro</li>
+        <li>Usa "estimado" asumiendo género masculino sin preguntar</li>
+        <li>No cotiza precios. No confirma citas por escrito</li>
+        <li>Dos canales (Kavak / Kavak Chile) desconectados entre sí</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-eyebrow">Flujos evaluados</div>
+    <table class="bench-flows mt-32">
+      <thead><tr><th>Flujo</th><th>Resultado</th><th>Estado</th></tr></thead>
+      <tbody>
+        <tr><td>Agendamiento cita ventas</td><td>Coordinado verbalmente, sin confirmación escrita. Flujo reiniciado al final.</td><td><span class="bench-badge b-warn">Parcial</span></td></tr>
+        <tr><td>Cotización vehículo</td><td>No entrega precio. Sólo link con typo y filtros incorrectos.</td><td><span class="bench-badge b-bad">No cubre</span></td></tr>
+        <tr><td>Tasación / VPP</td><td>3 opciones con precio exacto tras recibir patente. Único flujo completado.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Captación de lead</td><td>Capturó nombre, email y patente en ~90 min.</td><td><span class="bench-badge b-warn">Tardío</span></td></tr>
+        <tr><td>Mantención / Postventa</td><td>No aplica al modelo de negocio. No lo aclara al usuario.</td><td><span class="bench-badge b-bad">Ausente</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout neg">
+    <div class="eyebrow">Hallazgo clave</div>
+    <p>
+      Kavak tiene el <strong>CRM más sofisticado del benchmark</strong> (segmentación por comportamiento, precios dinámicos, seguimiento automatizado), pero el canal conversacional más débil. La desconexión entre ambos sistemas es la brecha más costosa: el canal de remarketing sabe que miraste el Swift, que no fuiste a la inspección y que el precio cambió, pero el chat de atención no sabe nada de eso y te pregunta marca y modelo como si fueras un extraño.
+    </p>
+  </div>
+</section>
+
+<!-- ============ BRUNO FRITSCH ============ -->
+<section id="bench-bf" class="bench-pane">
+  <div class="eyebrow">04 · Bruno Fritsch · #3</div>
+
+  <div class="bench-co-header">
+    <div class="bench-co-avatar av-bf">BF</div>
+    <div class="bench-co-meta">
+      <div class="bench-co-title">Bruno Fritsch</div>
+      <div class="bench-co-sub">Concesionario Toyota / Hyundai · Chat web propio + WhatsApp con agentes · Score: 23/45 · 51%</div>
+    </div>
+    <div class="bench-co-score bf">23</div>
+  </div>
+
+  <div class="bench-detail-grid">
+    <div class="bench-detail">
+      <div class="bench-detail-head">Tipo de sistema</div>
+      <div style="font-family: var(--serif); font-size: 18px; line-height: 1.3; margin-bottom: 8px;">Árbol de decisión con formulario embebido de 6 pasos + agentes humanos en WhatsApp.</div>
+      <div style="font-size: 13px; color: var(--ink-mute); line-height: 1.55;">No es IA generativa. El chat web acepta sólo clics en botones, sin texto libre funcional.</div>
+    </div>
+    <div class="bench-detail">
+      <div class="bench-detail-head">Tiempo hasta asesor humano</div>
+      <div class="bench-headline warn">~1 hora</div>
+      <div style="font-size: 13px; color: var(--ink-mute); line-height: 1.55; margin-top: 8px;">El agente en WhatsApp llega una hora después de llenar el formulario. Identifica al ejecutivo asignado por nombre.</div>
+    </div>
+  </div>
+
+  <div class="bench-detail-grid">
+    <div class="bench-detail">
+      <div class="bench-detail-head pos">Fortalezas</div>
+      <ul>
+        <li>Diseño visual limpio y profesional (identidad naranja coherente)</li>
+        <li>Menú inicial con 6 categorías claras incluyendo seguros y repuestos</li>
+        <li>Formulario captura nombre, RUT, teléfono, email, marca y modelo</li>
+        <li>El agente humano usa el nombre del usuario desde el formulario</li>
+        <li>Nombra al ejecutivo asignado (personalización del asesor)</li>
+      </ul>
+    </div>
+    <div class="bench-detail">
+      <div class="bench-detail-head neg">Debilidades críticas</div>
+      <ul>
+        <li>Sin IA ni comprensión de lenguaje natural</li>
+        <li>Vinculación a WhatsApp con código de 10 dígitos: fricción alta</li>
+        <li>Postventa deriva a la web, no gestiona en el chat</li>
+        <li>Agente humano con demora de 1 hora</li>
+        <li>Error de género: "serás contactado" (masculino por defecto)</li>
+        <li>Sin cotización de precio en ningún canal</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-eyebrow">Flujos evaluados</div>
+    <table class="bench-flows mt-32">
+      <thead><tr><th>Flujo</th><th>Resultado</th><th>Estado</th></tr></thead>
+      <tbody>
+        <tr><td>Cotización vehículo</td><td>Deriva al ejecutivo. Sin precio en el chat ni en el web chat.</td><td><span class="bench-badge b-bad">No cubre</span></td></tr>
+        <tr><td>Agendamiento cita ventas</td><td>El formulario captura datos. El ejecutivo coordina después.</td><td><span class="bench-badge b-warn">Parcial</span></td></tr>
+        <tr><td>Captación de lead</td><td>Formulario de 6 pasos completo: nombre, RUT, teléfono, email, marca, modelo.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Postventa / mantención</td><td>Botón en el chat redirige a la web de agendamiento. El usuario hace todo solo.</td><td><span class="bench-badge b-warn">Deriva</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warn">
+    <div class="eyebrow">Hallazgo clave</div>
+    <p>
+      Bruno Fritsch no tiene asistente de IA. Tiene un chatbot de árbol de decisión con formularios embebidos bien diseñados visualmente, más agentes humanos con demora. Es el modelo más tradicional del benchmark. La ausencia de WhatsApp nativo (requiere código de 10 dígitos para vincularse) y de IA generativa lo posiciona por debajo de Paula y confirma que <strong>la adopción de IA conversacional real en el sector es aún incipiente</strong>. Quien la implemente bien tiene ventaja estructural.
+    </p>
+  </div>
+</section>
+
+<!-- ============ POMPEYO ============ -->
+<section id="bench-pompeyo" class="bench-pane">
+  <div class="eyebrow">05 · Pompeyo Carrasco · Claudia · #1</div>
+
+  <div class="bench-co-header">
+    <div class="bench-co-avatar av-pompeyo">PC</div>
+    <div class="bench-co-meta">
+      <div class="bench-co-title">Pompeyo Carrasco — Claudia</div>
+      <div class="bench-co-sub">Concesionario multimarca · 2 canales WhatsApp especializados · IA generativa · Score: 44/45 · 98%</div>
+    </div>
+    <div class="bench-co-score pompeyo">44</div>
+  </div>
+
+  <div class="bench-detail-grid">
+    <div class="bench-detail">
+      <div class="bench-detail-head">Tipo de sistema</div>
+      <div style="font-family: var(--serif); font-size: 18px; line-height: 1.3; margin-bottom: 8px;">IA generativa (LLM) con acceso al catálogo real. Asistente "Claudia".</div>
+      <div style="font-size: 13px; color: var(--ink-mute); line-height: 1.55;">Dos canales WhatsApp separados: ventas y servicio. Respuesta inmediata. Sin agentes humanos visibles.</div>
+    </div>
+    <div class="bench-detail">
+      <div class="bench-detail-head pos">Resultado del flujo completo</div>
+      <div class="bench-headline pos">2 citas · 10 flujos · 64 min</div>
+      <div style="font-size: 13px; color: var(--ink-mute); line-height: 1.55; margin-top: 8px;">2 visitas con confirmación estructurada (nombre, dirección, Maps, fecha, hora). VPP, seguro, usados, financiamiento y recordatorio pre-visita dentro del chat.</div>
+    </div>
+  </div>
+
+  <div class="bench-detail-grid">
+    <div class="bench-detail">
+      <div class="bench-detail-head pos">Fortalezas destacadas</div>
+      <ul>
+        <li>Confirmación de cita estructurada: nombre, sucursal, dirección, fecha, hora y Maps</li>
+        <li>Cross-sell y upsell natural: ofrece alternativas en el momento correcto</li>
+        <li>Preparación de visita personalizada: maniobras a evaluar, orden de test drives</li>
+        <li>VPP / parte de pago integrado al flujo de compra sin fricción</li>
+        <li>Seguro automotriz: full vs responsabilidad civil con diferencias reales</li>
+        <li>Financiamiento explicado con estructura: crédito convencional vs compra inteligente</li>
+        <li>Canal postventa dedicado con mismo nivel de calidad</li>
+        <li>Honesto con limitaciones y siempre ofrece alternativa concreta</li>
+        <li>Recordatorio pre-visita con documentos a llevar coordinado con ejecutivo</li>
+      </ul>
+    </div>
+    <div class="bench-detail">
+      <div class="bench-detail-head warn">Limitaciones</div>
+      <ul>
+        <li>Precios son referenciales, la cotización formal requiere intervención humana</li>
+        <li>Sin recordatorio automático desde el chat (delegado al ejecutivo)</li>
+        <li>Dirección exacta de sucursal no siempre disponible en el canal</li>
+      </ul>
+      <div style="height: 16px;"></div>
+      <div class="bench-detail-head signal">Lo que Paula debe aprender</div>
+      <ul>
+        <li>Resumen estructurado de cita con todos los datos en un mensaje</li>
+        <li>Vincular tasación del auto actual como pie para el nuevo</li>
+        <li>Detectar proactivamente VPP, seguro y usados sin que el usuario lo pida</li>
+        <li>Canal especializado de postventa separado del de ventas</li>
+        <li>Recordatorio pre-visita con documentos a llevar</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-eyebrow">Flujos evaluados</div>
+    <table class="bench-flows mt-32">
+      <thead><tr><th>Flujo</th><th>Resultado</th><th>Estado</th></tr></thead>
+      <tbody>
+        <tr><td>Agendamiento cita ventas</td><td>2 citas con nombre, dirección, Maps, fecha y hora. Confirmación estructurada.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Test drive</td><td>Orden, maniobras específicas y ambos modelos agendados.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Cotización nuevos</td><td>Precios referenciales + cotización formal vía ejecutivo antes del sábado.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Cotización usados</td><td>5 SUV con links, 2 priorizados para la visita del 30.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>VPP / Tasación</td><td>RAV4 2018 capturada, vinculada como pie para usados y parte de pago.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Financiamiento</td><td>Crédito convencional + compra inteligente explicados y solicitados.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Fichas técnicas</td><td>PDFs enviados para Dzire y Coolray dentro del chat.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Seguro automotriz</td><td>Full vs RC con opción equilibrada para primer auto.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Mantención / Postventa</td><td>Canal dedicado. Registro de cliente y derivación limpia si marca no aplica.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Recordatorio pre-visita</td><td>Viernes en la mañana con documentos a llevar. Coordinado con ejecutivo.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bench-conclusion">
+    <div class="bc-label">Hallazgo clave — el referente del benchmark</div>
+    <div class="bc-text">
+      Claudia (Pompeyo Carrasco) demuestra que la IA conversacional de excelencia en el sector automotriz chileno <em>ya existe y está operando hoy</em>. En 11 minutos agendó 2 test drives con confirmación estructurada (nombre, dirección, Maps, fecha y hora), preguntó proactivamente por VPP, seguro y financiamiento, y preparó una agenda de visita personalizada con maniobras específicas a evaluar. La única limitación es que los precios son referenciales y la cotización formal requiere al ejecutivo. <strong>Si lograra cerrar precios directamente en el chat, sería 45/45.</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAULA ============ -->
+<section id="bench-paula" class="bench-pane">
+  <div class="eyebrow">06 · Salazar Israel · Paula · #2</div>
+
+  <div class="bench-co-header">
+    <div class="bench-co-avatar av-paula">SI</div>
+    <div class="bench-co-meta">
+      <div class="bench-co-title">Salazar Israel — Paula</div>
+      <div class="bench-co-sub">IA generativa · WhatsApp · Memoria histórica única en el benchmark · Score: 38/45 · 84%</div>
+    </div>
+    <div class="bench-co-score paula">38</div>
+  </div>
+
+  <div class="bench-conclusion" style="border-color: var(--signal); background: var(--signal-tint);">
+    <div class="bc-label" style="color: var(--signal);">Posición en el benchmark</div>
+    <div class="bc-text">
+      Paula es <strong>tecnológicamente la más avanzada del benchmark</strong>: es la única con memoria histórica entre sesiones, entrega precios lista/contado/crédito en el primer mensaje, captura el lead más completo de todo el análisis y pregunta proactivamente por financiamiento y parte de pago. La brecha con Claudia baja a <strong>sólo 6 puntos</strong>, explicada principalmente por la falta de confirmación estructurada de cita y la dificultad para cambiar de flujo dentro del mismo canal. <em>Ambas son brechas de configuración, no de tecnología.</em>
+    </div>
+  </div>
+
+  <div class="bench-detail-grid">
+    <div class="bench-detail">
+      <div class="bench-detail-head pos">Ventajas confirmadas con evidencia real</div>
+      <ul>
+        <li><strong>Memoria histórica entre sesiones:</strong> única en el benchmark. Recuerda conversaciones previas y las usa de apertura.</li>
+        <li><strong>Precios en el primer mensaje:</strong> Lista, Contado y Crédito para las 3 versiones del Subaru Impreza sin que el usuario lo pida.</li>
+        <li><strong>Mejor resumen de lead del benchmark:</strong> nombre, RUT, correo, teléfono, vehículo, sucursal, tiempo de compra, financiamiento y datos del auto en parte de pago, todo confirmado en un solo mensaje.</li>
+        <li><strong>VPP y financiamiento proactivos:</strong> pregunta por ambos en el mismo turno sin esperar que el usuario lo mencione.</li>
+        <li>Respuesta inmediata (&lt;2 seg). Legibilidad superior: mensajes cortos y separados.</li>
+        <li>Autocorrección en tiempo real y manejo honesto de limitaciones.</li>
+      </ul>
+    </div>
+    <div class="bench-detail">
+      <div class="bench-detail-head neg">Brechas a corregir</div>
+      <ul>
+        <li><strong>[Alta]</strong> Le cuesta cambiar de flujo: si el usuario estaba en compra y pide mantención en el mismo chat, Paula declara su límite y deriva al teléfono. Correcto pero genera fricción.</li>
+        <li><strong>[Alta]</strong> Sin confirmación estructurada de cita: no envía resumen con nombre, dirección, fecha, hora y Maps como sí hace Claudia.</li>
+        <li><strong>[Alta]</strong> Pide datos técnicos internos al usuario: ID de sucursal y descuentos disponibles (que el usuario no puede saber).</li>
+        <li><strong>[Media]</strong> Sin canal dedicado de postventa. Todo en el mismo hilo.</li>
+        <li><strong>[Media]</strong> Localización argentina en algunos mensajes ("seguís", "vos").</li>
+        <li><strong>[Contexto]</strong> Cuando no tiene el producto en catálogo deriva al asesor. Es el comportamiento correcto — no inventa precios.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-eyebrow">Flujos evaluados</div>
+    <table class="bench-flows mt-32">
+      <thead><tr><th>Flujo</th><th>Resultado</th><th>Estado</th></tr></thead>
+      <tbody>
+        <tr><td>Memoria histórica</td><td>Recuerda conversaciones de sesiones anteriores. Único asistente del benchmark con esta capacidad.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Cotización con precio</td><td>Entrega precio Lista, Contado y Crédito por versión en el primer mensaje (Subaru Impreza 2026). Requiere que el producto esté en catálogo.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Captación de lead</td><td>El más completo del benchmark: nombre, RUT, correo, teléfono, vehículo, sucursal, horizonte de compra, financiamiento y datos del auto en parte de pago.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>VPP / Parte de pago</td><td>Pregunta proactivamente por parte de pago. Recopila marca, modelo, año, patente y km del vehículo actual.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Financiamiento</td><td>Pregunta por interés en financiamiento de forma proactiva. Deriva los montos al ejecutivo.</td><td><span class="bench-badge b-ok">Completado</span></td></tr>
+        <tr><td>Agendamiento cita ventas</td><td>Recopila todos los datos pero no genera confirmación estructurada. Recomienda llamar a la sucursal; si el usuario no quiere, deriva a asesor que contactará después.</td><td><span class="bench-badge b-warn">Parcial</span></td></tr>
+        <tr><td>Cambio de flujo ventas → postventa</td><td>Al pedir mantención en el mismo chat, Paula declara: "Yo soy asesora de compra y financiamiento. Para mantención contacta a la sucursal: +56 9 9813 9124".</td><td><span class="bench-badge b-warn">Límite de flujo</span></td></tr>
+        <tr><td>Info postventa</td><td>Deriva directamente al teléfono de la sucursal para mantención y servicios.</td><td><span class="bench-badge b-warn">Parcial</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bench-priorities">
+    <div class="bp-head">Plan de correcciones priorizadas — brecha de 6 puntos con Claudia</div>
+    <div class="bench-priority">
+      <div class="bp-num">01</div>
+      <div>
+        <div class="bp-title">Confirmación estructurada de cita</div>
+        <div class="bp-desc">Claudia envía un resumen con nombre, sucursal, dirección exacta, fecha, hora y Maps en un solo mensaje. Paula debe hacer lo mismo. Es el cambio de mayor impacto visual para el usuario y cierra la percepción de "queda pendiente" que tiene el flujo actual.</div>
+      </div>
+    </div>
+    <div class="bench-priority">
+      <div class="bp-num">02</div>
+      <div>
+        <div class="bp-title">Eliminar datos técnicos internos del flujo</div>
+        <div class="bp-desc">El ID de sucursal y los descuentos disponibles los maneja Salazar Israel, no el cliente. Paula debe tener acceso a la lista de sucursales con sus datos y nunca pedir al usuario información que sólo existe en el sistema interno.</div>
+      </div>
+    </div>
+    <div class="bench-priority">
+      <div class="bp-num">03</div>
+      <div>
+        <div class="bp-title">Canal dedicado de postventa</div>
+        <div class="bp-desc">Separar el canal de ventas del de mantención y servicio técnico, siguiendo el modelo de Pompeyo Carrasco. Resuelve la dificultad de cambio de flujo y permite que cada canal tenga su propio contexto y especialización.</div>
+      </div>
+    </div>
+    <div class="bench-priority">
+      <div class="bp-num">04</div>
+      <div>
+        <div class="bp-title">Localización al español chileno</div>
+        <div class="bp-desc">Instrucción explícita en el prompt de sistema: "Usa siempre español de Chile. Tú, no vos. Evita expresiones rioplatenses." Corrección en horas, impacto inmediato en la naturalidad de la conversación.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPORTUNIDADES ============ -->
+<section id="bench-oportunidades" class="bench-pane">
+  <div class="eyebrow">07 · Oportunidades</div>
+  <h2>Hallazgos traducidos<br>en acciones concretas.</h2>
+  <p class="lead">
+    Cada hallazgo del benchmark se convierte en una palanca específica de mejora para Paula. Ordenadas por impacto.
+  </p>
+
+  <div class="bench-opps">
+    <div class="bench-opp">
+      <div class="opp-num">01</div>
+      <div class="opp-title">Integración al catálogo de precios</div>
+      <div class="opp-text">Paula responde "lamentablemente no tengo acceso a los precios en este momento" al menos 4 veces en el flujo evaluado. Con acceso al catálogo de modelos y precios lista/contado/crédito de Salazar Israel, el flujo de cotización pasa de "deriva al asesor" a una conversión real dentro del chat.</div>
+      <div class="opp-impact">Impacto: muy alto · desbloqueador principal</div>
+    </div>
+    <div class="bench-opp">
+      <div class="opp-num">02</div>
+      <div class="opp-title">Confirmación estructurada de cita</div>
+      <div class="opp-text">Pompeyo envía un resumen de cita con nombre, sucursal, dirección, fecha, hora y Maps en un solo mensaje. Paula debe hacer lo mismo. Ese formato da certeza al usuario, reduce el no-show y reemplaza el "queda solicitado" por una confirmación real.</div>
+      <div class="opp-impact">Impacto: alto · cierre de conversión</div>
+    </div>
+    <div class="bench-opp">
+      <div class="opp-num">03</div>
+      <div class="opp-title">Eliminar datos técnicos del flujo</div>
+      <div class="opp-text">Pedir el ID de sucursal o preguntar "¿cuál es el descuento que te ofrecemos?" al usuario son errores de diseño de flujo. El usuario no tiene esos datos. Paula debe tener la lista de sucursales disponible y los descuentos en su base de conocimiento.</div>
+      <div class="opp-impact">Impacto: alto · desbloqueador de agendamiento</div>
+    </div>
+    <div class="bench-opp">
+      <div class="opp-num">04</div>
+      <div class="opp-title">Localización al español chileno</div>
+      <div class="opp-text">El uso de "seguís", "vos" y formas verbales rioplatenses rompe la naturalidad de la conversación para usuarios chilenos. Una instrucción de sistema explícita resuelve esto en horas. Impacto inmediato sin desarrollo técnico.</div>
+      <div class="opp-impact">Impacto: medio · experiencia de usuario</div>
+    </div>
+    <div class="bench-opp">
+      <div class="opp-num">05</div>
+      <div class="opp-title">Canal dedicado de postventa</div>
+      <div class="opp-text">Pompeyo Carrasco tiene un número de WhatsApp separado para servicio con el mismo nivel de calidad que el de ventas. Separar los canales evita que flujos de mantención, tasación y cotización se mezclen en el mismo hilo.</div>
+      <div class="opp-impact">Impacto: medio · arquitectura conversacional</div>
+    </div>
+    <div class="bench-opp">
+      <div class="opp-num">06</div>
+      <div class="opp-title">Recordatorio pre-visita automatizado</div>
+      <div class="opp-text">Pompeyo coordina un mensaje del viernes con documentos a llevar. Paula podría superar esto enviando el recordatorio automáticamente, sin delegar al ejecutivo. Un mensaje 2 días antes con hora, dirección y documentos necesarios maximiza la tasa de asistencia.</div>
+      <div class="opp-impact">Impacto: medio · tasa de no-show</div>
+    </div>
+    <div class="bench-opp">
+      <div class="opp-num">07</div>
+      <div class="opp-title">Aprovechar la memoria histórica</div>
+      <div class="opp-text">Paula es la <strong>única</strong> del benchmark con memoria entre sesiones. Eso es un activo estratégico subutilizado. El modelo debería usar ese historial proactivamente: "La última vez que hablamos mencionaste el Audi Q8 — ¿quieres que retomemos esa búsqueda?" convierte el recuerdo en acción.</div>
+      <div class="opp-impact">Impacto: alto · diferenciación tecnológica</div>
+    </div>
+    <div class="bench-opp">
+      <div class="opp-num">08</div>
+      <div class="opp-title">Detección proactiva de VPP y financiamiento</div>
+      <div class="opp-text">Pompeyo detecta la oportunidad de parte de pago antes de que el usuario la mencione: "¿Tienes un auto para entregar como parte de pago?" Paula debe incorporar esta pregunta en el flujo de cotización cuando el modelo sugiere que el usuario podría tener un vehículo previo.</div>
+      <div class="opp-impact">Impacto: medio · upsell de conversión</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-eyebrow">Buenas prácticas del mercado a adoptar</div>
+    <div class="findings mt-32">
+      <div class="finding">
+        <div class="num">01</div>
+        <div>
+          <h4>De Pompeyo Carrasco</h4>
+          <p><strong>Link al vehículo en la búsqueda:</strong> "¿Viste algún vehículo en la web? Envíame el link." Aprovecha la navegación previa del usuario y acorta el proceso. <strong>Pregunta de prioridades:</strong> "¿Qué es lo más importante para ti: seguridad, consumo o precio?" Personaliza toda la conversación con una sola pregunta.</p>
+        </div>
+        <div class="meta"><span class="tag pos"><span class="dot"></span>Adoptable</span></div>
+      </div>
+      <div class="finding">
+        <div class="num">02</div>
+        <div>
+          <h4>De Bruno Fritsch</h4>
+          <p><strong>Identificar al ejecutivo asignado:</strong> "Serás contactada por Paulette Viveros." Genera confianza y anticipación. El usuario sabe quién la llamará. <strong>Menú inicial amplio:</strong> incluir seguros, repuestos y otras consultas desde el primer mensaje reduce la fricción de navegación.</p>
+        </div>
+        <div class="meta"><span class="tag neu"><span class="dot"></span>Adoptable</span></div>
+      </div>
+      <div class="finding">
+        <div class="num">03</div>
+        <div>
+          <h4>Lo que ninguno hace bien</h4>
+          <p><strong>Cotización definitiva en el chat:</strong> ningún asistente entrega precio final confirmado sin intervención humana. Quien lo logre primero tendrá una ventaja competitiva muy difícil de replicar. <strong>Declarar la naturaleza del asistente:</strong> ninguno informa si es bot o humano. La transparencia genera confianza.</p>
+        </div>
+        <div class="meta"><span class="tag signal"><span class="dot"></span>Oportunidad de mercado</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bench-conclusion">
+    <div class="bc-label">Conclusión estratégica</div>
+    <div class="bc-text">
+      Paula tiene la <em>mejor base tecnológica</em> del mercado chileno evaluado. La memoria histórica entre sesiones es un diferenciador que ningún competidor tiene y que crea una experiencia de continuidad única. Con los ajustes priorizados (catálogo de precios, datos de sucursales, localización), Paula puede alcanzar o superar a Pompeyo Carrasco y posicionarse como el asistente de IA automotriz más completo de Chile. <strong>La brecha no es tecnológica: es de datos y configuración.</strong> Eso es una buena noticia.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="doc-meta">
+    <strong>Benchmark Asistentes IA · Industria Automotriz Chile</strong>
+    Uso interno · Salazar Israel · Mayo 2026 · 4 empresas · 9 dimensiones · 45 puntos máx.
+  </div>
+  <div class="sig">
+    Versión 1.0 · Mayo 2026
+  </div>
+</footer>
+
+</div><!-- /shell -->
+
+<script>
+function showBench(id, ev) {
+  document.querySelectorAll('.bench-pane').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.bench-tabs button').forEach(t => t.classList.remove('active'));
+  document.getElementById('bench-' + id).classList.add('active');
+  if (ev && ev.currentTarget) ev.currentTarget.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+document.documentElement.classList.add('js-on');
+</script>
+
+</body>
+</html>
