@@ -23,6 +23,7 @@
       <a href="venta.html">Venta</a>
       <a href="postventa.html" class="active">Postventa</a>
       <a href="compra.html">Compra</a>
+      <a href="plan.html">Plan de trabajo</a>
       <a href="dashboard.html">Dashboard</a>
     </nav>
   </div>
@@ -49,7 +50,6 @@
   <nav class="page-toc" aria-label="Índice de la página">
     <a href="#contexto"><span class="toc-num">01</span> Contexto del agente</a>
     <a href="#hallazgos"><span class="toc-num">02</span> Principales hallazgos</a>
-    <a href="#plan"><span class="toc-num">03</span> Plan de trabajo</a>
   </nav>
 </section>
 
@@ -703,90 +703,6 @@
   </div>
 </section>
 
-<!-- ============ 03 · PLAN ============ -->
-<section id="plan">
-  <div class="section-banner">
-    <div class="num-big">03</div>
-    <div>
-      <h2>Plan de trabajo.</h2>
-      <div class="punto">Qué vamos a hacer en corto, mediano y largo plazo.</div>
-    </div>
-  </div>
-
-  <div class="punto-clave">
-    <div class="pc-label">El punto</div>
-    <div class="pc-text">
-      Primero <em>saneamos</em>, después escalamos. El corto plazo es compliance + quick wins de template. El mediano plazo es sistematizar la calidad. El largo plazo es habilitar el sub-agente SAC y reactivar contactos saneados.
-    </div>
-  </div>
-
-  <div class="plan-blocks">
-
-    <div class="plan-block">
-      <div class="plan-block-header">
-        <span class="plan-block-tag cp">Corto plazo</span>
-        <span class="plan-block-window">Mayo 2026 · 2–4 semanas · Prioridad cero</span>
-      </div>
-      <h3>Cosas que no pueden esperar — saneamiento + quick wins.</h3>
-      <p class="plan-block-desc">Acciones de esfuerzo bajo con impacto inmediato (~7.759 chats/mes recuperables) y compliance crítico.</p>
-      <ul class="plan-items">
-        <li><strong>Bloqueo manual de los 1.391 contactos.</strong> Carga en lista negra del CRM Llaima + Vambe como exclusión permanente. Incluye 70 menores de edad y 293 opt-out explícitos.<span class="who">Martín Flores · Compliance</span></li>
-        <li><strong>Detector automático de menores en el agente.</strong> Si el cliente declara edad &lt; 18, Paula cierra el flujo y marca el contacto para exclusión.<span class="who">Victorio Ortega</span></li>
-        <li><strong>Reemplazar template del recordatorio outbound por botones</strong> (✅ Confirmar / 🕐 Reagendar / ❌ Cancelar). Recuperable: ~5.477/mes.<span class="who">Vambe + Americar</span></li>
-        <li><strong>Validar datos antes de enviar template.</strong> Eliminar fechas tipo "día 46119" y patentes "SINPATENTE". Recuperable: ~999/mes.<span class="who">Vambe + Americar</span></li>
-        <li><strong>Separar destinos Meta · ventas vs. postventa.</strong> Números de WhatsApp distintos para anuncios. Recuperable: ~562/mes.<span class="who">Marketing</span></li>
-        <li><strong>Activar Maipú y Puerto Montt Citroën como talleres.</strong> Recuperable: ~422/mes.<span class="who">Vambe + Americar</span></li>
-        <li><strong>Corregir bug "Pablo" en Servimaq.</strong> Regresión desde marzo 2026. Recuperable: ~142/mes.<span class="who">Equipo Paula</span></li>
-        <li><strong>Filtrar destinatarios con rechazo previo</strong> antes de enviar nuevos recordatorios. Recuperable: ~157/mes.<span class="who">Vambe</span></li>
-        <li><strong>Audit legal del proceso de opt-out.</strong> Validar cumplimiento Ley 19.628.<span class="who">Legal + Martín Flores</span></li>
-      </ul>
-    </div>
-
-    <div class="plan-block">
-      <div class="plan-block-header">
-        <span class="plan-block-tag mp">Mediano plazo</span>
-        <span class="plan-block-window">Junio – Julio 2026 · 1–3 meses · Saneamiento estructural</span>
-      </div>
-      <h3>De parches a sistemas.</h3>
-      <p class="plan-block-desc">Reemplazar acciones manuales por flujos automáticos y dashboards permanentes — para prevenir otra crisis tipo Meta.</p>
-      <ul class="plan-items">
-        <li><strong>Lista negra centralizada CRM Creatio ↔ Llaima ↔ Vambe.</strong> Tabla única de exclusión con sync diario.<span class="who">Pablo Polanco + Martín Flores</span></li>
-        <li><strong>Workflow de opt-out automatizado.</strong> Respuestas tipo "no me contacten" / "stop" / "baja" gatillan exclusión sin intervención humana.<span class="who">Victorio + Martín Flores</span></li>
-        <li><strong>Dashboard de calidad de base outbound.</strong> Composición semanal: % válidos, % opt-out, frecuencia, antigüedad.<span class="who">Pablo Polanco</span></li>
-        <li><strong>Evaluar pedir RUT más adelante en el flujo.</strong> Después de patente y tipo de mantención. Recuperable: ~1.731/mes.<span class="who">Equipo Paula</span></li>
-        <li><strong>Cargar tabla de precios estimados por modelo y dealer.</strong> Recuperable: ~529/mes.<span class="who">Vambe + Americar</span></li>
-        <li><strong>Corregir los 7 errores conversacionales restantes.</strong> Recuperable: ~1.832/mes.<span class="who">Equipo Paula</span></li>
-        <li><strong>Invertir flujo de reagendamiento</strong> — verificar disponibilidad antes de cancelar la cita existente.<span class="who">Equipo Paula</span></li>
-        <li><strong>Segmentación por antigüedad de cliente.</strong> Mensaje y frecuencia distintos para recientes vs. inactivos &gt; 24 meses.<span class="who">Producto + Marketing</span></li>
-        <li><strong>Integración cita de mantención en CRM Creatio.</strong> Eliminar doble carga y errores de cancelación.<span class="who">Martín Flores</span></li>
-      </ul>
-    </div>
-
-    <div class="plan-block">
-      <div class="plan-block-header">
-        <span class="plan-block-tag lp">Largo plazo</span>
-        <span class="plan-block-window">Agosto 2026 en adelante · 3+ meses · Etapa 2</span>
-      </div>
-      <h3>De saneado a inteligente.</h3>
-      <p class="plan-block-desc">Una vez que la base es limpia y los flujos están automatizados, ampliamos la capacidad del agente y empezamos a orquestar.</p>
-      <ul class="plan-items">
-        <li><strong>Sub-agente SAC.</strong> Derivar reclamos y solicitudes formales a un agente distinto del de citas — desbloquea métrica de cierre de Paula Postventa.<span class="who">Producto + Postventa</span></li>
-        <li><strong>Corregir sincronización Paula → Quiter</strong> (citas de mantención confirmadas que el sistema no registra). Recuperable: ~1.002/mes.<span class="who">Tech / Vambe</span></li>
-        <li><strong>Reintegro de contactos saneados con consentimiento explícito.</strong> Reactivar los que pedían no contacto por canal incorrecto.<span class="who">Martín Flores + Compliance</span></li>
-        <li><strong>Análisis cualitativo recurrente</strong> (junio + cada trimestre). Medir efecto real de los cambios sobre los 15.356 chats atascados.<span class="who">Pablo Polanco</span></li>
-        <li><strong>Memoria contextual del cliente</strong> entre conversaciones — primer paso a la orquestación Llaima (Etapa 2).<span class="who">Producto + TI</span></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="callout mt-48">
-    <div class="eyebrow">Definición de éxito a 90 días</div>
-    <p>
-      Cero contactos con opt-out activo en la base · dashboard de calidad operativo · costo por agenda de mantención &lt; US$ 9 · template del recordatorio reemplazado por botones · 12.954 chats/mes recuperables ejecutando todo el plan.
-    </p>
-  </div>
-</section>
 
 <!-- BENCHMARKING removed: ahora vive en index.html (General) -->
 

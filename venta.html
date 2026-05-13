@@ -23,6 +23,7 @@
       <a href="venta.html" class="active">Venta</a>
       <a href="postventa.html">Postventa</a>
       <a href="compra.html">Compra</a>
+      <a href="plan.html">Plan de trabajo</a>
       <a href="dashboard.html">Dashboard</a>
     </nav>
   </div>
@@ -49,7 +50,6 @@
   <nav class="page-toc" aria-label="Índice de la página">
     <a href="#contexto"><span class="toc-num">01</span> Contexto del agente</a>
     <a href="#hallazgos"><span class="toc-num">02</span> Principales hallazgos</a>
-    <a href="#plan"><span class="toc-num">03</span> Plan de trabajo</a>
   </nav>
 </section>
 
@@ -398,7 +398,7 @@
   <div class="punto-clave">
     <div class="pc-label">El punto</div>
     <div class="pc-text">
-      La brecha de Paula sobre el canal propio se <em>amplió 70% YoY</em> y es ya estructural, no estacional. El problema no es el cierre — es el volumen de leads, que cayó −28,8% en abril. Y nos falta el feedback loop con asesores que nos diga qué leads son apto o no.
+      Análisis de <strong>15.042 conversaciones</strong> de Preventa Usados de abril 2026 — un tercio del universo (45.780), seleccionadas de forma representativa por concesionario y etapa. Clasificación con IA validada manualmente (<em>86% de coincidencia humano–IA</em>). Cuatro cuellos identificados: <strong>Recepción ignora el contexto del anuncio</strong> (52,5%), <strong>confusión de marca por CLICAR</strong> (25,1%), <strong>Interesado sin cita</strong> (42,7% del Drop C — pendiente validación Vambe) y <strong>recordatorio contradictorio</strong> que rompe citas ya cerradas (20,4% del Drop D). En paralelo, hay <strong>2.565 leads de alta probabilidad</strong> listos para acción comercial inmediata.
     </div>
   </div>
 
@@ -406,126 +406,46 @@
     <div class="finding">
       <div class="num">01</div>
       <div>
-        <h4>El agente cierra mejor que el canal propio — y la brecha está creciendo.</h4>
-        <p>En abril 2026 la tasa de cierre IA fue de 6,08% vs 4,66% del canal propio (no asistido). La diferencia se amplió 70% YoY. Esto es ya estructural, no estacional.</p>
+        <h4>Recepción ignora la información del anuncio · 52,5%.</h4>
+        <p>Más de la mitad de las conversaciones que llegan por anuncios Meta pierden el contexto que el cliente ya declaró en el click. El welcome del anuncio dice "Quiero cotizar mi nuevo Peugeot Boxer" y Paula igual pregunta "¿Buscas un auto Nuevo o Usado?". Impacto por dealer: Servimaq 55,9% (~538 chats/mes), Salazar Israel 55,7% (~5.512), Coseche 49,0% (~2.170), Portillo 40,2% (~631). <strong>Proyección: ~8.851 chats/mes con mejor UX si se corrige; ~4.400 recuperables.</strong></p>
       </div>
-      <div class="meta"><span class="tag pos"><span class="dot"></span>Fortaleza</span></div>
+      <div class="meta"><span class="tag neu"><span class="dot"></span>Mejora rápida</span></div>
     </div>
     <div class="finding">
       <div class="num">02</div>
       <div>
-        <h4>Caída en volumen de leads IA en abril (−28,8% YoY).</h4>
-        <p>Aunque el % de participación se sostiene, el volumen absoluto bajó. Probable efecto rebote post-bloqueo Meta — cruzar contra inversión en Meta y formularios web por marca para confirmar.</p>
+        <h4>Confusión de marca por publicidad de CLICAR · 25,1%.</h4>
+        <p>1 de cada 4 conversaciones tiene confusión de identidad de marca. Los anuncios de CLICAR (marca paraguas) aterrizan en canales de concesionarios individuales: el welcome dice una cosa, la conversación llega al canal de otro dealer y Paula se identifica como asesora del concesionario equivocado. Volumen: Clicar 36,7% (1.695), Salazar Israel 26,4% (1.533), Servimaq 21,4% (123), Coseche 13,2% (316), Portillo 6,7% (111). <strong>Total: 3.778 chats/mes con identidad inconsistente.</strong></p>
       </div>
-      <div class="meta"><span class="tag neu"><span class="dot"></span>A investigar</span></div>
+      <div class="meta"><span class="tag neu"><span class="dot"></span>Configuración</span></div>
     </div>
     <div class="finding">
       <div class="num">03</div>
       <div>
-        <h4>Nuevos: cae tasa de cierre IA en abril a 5,59% (vs 8,38% en marzo).</h4>
-        <p>Probable efecto mix por mayor presencia de leads de campañas con baja intención. Validar con marketing si hubo cambio de pauta a fines de marzo.</p>
+        <h4>Interesado sin cita agendada · 42,7% del Drop C.</h4>
+        <p>Lectura clave: llegar a Interesado significa que <em>Paula ya hizo su trabajo principal</em> — capturó nombre, RUT, correo, teléfono, modelo y sucursal, y los registró en el CRM. El 42,7% sin cita no es error operativo: es el % en el que Paula derivó al ejecutivo sin agendar. Hipótesis a validar con Vambe: la sucursal cotizada puede no haber estado habilitada para Cita de Venta en ese momento. Distribución: Clicar 54,4% (453), Coseche 41,8% (23), Salazar Israel 29,4% (58), Servimaq 17,9% (12 · esperado), Portillo 8,2% (13 · esperado).</p>
       </div>
-      <div class="meta"><span class="tag neg"><span class="dot"></span>Atender</span></div>
+      <div class="meta"><span class="tag neu"><span class="dot"></span>A validar</span></div>
     </div>
     <div class="finding">
       <div class="num">04</div>
       <div>
-        <h4>Cita de venta sigue piloto cerrado en Toyota.</h4>
-        <p>Funcionalidad lanzada en noviembre 2025 con buena aceptación local. Aún no se ha extendido a otras marcas. Es la palanca individual con mayor potencial de mejora en tasa de show.</p>
+        <h4>Recordatorio contradice el cierre de Paula · 20,4% del Drop D.</h4>
+        <p>1 de cada 5 citas agendadas queda contaminada por un recordatorio automático que dice "aún nos falta elegir la fecha" — aunque Paula ya cerró la cita correctamente y el cliente ya confirmó. Bug de configuración claro: el trigger dispara por tiempo desde el último mensaje, sin validar el estado de la cita. Algunos clientes vuelven a coordinar (re-trabajo); otros pierden confianza y dejan de responder. <strong>~63 leads/mes protegidos si se elimina el recordatorio post-cita-agendada.</strong></p>
       </div>
-      <div class="meta"><span class="tag signal"><span class="dot"></span>Oportunidad</span></div>
-    </div>
-    <div class="finding">
-      <div class="num">05</div>
-      <div>
-        <h4>Falta cierre del loop de calidad de lead.</h4>
-        <p>Los asesores no tienen un canal estructurado para devolver feedback sobre la calidad de leads del agente. Sin eso, no podemos entrenar el agente con datos del propio negocio.</p>
-      </div>
-      <div class="meta"><span class="tag neu"><span class="dot"></span>Gap proceso</span></div>
+      <div class="meta"><span class="tag neg"><span class="dot"></span>Bug</span></div>
     </div>
     <div class="finding is-new">
-      <div class="num">06</div>
+      <div class="num">05</div>
       <div>
-        <h4>Usados: 3,8× más eficiente por conversación que Nuevos, con la mitad del presupuesto Meta.</h4>
-        <p>Q1+Abril 2026: Usados capturó <strong>67% de los messaging_started</strong> con solo <strong>35% del presupuesto C2W</strong>. Costo por mensaje iniciado: $592 CLP en Usados vs $2.262 en Nuevos. El techo de Usados hoy no es la pauta — es la capacidad de seguimiento humano post-conversación.</p>
+        <h4>2.565 leads de alta probabilidad listos para acción comercial.</h4>
+        <p>De las 15.042 conversaciones analizadas, <strong>17,1% (2.565)</strong> están clasificadas como "alta probabilidad de recupero" — lead identificado, datos completos en CRM, conversación detenida en algún paso del flujo. Asumiendo una tasa de cierre del 15% tras llamada humana (estándar industria), representa <strong>~385 ventas adicionales/mes</strong>. En paralelo, 6.741 (44,8%) son "recuperables con esfuerzo" para campañas de reactivación segmentadas. <em>Acción concreta:</em> exportar la lista de los 2.565 conv_ids con sus datos y entregarla al equipo comercial de cada concesionario.</p>
       </div>
-      <div class="meta"><span class="tag signal"><span class="dot"></span>Reasignación presupuesto</span></div>
+      <div class="meta"><span class="tag pos"><span class="dot"></span>Oportunidad</span></div>
     </div>
   </div>
 </section>
 
-<!-- ============ 03 · PLAN ============ -->
-<section id="plan">
-  <div class="section-banner">
-    <div class="num-big">03</div>
-    <div>
-      <h2>Plan de trabajo.</h2>
-      <div class="punto">Qué vamos a hacer en corto, mediano y largo plazo.</div>
-    </div>
-  </div>
-
-  <div class="punto-clave">
-    <div class="pc-label">El punto</div>
-    <div class="pc-text">
-      Corto plazo: diagnosticar la caída de leads y extender Cita de Venta a 2 marcas más. Mediano plazo: enriquecer el catálogo, integrar tasación VPP y armar pre-evaluación crediticia. Largo plazo: <em>memoria contextual</em> entre conversaciones — primer paso a la orquestación Llaima.
-    </div>
-  </div>
-
-  <div class="plan-blocks">
-
-    <div class="plan-block">
-      <div class="plan-block-header">
-        <span class="plan-block-tag cp">Corto plazo</span>
-        <span class="plan-block-window">Mayo 2026 · 2–4 semanas</span>
-      </div>
-      <h3>Diagnóstico y expansión inicial.</h3>
-      <p class="plan-block-desc">Entender la caída de leads de abril y desbloquear el siguiente escalón: Cita de Venta más allá de Toyota.</p>
-      <ul class="plan-items">
-        <li><strong>Diagnóstico de la caída de leads IA en abril.</strong> Cruzar volumen de leads IA con inversión Meta y tráfico de formularios web por marca. Definir si es pauta, calificación o comportamiento post-bloqueo.<span class="who">PM Productos + Pablo Polanco</span></li>
-        <li><strong>Extender Cita de Venta a 2 marcas adicionales.</strong> Definir candidatos según volumen de leads, capacidad operativa y disposición de los Brand Manager.<span class="who">PM + Comercial</span></li>
-        <li><strong>Activar feedback loop de asesores.</strong> Botón rápido en CRM Llaima para clasificar calidad del lead IA (apto / no apto / no contestó / cerró).<span class="who">Martín Flores</span></li>
-      </ul>
-    </div>
-
-    <div class="plan-block">
-      <div class="plan-block-header">
-        <span class="plan-block-tag mp">Mediano plazo</span>
-        <span class="plan-block-window">Junio – Julio 2026 · 1–3 meses</span>
-      </div>
-      <h3>Más profundidad funcional.</h3>
-      <p class="plan-block-desc">Enriquecer la capacidad del agente con catálogo, tasación y simulador crediticio — los tres deltas que más mueven la aguja en preventa.</p>
-      <ul class="plan-items">
-        <li><strong>Catálogo enriquecido por modelo.</strong> Carga de fichas técnicas, fotos y videos para top-15 modelos en stock de rotación.<span class="who">Vitrina Digital</span></li>
-        <li><strong>Tasación VPP integrada en el flujo.</strong> Cliente con auto a entregar puede iniciar tasación dentro del chat.<span class="who">Equipo Catman + Victorio Ortega</span></li>
-        <li><strong>A/B test de mensaje inicial en usados.</strong> Variantes por marca para validar lift en respuesta.<span class="who">Producto</span></li>
-        <li><strong>Pre-evaluación crediticia conversacional.</strong> Simulador básico dentro del chat antes de derivar a Tanner / Banco Internacional.<span class="who">Producto + Crédito</span></li>
-        <li><strong>Confirmación de cita de venta automatizada.</strong> Workflow de 24h / 2h / 1h antes con opción de reagendar.<span class="who">Victorio Ortega</span></li>
-      </ul>
-    </div>
-
-    <div class="plan-block">
-      <div class="plan-block-header">
-        <span class="plan-block-tag lp">Largo plazo</span>
-        <span class="plan-block-window">Agosto 2026 en adelante · 3+ meses</span>
-      </div>
-      <h3>Hacia un Paula con memoria.</h3>
-      <p class="plan-block-desc">Romper la barrera de cada conversación aislada: el cliente que vuelve no parte de cero. Primer paso real hacia la orquestación de la Etapa 2.</p>
-      <ul class="plan-items">
-        <li><strong>Agente con memoria contextual.</strong> El cliente que vuelve ya no parte de cero — Paula recuerda preferencias, conversaciones anteriores y modelos vistos.<span class="who">Producto + TI + Victorio Ortega</span></li>
-        <li><strong>Reporte de performance al directorio.</strong> Cierre de ciclo Q2 con highlights y aprendizajes consolidados.<span class="who">PM Productos</span></li>
-        <li><strong>Análisis cualitativo del canal de Venta</strong> (mismo método aplicado en postventa). Identificar fricciones conversacionales propias del flujo de preventa.<span class="who">Pablo Polanco</span></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="callout mt-48">
-    <div class="eyebrow">Definición de éxito a 90 días</div>
-    <p>
-      Cita de Venta operando en al menos 3 marcas · tasa de cierre IA sostenida &gt; 5,5% · feedback loop con asesores cerrado en CRM Llaima · caída de leads de abril explicada y, si aplica, recuperada.
-    </p>
-  </div>
-</section>
 
 <section id="explorar">
   <div class="next-nav">
